@@ -1,0 +1,93 @@
+[
+  {
+    "title": "5 Common Interview Mistakes (and How to Avoid Them)",
+    "slug": "common-interview-mistakes",
+    "url": "/blog/interview/common-interview-mistakes.html",
+    "excerpt": "Learn the most frequent pitfalls candidates face and how to navigate them with confidence.",
+    "tags": ["interview", "mistakes", "preparation", "tips"],
+    "category": "interview",
+    "date": "2024-03-15",
+    "readingTime": 5
+  },
+  {
+    "title": "How to Structure a Winning Teaching Demo",
+    "slug": "teaching-demo-structure",
+    "url": "/blog/teaching-demo/teaching-demo-structure.html",
+    "excerpt": "A step-by-step guide to creating a teaching demonstration that showcases your strengths.",
+    "tags": ["teaching-demo", "structure", "preparation", "pedagogy"],
+    "category": "teaching-demo",
+    "date": "2024-03-10",
+    "readingTime": 7
+  },
+  {
+    "title": "Research Talk Tips from Hiring Committees",
+    "slug": "research-talk-tips",
+    "url": "/blog/research-talk/research-talk-tips.html",
+    "excerpt": "What hiring committees are really looking for in your research presentation.",
+    "tags": ["research-talk", "presentation", "committees", "tips"],
+    "category": "research-talk",
+    "date": "2024-03-05",
+    "readingTime": 6
+  },
+  {
+    "title": "CV Formatting Tips That Get Interviews",
+    "slug": "cv-formatting-tips",
+    "url": "/blog/dossier/cv-formatting-tips.html",
+    "excerpt": "Small formatting choices that make a big difference in how committees perceive your application.",
+    "tags": ["dossier", "cv", "formatting", "application"],
+    "category": "dossier",
+    "date": "2024-02-28",
+    "readingTime": 4
+  },
+  {
+    "title": "A Complete Guide to Academic Campus Visits",
+    "slug": "campus-visit-guide",
+    "url": "/blog/campus-visit/campus-visit-guide.html",
+    "excerpt": "Everything you need to know about campus visits, from scheduling to follow-up.",
+    "tags": ["campus-visit", "guide", "preparation", "follow-up"],
+    "category": "campus-visit",
+    "date": "2024-02-20",
+    "readingTime": 8
+  },
+  {
+    "title": "Negotiation Strategies for Academic Offers",
+    "slug": "negotiation-strategies",
+    "url": "/blog/negotiation/negotiation-strategies.html",
+    "excerpt": "How to negotiate salary, startup funds, and other aspects of your offer package.",
+    "tags": ["negotiation", "salary", "startup", "offers"],
+    "category": "negotiation",
+    "date": "2024-02-15",
+    "readingTime": 6
+  },
+  {
+    "title": "A Guide for International Candidates",
+    "slug": "international-candidates-guide",
+    "url": "/blog/international/international-candidates-guide.html",
+    "excerpt": "Navigating the US academic job market as an international candidate.",
+    "tags": ["international", "visa", "immigration", "culture"],
+    "category": "international",
+    "date": "2024-02-10",
+    "readingTime": 9
+  },
+  {
+    "title": "Making the Jump from Adjunct to Tenure-Track",
+    "slug": "adjunct-to-tenure-track",
+    "url": "/blog/career-transitions/adjunct-to-tenure-track.html",
+    "excerpt": "Strategies for transitioning from part-time to full-time positions.",
+    "tags": ["career-transitions", "adjunct", "tenure-track", "transition"],
+    "category": "career-transitions",
+    "date": "2024-02-05",
+    "readingTime": 7
+  },
+  {
+    "title": "Top 10 First Interview Questions (With Answers)",
+    "slug": "first-interview-questions",
+    "url": "/blog/interview/first-interview-questions.html",
+    "excerpt": "Prepare for your first-round interview with these common questions and expert answers.",
+    "tags": ["interview", "questions", "answers", "preparation"],
+    "category": "interview",
+    "date": "2024-01-30",
+    "readingTime": 10
+  }
+]
+
