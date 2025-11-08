@@ -1,143 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Professor Town for questions about our courses, coaching, or resources. We're here to help you succeed.">
-  <title>Contact | Professor Town</title>
-  
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Professor Town</a>
-      <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul class="nav-menu">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/courses/" class="nav-link">Courses</a></li>
-        <li><a href="/coaching/" class="nav-link">Coaching</a></li>
-        <li><a href="/blog/" class="nav-link">Blog</a></li>
-        <li><a href="/resources/" class="nav-link">Resources</a></li>
-        <li><a href="/about/" class="nav-link">About</a></li>
-        <li><a href="/contact/" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <main id="main-content">
-    <section class="hero">
-      <div class="container">
-        <div class="text-center reveal">
-          <h1>Contact Us</h1>
-          <p style="font-size: 1.25rem; margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-            Have questions? We're here to help. Reach out and we'll get back to you within 24 hours.
-          </p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Professor Town for questions about our courses, coaching, or resources. We're here to help you succeed."
+    />
+    <title>Contact | Professor Town</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">Professor Town</a>
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/courses/" class="nav-link">Courses</a></li>
+          <li><a href="/coaching/" class="nav-link">Coaching</a></li>
+          <li><a href="/blog/" class="nav-link">Blog</a></li>
+          <li><a href="/resources/" class="nav-link">Resources</a></li>
+          <li><a href="/about/" class="nav-link">About</a></li>
+          <li><a href="/contact/" class="nav-link">Contact</a></li>
+        </ul>
       </div>
-    </section>
-    
-    <section class="section">
-      <div class="container" style="max-width: 800px;">
-        <div class="grid-12">
-          <div class="card reveal" style="grid-column: span 6;">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post" style="margin-top: 1.5rem;">
-              <div style="margin-bottom: 1rem;">
-                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name</label>
-                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--pt-slate-200); border-radius: 8px; font-size: 1rem;">
-              </div>
-              <div style="margin-bottom: 1rem;">
-                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--pt-slate-200); border-radius: 8px; font-size: 1rem;">
-              </div>
-              <div style="margin-bottom: 1rem;">
-                <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
-                <select id="subject" name="subject" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--pt-slate-200); border-radius: 8px; font-size: 1rem;">
-                  <option value="">Select a topic...</option>
-                  <option value="coaching">Coaching Questions</option>
-                  <option value="courses">Course Information</option>
-                  <option value="resources">Resources</option>
-                  <option value="partnership">Partnership Opportunities</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
-                <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--pt-slate-200); border-radius: 8px; font-size: 1rem; font-family: inherit;"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+    </nav>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <div class="text-center reveal">
+            <h1>Contact Us</h1>
+            <p
+              style="
+                font-size: 1.25rem;
+                margin-top: 1rem;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Have questions? We're here to help. Reach out and we'll get back
+              to you within 24 hours.
+            </p>
           </div>
-          
-          <div class="card reveal" style="grid-column: span 6;">
-            <h2>Other Ways to Reach Us</h2>
-            <div style="margin-top: 1.5rem;">
-              <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal);">Email</h3>
-              <p style="margin-bottom: 1.5rem;"><a href="mailto:hello@professortown.com">hello@professortown.com</a></p>
-              
-              <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal);">Response Time</h3>
-              <p style="margin-bottom: 1.5rem;">We typically respond within 24 hours during business days.</p>
-              
-              <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal);">Coaching Bookings</h3>
-              <p style="margin-bottom: 1.5rem;">To book a coaching session, please use our <a href="/coaching/">coaching calendar</a>.</p>
-              
-              <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal);">Follow Us</h3>
-              <p>
-                <a href="https://twitter.com/professortown" target="_blank" rel="noopener" style="margin-right: 1rem;">Twitter</a>
-                <a href="https://linkedin.com/company/professortown" target="_blank" rel="noopener">LinkedIn</a>
-              </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" style="max-width: 800px">
+          <div class="grid-12">
+            <div class="card reveal" style="grid-column: span 6">
+              <h2>Send Us a Message</h2>
+              <form action="#" method="post" style="margin-top: 1.5rem">
+                <div style="margin-bottom: 1rem">
+                  <label
+                    for="name"
+                    style="
+                      display: block;
+                      margin-bottom: 0.5rem;
+                      font-weight: 600;
+                    "
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 0.875rem;
+                      border: 2px solid var(--pt-slate-200);
+                      border-radius: 8px;
+                      font-size: 1rem;
+                    "
+                  />
+                </div>
+                <div style="margin-bottom: 1rem">
+                  <label
+                    for="email"
+                    style="
+                      display: block;
+                      margin-bottom: 0.5rem;
+                      font-weight: 600;
+                    "
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 0.875rem;
+                      border: 2px solid var(--pt-slate-200);
+                      border-radius: 8px;
+                      font-size: 1rem;
+                    "
+                  />
+                </div>
+                <div style="margin-bottom: 1rem">
+                  <label
+                    for="subject"
+                    style="
+                      display: block;
+                      margin-bottom: 0.5rem;
+                      font-weight: 600;
+                    "
+                    >Subject</label
+                  >
+                  <select
+                    id="subject"
+                    name="subject"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 0.875rem;
+                      border: 2px solid var(--pt-slate-200);
+                      border-radius: 8px;
+                      font-size: 1rem;
+                    "
+                  >
+                    <option value="">Select a topic...</option>
+                    <option value="coaching">Coaching Questions</option>
+                    <option value="courses">Course Information</option>
+                    <option value="resources">Resources</option>
+                    <option value="partnership">
+                      Partnership Opportunities
+                    </option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div style="margin-bottom: 1.5rem">
+                  <label
+                    for="message"
+                    style="
+                      display: block;
+                      margin-bottom: 0.5rem;
+                      font-weight: 600;
+                    "
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 0.875rem;
+                      border: 2px solid var(--pt-slate-200);
+                      border-radius: 8px;
+                      font-size: 1rem;
+                      font-family: inherit;
+                    "
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="card reveal" style="grid-column: span 6">
+              <h2>Other Ways to Reach Us</h2>
+              <div style="margin-top: 1.5rem">
+                <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal)">
+                  Email
+                </h3>
+                <p style="margin-bottom: 1.5rem">
+                  <a href="mailto:hello@professortown.com"
+                    >hello@professortown.com</a
+                  >
+                </p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal)">
+                  Response Time
+                </h3>
+                <p style="margin-bottom: 1.5rem">
+                  We typically respond within 24 hours during business days.
+                </p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal)">
+                  Coaching Bookings
+                </h3>
+                <p style="margin-bottom: 1.5rem">
+                  To book a coaching session, please use our
+                  <a href="/coaching/">coaching calendar</a>.
+                </p>
+
+                <h3 style="margin-bottom: 0.5rem; color: var(--pt-teal)">
+                  Follow Us
+                </h3>
+                <p>
+                  <a
+                    href="https://twitter.com/professortown"
+                    target="_blank"
+                    rel="noopener"
+                    style="margin-right: 1rem"
+                    >Twitter</a
+                  >
+                  <a
+                    href="https://linkedin.com/company/professortown"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="section section-alt">
-      <div class="container">
-        <div class="text-center reveal">
-          <h2 style="margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
-          <p style="margin-bottom: 2rem;">Have a quick question? Check out our <a href="/#faq">FAQ section</a> for common questions about our services.</p>
-          <a href="/" class="btn btn-secondary">View FAQ</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>Professor Town</h4>
-          <p>Practical interview prep for professors, adjuncts, and grad students.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/resources/">Free Resources</a></li>
-            <li><a href="/courses/">Courses</a></li>
-            <li><a href="/coaching/">Coaching</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Professor Town. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>
+      </section>
 
+      <section class="section section-alt">
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 style="margin-bottom: 1.5rem">Frequently Asked Questions</h2>
+            <p style="margin-bottom: 2rem">
+              Have a quick question? Check out our
+              <a href="/#faq">FAQ section</a> for common questions about our
+              services.
+            </p>
+            <a href="/" class="btn btn-secondary">View FAQ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Professor Town</h4>
+            <p>
+              Practical interview prep for professors, adjuncts, and grad
+              students.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/resources/">Free Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Professor Town. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
