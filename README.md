@@ -58,13 +58,13 @@ You need to add the following WOFF2 font files to `/assets/fonts/`:
 
 - **Source Serif 4** (700 weight)
   - `source-serif-4-bold.woff2`
-  
 - **Inter** (400, 500, 600 weights)
   - `inter-regular.woff2`
   - `inter-medium.woff2`
   - `inter-semibold.woff2`
 
 **Where to get fonts:**
+
 - Google Fonts (https://fonts.google.com)
 - Adobe Fonts
 - Inter is also available on GitHub: https://github.com/rsms/inter
@@ -79,6 +79,7 @@ Add the following images to `/assets/img/`:
 - WebP/AVIF versions of hero images and other graphics
 
 **Image optimization:**
+
 - Use WebP or AVIF format
 - Include responsive `srcset` attributes
 - Provide SVG icons where possible
@@ -120,7 +121,7 @@ Simply upload all files to your hosting service. No build step required.
 ✅ **Fast animations** - CSS-first with IntersectionObserver  
 ✅ **Blog system** - Static HTML with JSON search index  
 ✅ **FAQ accordion** - Keyboard accessible  
-✅ **Mobile navigation** - Hamburger menu with smooth transitions  
+✅ **Mobile navigation** - Hamburger menu with smooth transitions
 
 ## Browser Support
 
@@ -137,5 +138,4 @@ No build tools or dependencies required. Simply:
 
 ## License
 
-All rights reserved. Professor Town © 2024
-
+All rights reserved. Professor Town © 2025
