@@ -654,5 +654,23 @@ small {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .university-logo-dark-bg {
+    padding: 0.25rem 0.5rem;
+    height: 50px;
+  }
+  
+  .university-logo {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .university-banner-track {
+    gap: 1.5rem;
+  }
 }
 
