@@ -612,3 +612,47 @@ small {
   }
 }
 
+/* Scrolling banner animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.university-banner {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.university-banner-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+}
+
+.university-banner-track:hover {
+  animation-play-state: paused;
+}
+
+.university-logo {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.university-logo-dark-bg {
+  background-color: #1E293B;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
