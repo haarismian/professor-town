@@ -684,7 +684,7 @@ small {
 
 .testimonials-column-wrapper {
   overflow: hidden;
-  height: 600px;
+  height: 450px;
   position: relative;
   background: var(--pt-white);
 }
@@ -897,6 +897,145 @@ small {
 
   .testimonial-rating-row {
     gap: 0.5rem;
+  }
+}
+
+/* ============================================
+   Pricing Cards
+   ============================================ */
+.pricing-card {
+  background: var(--pt-white);
+  border: 2px solid var(--pt-slate-200);
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card-featured {
+  border-color: var(--pt-teal);
+  box-shadow: 0 8px 24px rgba(12, 124, 89, 0.15);
+  transform: scale(1.05);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pt-gold);
+  color: var(--pt-oxford);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--pt-slate-200);
+}
+
+.pricing-price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--pt-oxford);
+  margin-top: 1rem;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li {
+  padding: 0.75rem 0;
+  padding-left: 1.75rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--pt-teal);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .pricing-card-featured {
+    transform: scale(1);
+  }
+  
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .pricing-price {
+    font-size: 2.5rem;
+  }
+}
+
+/* ============================================
+   Coaching Path
+   ============================================ */
+.coaching-path {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.coaching-step {
+  position: relative;
+  background: var(--pt-white);
+  border: 1px solid var(--pt-slate-200);
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.coaching-step-number {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--pt-teal);
+  color: var(--pt-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(12, 124, 89, 0.3);
+}
+
+.coaching-step-content {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .coaching-path {
+    grid-template-columns: 1fr;
+  }
+  
+  .coaching-step {
+    padding: 1.5rem;
   }
 }
 
