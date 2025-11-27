@@ -35,7 +35,7 @@ const TESTIMONIALS = [
     title: "Academic Career Transition",
     linkedin: "https://www.linkedin.com/in/chris-bosley-aiml/",
     // image: "/assets/img/testimonials/chris-bosley.jpg", // Add LinkedIn photo when available
-    logo: "/assets/img/uni logos/university-of-utah.png",
+    logo: "/assets/img/uni logos/university_utah.jpg",
     text: "Coming into this, I honestly didn't understand how to approach academic roles. I didn't know how faculty hiring committees read my materials or how to tell my story in a way that made sense to them. Working with Haaris, I finally got a clear view of the actual process: how committees use rubrics, what they score, and how my documents are really being evaluated. He showed me how to turn my executive and industry background into an academic narrative that speaks directly to those criteria. I left with specific, actionable steps to improve my CV, cover letter, and teaching statement, plus a concrete networking strategy tailored to my target universities.",
   },
 ];
