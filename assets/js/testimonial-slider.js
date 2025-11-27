@@ -37,12 +37,28 @@ function renderTestimonialSlider(containerId, options = {}) {
   </svg>`;
 
   /**
+   * Renders the avatar element - person image, logo, or initials fallback
+   */
+  const renderAvatar = (t) => {
+    if (t.image) {
+      // Person's photo takes priority
+      return `<img src="${t.image}" alt="${t.name}" class="testimonial-avatar testimonial-avatar-img">`;
+    } else if (t.logo) {
+      // University/company logo as fallback
+      return `<img src="${t.logo}" alt="" class="testimonial-avatar testimonial-avatar-logo">`;
+    } else {
+      // Initials as final fallback
+      return `<div class="testimonial-avatar">${t.initials}</div>`;
+    }
+  };
+
+  /**
    * Renders a single testimonial card
    */
   const renderCard = (t) => `
     <div class="testimonial-card">
       <div class="testimonial-header">
-        <div class="testimonial-avatar">${t.initials}</div>
+        ${renderAvatar(t)}
         <div class="testimonial-header-text">
           <div class="testimonial-name">${t.name}</div>
           <div class="testimonial-title">${t.title}</div>

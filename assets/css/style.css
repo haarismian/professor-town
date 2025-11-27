@@ -774,6 +774,20 @@ small {
   flex-shrink: 0;
 }
 
+/* Person's photo - circular crop */
+.testimonial-avatar-img {
+  object-fit: cover;
+  background: transparent;
+}
+
+/* University/company logo - contained with padding */
+.testimonial-avatar-logo {
+  object-fit: contain;
+  background: white;
+  padding: 4px;
+  border: 1px solid #e5e7eb;
+}
+
 .testimonial-header-text {
   flex: 1;
   min-width: 0;
@@ -877,6 +891,10 @@ small {
     width: 40px;
     height: 40px;
     font-size: 0.75rem;
+  }
+
+  .testimonial-avatar-logo {
+    padding: 3px;
   }
 
   .testimonial-name {
