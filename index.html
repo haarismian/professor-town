@@ -784,6 +784,57 @@
             style="text-align: center; max-width: 900px; margin: 0 auto"
           >
             <h2 style="margin-bottom: 2rem">Check Us Out on Social Media</h2>
+
+            <!-- Latest YouTube Video (Auto-fetched) -->
+            <div
+              style="width: 100%; max-width: 800px; margin: 0 auto 2rem auto"
+            >
+              <h3
+                style="
+                  text-align: center;
+                  margin-bottom: 1rem;
+                  color: var(--pt-teal);
+                "
+              >
+                📺 Latest from YouTube
+              </h3>
+              <div
+                id="latest-youtube-video"
+                style="
+                  position: relative;
+                  padding-bottom: 56.25%;
+                  height: 0;
+                  overflow: hidden;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                  background: #000;
+                "
+              >
+                <!-- Video will be loaded dynamically via JavaScript -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                  "
+                >
+                  Loading latest video...
+                </div>
+              </div>
+              <p style="text-align: center; margin-top: 1rem">
+                <a
+                  href="https://www.youtube.com/@ProfessorTown"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: var(--pt-teal); text-decoration: underline"
+                >
+                  Subscribe to our YouTube Channel →
+                </a>
+              </p>
+            </div>
+
             <div
               style="
                 display: grid;
@@ -794,6 +845,15 @@
               "
             >
               <div style="width: 100%; max-width: 605px; margin: 0 auto">
+                <h3
+                  style="
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    color: var(--pt-teal);
+                  "
+                >
+                  TikTok
+                </h3>
                 <blockquote
                   class="tiktok-embed"
                   cite="https://www.tiktok.com/@professor.town/video/7568594484641025288"
@@ -848,6 +908,15 @@
                 <script async src="https://www.tiktok.com/embed.js"></script>
               </div>
               <div style="width: 100%; max-width: 540px; margin: 0 auto">
+                <h3
+                  style="
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    color: var(--pt-teal);
+                  "
+                >
+                  Instagram
+                </h3>
                 <blockquote
                   class="instagram-media"
                   data-instgrm-captioned
@@ -1593,5 +1662,59 @@
     <script src="/assets/js/testimonials-data.js"></script>
     <script src="/assets/js/testimonial-slider.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!-- Auto-fetch latest YouTube video -->
+    <script>
+      (function () {
+        const CHANNEL_ID = "UCmHdPV25Qnz05BPIM_OX31g";
+        const container = document.getElementById("latest-youtube-video");
+
+        // Use RSS2JSON service to get YouTube feed (free, no API key needed)
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(
+          rssUrl
+        )}`;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "ok" && data.items && data.items.length > 0) {
+              // Get the latest video
+              const latestVideo = data.items[0];
+              // Extract video ID from the link
+              const videoId = latestVideo.link.split("v=")[1];
+
+              // Create and insert the iframe
+              container.innerHTML = `
+                <iframe
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                  src="https://www.youtube.com/embed/${videoId}"
+                  title="${latestVideo.title}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              `;
+            } else {
+              // Fallback: show channel link
+              container.innerHTML = `
+                <a href="https://www.youtube.com/@ProfessorTown" target="_blank" rel="noopener"
+                   style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-decoration: underline;">
+                  Watch our videos on YouTube →
+                </a>
+              `;
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching YouTube video:", error);
+            // Fallback on error
+            container.innerHTML = `
+              <a href="https://www.youtube.com/@ProfessorTown" target="_blank" rel="noopener"
+                 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-decoration: underline;">
+                Watch our videos on YouTube →
+              </a>
+            `;
+          });
+      })();
+    </script>
   </body>
 </html>
