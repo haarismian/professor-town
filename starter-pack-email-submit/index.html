@@ -116,12 +116,7 @@
         line-height: 1.8;
         color: var(--pt-ink);
         max-width: 700px;
-        margin: 0 auto 2.5rem auto;
-      }
-
-      .confirmation-hero .body-copy #spots-remaining {
-        font-weight: 700;
-        color: var(--pt-teal);
+        margin: 0 auto 2rem auto;
       }
 
       .who-for-box {
@@ -247,11 +242,63 @@
             Most candidates download these rubrics but struggle to grade
             themselves objectively. They think their application is a 9/10, but
             the committee sees a 4/10 because of formatting blind spots. I have
-            opened up <span id="spots-remaining">4</span> slots this week for a
-            Free 'Rubric Fit' Assessment. In this session, we will review your
-            CV against the 'Professor Town' rubric live. You will leave knowing
-            exactly where your application is losing points and how to fix it.
+            opened up a few slots this week for a Free 'Rubric Fit' Assessment.
+            In this session, we will review your CV against the 'Professor Town'
+            rubric live. You will leave knowing exactly where your application
+            is losing points and how to fix it.
           </p>
+
+          <!-- Spots Counter -->
+          <div
+            class="spots-counter"
+            style="
+              background: linear-gradient(
+                135deg,
+                var(--pt-oxford) 0%,
+                #1a365d 100%
+              );
+              border-radius: 12px;
+              padding: 1rem 1.5rem;
+              margin-bottom: 2rem;
+              max-width: 500px;
+              margin-left: auto;
+              margin-right: auto;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            "
+          >
+            <p
+              style="
+                color: var(--pt-slate-200);
+                font-size: 0.875rem;
+                margin: 0 0 0.5rem 0;
+                opacity: 0.9;
+              "
+            >
+              To maintain the highest quality service, we only help 14 people
+              per week
+            </p>
+            <p
+              style="
+                color: var(--pt-white);
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin: 0;
+              "
+            >
+              Only
+              <span
+                id="spots-remaining"
+                style="
+                  color: var(--pt-gold);
+                  font-size: 1.5rem;
+                  display: inline-block;
+                  min-width: 1.5rem;
+                "
+                >--</span
+              >
+              spots available this week
+            </p>
+          </div>
 
           <!-- Who This Is For Box -->
           <div class="who-for-box">
