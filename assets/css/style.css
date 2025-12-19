@@ -1162,3 +1162,95 @@ small {
     padding: 1.5rem;
   }
 }
+
+/* ============================================
+   Christmas Sale Banner
+   ============================================ */
+.sale-banner {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  color: white;
+  padding: 0.875rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.sale-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sale-banner-text {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.sale-banner a {
+  color: white;
+  text-decoration: underline;
+}
+
+.sale-banner a:hover {
+  color: #fef2f2;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.countdown-unit {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+.countdown-separator {
+  font-weight: 700;
+}
+
+/* Adjust nav position when banner is present */
+.has-sale-banner .nav {
+  top: 52px;
+}
+
+@media (max-width: 768px) {
+  .sale-banner {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .sale-banner-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sale-banner-text {
+    font-size: 0.875rem;
+  }
+
+  .countdown-timer {
+    gap: 0.375rem;
+  }
+
+  .countdown-unit {
+    padding: 0.2rem 0.375rem;
+    font-size: 0.75rem;
+    min-width: 2rem;
+  }
+
+  .has-sale-banner .nav {
+    top: 80px;
+  }
+}

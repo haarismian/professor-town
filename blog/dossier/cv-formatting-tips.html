@@ -129,7 +129,26 @@
       });
     </script>
   </head>
-  <body>
+  <body class="has-sale-banner">
+    <!-- Christmas Sale Banner -->
+    <div class="sale-banner">
+      <div class="sale-banner-content">
+        <span class="sale-banner-text"
+          >🎄 HOLIDAY SALE: 65% OFF —
+          <a href="/offers/application-review/">Get Your Application Reviewed</a></span
+        >
+        <div class="countdown-timer" id="countdown">
+          <span class="countdown-unit" id="days">00</span>
+          <span class="countdown-separator">:</span>
+          <span class="countdown-unit" id="hours">00</span>
+          <span class="countdown-separator">:</span>
+          <span class="countdown-unit" id="minutes">00</span>
+          <span class="countdown-separator">:</span>
+          <span class="countdown-unit" id="seconds">00</span>
+        </div>
+      </div>
+    </div>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <nav class="nav">
@@ -148,8 +167,8 @@
           <li class="nav-dropdown">
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
-              <li><a href="/work-with-us/job-search-system/">Faculty Job Search System</a></li>
-              <li><a href="/work-with-us/">1:1 Coaching</a></li>
+              <li><a href="/offers/faculty-coaching/">Faculty Coaching</a></li>
+              <li><a href="/offers/application-review/">Application Review</a></li>
             </ul>
           </li>
           <li><a href="/blog/" class="nav-link">Blog</a></li>
@@ -893,5 +912,36 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+
+    <!-- Countdown Timer Script -->
+    <script>
+      (function() {
+        function updateCountdown() {
+          const targetDate = new Date("2025-12-27T04:59:59Z");
+          const now = new Date();
+          const diff = targetDate - now;
+          if (diff <= 0) {
+            document.querySelectorAll(".countdown-timer").forEach(timer => {
+              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            });
+            return;
+          }
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+          const d = document.getElementById("days");
+          const h = document.getElementById("hours");
+          const m = document.getElementById("minutes");
+          const s = document.getElementById("seconds");
+          if (d) d.textContent = String(days).padStart(2, "0") + "d";
+          if (h) h.textContent = String(hours).padStart(2, "0") + "h";
+          if (m) m.textContent = String(minutes).padStart(2, "0") + "m";
+          if (s) s.textContent = String(seconds).padStart(2, "0") + "s";
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      })();
+    </script>
   </body>
 </html>
