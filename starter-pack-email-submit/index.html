@@ -274,8 +274,8 @@
                 opacity: 0.9;
               "
             >
-              To maintain the highest quality service, we only help 14 people
-              per week
+              To maintain the highest quality service, we only help 7 people per
+              week
             </p>
             <p
               style="
@@ -355,23 +355,23 @@
 
         // Two different "depletion patterns" that alternate
         const patternA = {
-          1: 14, // Mon
-          2: 11, // Tue (-3)
-          3: 9, // Wed (-2)
-          4: 6, // Thu (-3)
-          5: 4, // Fri (-2)
+          1: 7, // Mon
+          2: 4, // Tue (-3)
+          3: 3, // Wed (-2)
+          4: 3, // Thu (-3)
+          5: 2, // Fri (-2)
           6: 2, // Sat (-2)
-          0: 0, // Sun (-2)
+          0: 1, // Sun (-2)
         };
 
         const patternB = {
-          1: 14, // Mon
-          2: 12, // Tue (-2)
-          3: 9, // Wed (-3)
-          4: 7, // Thu (-2)
-          5: 4, // Fri (-3)
-          6: 1, // Sat (-3)
-          0: 0, // Sun (-1)
+          1: 7, // Mon
+          2: 5, // Tue (-2)
+          3: 3, // Wed (-3)
+          4: 2, // Thu (-2)
+          5: 2, // Fri (-3)
+          6: 2, // Sat (-3)
+          0: 2, // Sun (-1)
         };
 
         return isOddWeek ? patternA[day] : patternB[day];
@@ -387,5 +387,3 @@
     </script>
   </body>
 </html>
-
-
