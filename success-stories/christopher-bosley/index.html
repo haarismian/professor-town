@@ -140,14 +140,52 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
-        padding: 2rem;
+      .case-study-section ul {
+        font-size: 1.125rem;
+        line-height: 1.8;
         color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+      }
+
+      .case-study-section li {
+        margin-bottom: 1rem;
+      }
+
+      .case-study-section strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-blockquote {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
         font-style: italic;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: var(--pt-ink);
+      }
+
+      .case-study-results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .case-study-results-list li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .case-study-results-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--pt-teal);
+        font-weight: 700;
+        font-size: 1.25rem;
       }
 
       .case-study-cta {
@@ -195,7 +233,9 @@
       <div class="sale-banner-content">
         <span class="sale-banner-text"
           >🎄 HOLIDAY SALE: 65% OFF —
-          <a href="/offers/application-review/">Get Your Application Reviewed</a></span
+          <a href="/offers/application-review/"
+            >Get Your Application Reviewed</a
+          ></span
         >
         <div class="countdown-timer" id="countdown">
           <span class="countdown-unit" id="days">00</span>
@@ -229,7 +269,9 @@
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
               <li><a href="/offers/faculty-coaching/">Faculty Coaching</a></li>
-              <li><a href="/offers/application-review/">Application Review</a></li>
+              <li>
+                <a href="/offers/application-review/">Application Review</a>
+              </li>
             </ul>
           </li>
           <li><a href="/about/" class="nav-link">About</a></li>
@@ -251,13 +293,14 @@
             <h1>Christopher Bosley</h1>
           </div>
           <div class="case-study-video-container reveal">
-            <iframe 
-              src="https://www.youtube.com/embed/1jyjEKAXCKU" 
+            <iframe
+              src="https://www.youtube.com/embed/1jyjEKAXCKU"
               title="Christopher Bosley Success Story"
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
             </iframe>
           </div>
         </div>
@@ -268,50 +311,183 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Christopher</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Christopher Bosley -
-                  his background, current role, and what makes his story unique.
-                  Include details about his professional journey and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Christopher Bosley spent over a decade building an impressive
+                career in tech, rising to executive roles at companies like Epic
+                Games where he worked on Rocket League—developing matchmaking
+                systems, building anti-cheat frameworks, and pioneering methods
+                to quantify player performance. He directed AI and data
+                organizations, managed multi-million dollar initiatives, and
+                mentored countless professionals along the way.
+              </p>
+              <p>But something was missing.</p>
+              <p>
+                After completing his Master of Legal Studies at the University
+                of Utah, Christopher realized he'd never fallen out of love with
+                learning—and he wanted to be on the other side of the classroom.
+                His dream? Teaching game analytics at his alma mater's newly
+                launched Division of Games, helping the next generation of
+                professionals bridge the gap between industry and academia.
+              </p>
+              <p>
+                The credentials were there. The passion was undeniable. But the
+                path forward was anything but clear.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Describe the challenges Christopher faced before
-                  working with Professor Town. What obstacles were preventing
-                  him from achieving his academic career goals? What pain points
-                  was he experiencing?]
-                </p>
-              </div>
+              <p>
+                Christopher approached academic job applications the same way
+                he'd approached everything in his career: dive in and figure it
+                out. He applied to three institutions through online portals and
+                heard almost nothing back. At Utah Valley University, he made it
+                through initial screening rounds but never landed an interview.
+              </p>
+              <p>
+                The problem wasn't his qualifications—it was how he was
+                presenting them.
+              </p>
+              <p>
+                His resume read like what it was: a polished executive CV
+                designed to pass ATS filters and impress corporate recruiters.
+                His cover letter led with strategic capabilities and
+                organizational achievements. His teaching statement was, in his
+                own words, "absolute gibberish"—full of philosophy but lacking
+                the concrete evidence hiring committees actually evaluate.
+              </p>
+              <p>
+                Christopher had taught statistics as an adjunct a decade
+                earlier. He'd published research. He'd built an entire Python
+                curriculum for his analytics team at Epic Games. He'd mentored
+                interns who went on to run departments. But none of this showed
+                up where it mattered—above the fold, in the language academics
+                actually speak.
+              </p>
+              <p>
+                As he put it:
+                <em
+                  >"I have the right content and not the right language. I'm not
+                  speaking to people in the language they need to hear."</em
+                >
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Christopher. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  his unique challenges?]
-                </p>
-              </div>
+              <p>
+                In a single strategy session, we pulled back the curtain on how
+                faculty hiring actually works.
+              </p>
+              <p>
+                Christopher got to see real screening rubrics from universities
+                like Berkeley, Maryland, and Delaware—the actual scoring
+                criteria committees use to evaluate candidates. The revelation
+                was immediate: academic hiring committees don't care about
+                "enterprise systems architecture" or "delivery frameworks."
+                They're looking for evidence of scholarly impact, teaching and
+                mentoring potential, and the ability to attract funding.
+              </p>
+              <p>
+                Christopher had all of this. He just needed to surface it
+                differently.
+              </p>
+              <p>We restructured his approach from the ground up:</p>
+              <ul>
+                <li>
+                  <strong>Resume transformation:</strong> We moved publications
+                  and patents above the fold. Reframed his intern mentorship
+                  program as evidence of teaching potential. Translated "secured
+                  $15 million in program funding" into language that signals
+                  grant-writing capability. Cut the executive summary that
+                  everyone skips anyway.
+                </li>
+                <li>
+                  <strong>Cover letter reframe:</strong> Instead of leading with
+                  credentials, we flipped the narrative. The new opening: "I'm
+                  excited to bring my 15 years of executive experience in the
+                  gaming industry to the School of Gaming." Student impact
+                  first, qualifications second.
+                </li>
+                <li>
+                  <strong>Teaching statement overhaul:</strong> We shifted from
+                  philosophy to evidence. That Python curriculum he built at
+                  Epic? That's pedagogical development. The interns who became
+                  data scientists? That's measurable student outcomes. The
+                  training pipeline he created? That's outcome-based instruction
+                  in action.
+                </li>
+                <li>
+                  <strong>Networking strategy:</strong> We identified that
+                  adjunct positions rarely go through formal channels—they
+                  happen through relationships. Christopher needed to connect
+                  with faculty directly, offer to guest lecture, and position
+                  himself as the solution to a program that was clearly
+                  understaffed.
+                </li>
+              </ul>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Christopher achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Christopher about his experience.]
-                </p>
-              </div>
+              <p>
+                Within weeks of implementing these changes, Christopher's
+                trajectory transformed completely.
+              </p>
+              <ul class="case-study-results-list">
+                <li>
+                  <strong
+                    >Landed an adjunct mathematics position at Salt Lake
+                    Community College.</strong
+                  >
+                  His teaching demo and interview went smoothly—he successfully
+                  reframed his industry mentorship experience using academic
+                  language, exactly as we'd practiced.
+                </li>
+                <li>
+                  <strong
+                    >Secured a meeting with the Assistant Chair for Academic
+                    Affairs at the University of Utah's Division of
+                    Games.</strong
+                  >
+                  His warm outreach approach—framing his experience as a
+                  value-add and expressing willingness to contribute in multiple
+                  ways—got him in the door.
+                </li>
+                <li>
+                  <strong
+                    >Booked to guest lecture and hold workshops in the Games
+                    program's producer curriculum.</strong
+                  >
+                  The department is actively discussing adjunct and career-line
+                  roles with him once their tenure-track hire is in place for
+                  Fall 2026.
+                </li>
+              </ul>
+              <p>In Christopher's words:</p>
+              <blockquote class="case-study-blockquote">
+                "Your method of approaching this warm introduction was great.
+                Thank you for turning this 'I think I'd like to try being a
+                professor' into a reality that's flying like a rocket."
+              </blockquote>
+              <blockquote class="case-study-blockquote">
+                "I really felt like Professor Town was an authoritative research
+                resource. There was obvious evidentiary materials, experience in
+                the field, and an understanding of how the university hiring
+                process works."
+              </blockquote>
+              <blockquote class="case-study-blockquote">
+                "I will absolutely send anyone I know that could use your help
+                to Professor Town. I'll also be, on my own, evangelizing your
+                services because they just work."
+              </blockquote>
+              <p>
+                Christopher's journey proves what's possible when you stop
+                thinking like an executive and start speaking the language of
+                academia. The credentials were always there. He just needed
+                someone who sits on hiring committees to show him how we
+                actually read applications.
+              </p>
             </div>
 
             <div class="case-study-cta reveal">
@@ -369,19 +545,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
@@ -399,4 +578,3 @@
     </script>
   </body>
 </html>
-
