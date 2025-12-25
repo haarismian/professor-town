@@ -140,6 +140,9 @@
         font-weight: 700;
         border-radius: 14px;
         text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
         transition: transform 0.15s ease, box-shadow 0.15s ease,
           background 0.15s ease;
       }
@@ -545,6 +548,127 @@
         font-style: italic;
       }
 
+      /* Payment Modal */
+      .payment-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+      }
+
+      .payment-modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .payment-modal {
+        background: var(--pt-white);
+        border-radius: 16px;
+        max-width: 480px;
+        width: 90%;
+        padding: 2.5rem;
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+        transform: scale(0.9) translateY(20px);
+        transition: transform 0.25s ease;
+        text-align: center;
+      }
+
+      .payment-modal-overlay.active .payment-modal {
+        transform: scale(1) translateY(0);
+      }
+
+      .payment-modal-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .payment-modal h3 {
+        font-size: 1.5rem;
+        color: var(--pt-oxford);
+        margin-bottom: 1rem;
+      }
+
+      .payment-modal p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: var(--pt-ink);
+        margin-bottom: 1rem;
+      }
+
+      .payment-modal-note {
+        background: var(--pt-slate-50);
+        border-radius: 8px;
+        padding: 1rem;
+        font-size: 0.9375rem;
+        color: var(--pt-ink);
+        margin-bottom: 1.5rem;
+      }
+
+      .payment-modal-note a {
+        color: var(--pt-teal);
+        text-decoration: underline;
+      }
+
+      .payment-modal-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .payment-modal-btn {
+        padding: 0.875rem 1.75rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        border: none;
+      }
+
+      .payment-modal-btn-primary {
+        background: #b91c1c;
+        color: white;
+      }
+
+      .payment-modal-btn-primary:hover {
+        background: #991b1b;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(185, 28, 28, 0.3);
+      }
+
+      .payment-modal-btn-secondary {
+        background: var(--pt-slate-100);
+        color: var(--pt-ink);
+      }
+
+      .payment-modal-btn-secondary:hover {
+        background: var(--pt-slate-200);
+      }
+
+      @media (max-width: 480px) {
+        .payment-modal {
+          padding: 1.75rem;
+        }
+
+        .payment-modal-buttons {
+          flex-direction: column;
+        }
+
+        .payment-modal-btn {
+          width: 100%;
+        }
+      }
+
       /* Testimonials Section */
       .testimonials-section {
         background: var(--pt-white);
@@ -657,11 +781,9 @@
               <span class="price-sale">$197</span>
               <span class="price-badge">65% OFF — Christmas Sale</span>
             </div>
-            <a
-              href="mailto:hello@professortown.com?subject=Application%20Package%20Review%20%E2%80%94%20Christmas%20Sale&body=%5BPROFESSOR%20TOWN%20NOTE%3A%20Thank%20you%20for%20your%20interest%20in%20the%20Christmas%20Sale%20Application%20Package%20Review!%20To%20get%20started%2C%20please%20fill%20out%20the%20details%20below%20and%20attach%20your%20CV%2C%20Cover%20Letter%2C%20Teaching%20Statement%2C%20and%20Research%20Statement%20(PDFs%20preferred).%20You%20can%20also%20include%20up%20to%203%20job%20postings%20you%27re%20targeting.%20After%20you%20send%20this%20email%2C%20you%20will%20receive%20an%20invoice.%20Once%20payment%20is%20received%2C%20you%27ll%20get%20immediate%20access%20to%20all%20bonuses%20and%20your%20video%20review%20will%20be%20delivered%20within%205%20business%20days.%20(Note%3A%20Orders%20placed%20Dec%2024-26%20will%20be%20delivered%20by%20January%202nd.)%5D%0A%0AName%3A%20%5BType%20Name%20Here%5D%0ACurrent%20Status%3A%20%5Be.g.%20PhD%20Candidate%2C%20Postdoc%2C%20Adjunct%5D%0ATarget%20Job%20Postings%20(up%20to%203)%3A%20%5BPaste%20links%20here%5D%0AApplication%20Deadline%20(if%20any)%3A%20%5BDate%5D%0ABiggest%20Concern%20(Optional)%3A%20%5BYour%20concerns%5D%0A%0AI%20am%20ready%20for%20the%20Application%20Package%20Review%20(%24197%20Christmas%20Sale).%20Please%20send%20the%20invoice%20and%20bonus%20materials."
-              class="cta-button"
-              >Get Your Application Reviewed — $197</a
-            >
+            <button type="button" class="cta-button open-payment-modal">
+              Get Your Application Reviewed — $197
+            </button>
             <p class="urgency-text">
               Sale ends December 26th. Full package review + all bonuses
               included.
@@ -905,11 +1027,9 @@
               </p>
             </div>
             <div class="text-center reveal">
-              <a
-                href="mailto:hello@professortown.com?subject=Application%20Package%20Review%20%E2%80%94%20Christmas%20Sale&body=%5BPROFESSOR%20TOWN%20NOTE%3A%20Thank%20you%20for%20your%20interest%20in%20the%20Christmas%20Sale%20Application%20Package%20Review!%20To%20get%20started%2C%20please%20fill%20out%20the%20details%20below%20and%20attach%20your%20CV%2C%20Cover%20Letter%2C%20Teaching%20Statement%2C%20and%20Research%20Statement%20(PDFs%20preferred).%20You%20can%20also%20include%20up%20to%203%20job%20postings%20you%27re%20targeting.%20After%20you%20send%20this%20email%2C%20you%20will%20receive%20an%20invoice.%20Once%20payment%20is%20received%2C%20you%27ll%20get%20immediate%20access%20to%20all%20bonuses%20and%20your%20video%20review%20will%20be%20delivered%20within%205%20business%20days.%20(Note%3A%20Orders%20placed%20Dec%2024-26%20will%20be%20delivered%20by%20January%202nd.)%5D%0A%0AName%3A%20%5BType%20Name%20Here%5D%0ACurrent%20Status%3A%20%5Be.g.%20PhD%20Candidate%2C%20Postdoc%2C%20Adjunct%5D%0ATarget%20Job%20Postings%20(up%20to%203)%3A%20%5BPaste%20links%20here%5D%0AApplication%20Deadline%20(if%20any)%3A%20%5BDate%5D%0ABiggest%20Concern%20(Optional)%3A%20%5BYour%20concerns%5D%0A%0AI%20am%20ready%20for%20the%20Application%20Package%20Review%20(%24197%20Christmas%20Sale).%20Please%20send%20the%20invoice%20and%20bonus%20materials."
-                class="cta-button"
-                >Get Your Application Reviewed — $197</a
-              >
+              <button type="button" class="cta-button open-payment-modal">
+                Get Your Application Reviewed — $197
+              </button>
             </div>
           </div>
         </div>
@@ -1065,11 +1185,9 @@
                 <span class="countdown-unit" id="seconds2">00</span>
               </div>
             </div>
-            <a
-              href="mailto:hello@professortown.com?subject=Application%20Package%20Review%20%E2%80%94%20Christmas%20Sale&body=%5BPROFESSOR%20TOWN%20NOTE%3A%20Thank%20you%20for%20your%20interest%20in%20the%20Christmas%20Sale%20Application%20Package%20Review!%20To%20get%20started%2C%20please%20fill%20out%20the%20details%20below%20and%20attach%20your%20CV%2C%20Cover%20Letter%2C%20Teaching%20Statement%2C%20and%20Research%20Statement%20(PDFs%20preferred).%20You%20can%20also%20include%20up%20to%203%20job%20postings%20you%27re%20targeting.%20After%20you%20send%20this%20email%2C%20you%20will%20receive%20an%20invoice.%20Once%20payment%20is%20received%2C%20you%27ll%20get%20immediate%20access%20to%20all%20bonuses%20and%20your%20video%20review%20will%20be%20delivered%20within%205%20business%20days.%20(Note%3A%20Orders%20placed%20Dec%2024-26%20will%20be%20delivered%20by%20January%202nd.)%5D%0A%0AName%3A%20%5BType%20Name%20Here%5D%0ACurrent%20Status%3A%20%5Be.g.%20PhD%20Candidate%2C%20Postdoc%2C%20Adjunct%5D%0ATarget%20Job%20Postings%20(up%20to%203)%3A%20%5BPaste%20links%20here%5D%0AApplication%20Deadline%20(if%20any)%3A%20%5BDate%5D%0ABiggest%20Concern%20(Optional)%3A%20%5BYour%20concerns%5D%0A%0AI%20am%20ready%20for%20the%20Application%20Package%20Review%20(%24197%20Christmas%20Sale).%20Please%20send%20the%20invoice%20and%20bonus%20materials."
-              class="cta-button"
-              >Get Your Application Reviewed — $197</a
-            >
+            <button type="button" class="cta-button open-payment-modal">
+              Get Your Application Reviewed — $197
+            </button>
             <p class="final-urgency">
               Sale ends December 26th. Don't start 2025 wondering what went
               wrong.
@@ -1172,5 +1290,86 @@
     <script src="/assets/js/testimonials-data.js"></script>
     <script src="/assets/js/testimonial-slider.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal-overlay" id="paymentModal">
+      <div class="payment-modal">
+        <div class="payment-modal-icon">💳</div>
+        <h3>You're Almost There!</h3>
+        <p>
+          You will be taken to the secure payment page. After payment is
+          confirmed, you'll have the option to upload your documents right away
+          — or do it later if you're buying now or purchasing as a gift.
+        </p>
+        <div class="payment-modal-note">
+          Have questions? Email us at
+          <a href="mailto:hello@professortown.com">hello@professortown.com</a>
+        </div>
+        <div class="payment-modal-buttons">
+          <button
+            type="button"
+            class="payment-modal-btn payment-modal-btn-secondary"
+            id="modalCancel"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            class="payment-modal-btn payment-modal-btn-primary"
+            id="modalProceed"
+          >
+            Continue to Payment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Modal Script -->
+    <script>
+      (function () {
+        const modal = document.getElementById("paymentModal");
+        const cancelBtn = document.getElementById("modalCancel");
+        const proceedBtn = document.getElementById("modalProceed");
+        const openButtons = document.querySelectorAll(".open-payment-modal");
+        const stripeUrl = "https://buy.stripe.com/14AbJ12rVeDg4KX5MC6wE00";
+
+        function openModal() {
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+          modal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+
+        // Open modal when CTA buttons are clicked
+        openButtons.forEach(function (btn) {
+          btn.addEventListener("click", openModal);
+        });
+
+        // Cancel button closes modal
+        cancelBtn.addEventListener("click", closeModal);
+
+        // Proceed button redirects to Stripe
+        proceedBtn.addEventListener("click", function () {
+          window.location.href = stripeUrl;
+        });
+
+        // Close modal when clicking outside
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeModal();
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
