@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Christine Ohenewah's success story - how she transformed her academic career with Professor Town's guidance and coaching."
+      content="How Christine Ohenewah, a Cornell-educated attorney without a PhD, went from 'Adjunct Trap' to landing 3 concurrent faculty appointments at Iona, Hofstra, and St. Paul's."
     />
-    <title>Christine Ohenewah | Success Stories | Professor Town</title>
+    <title>
+      Christine Ohenewah: The "Academic Misfit" Who Landed 3 Faculty
+      Appointments | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +101,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +139,118 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: var(--pt-white);
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-wins-image {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        margin: 1.5rem 0;
+      }
+
+      .linkedin-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 0.5rem;
+      }
+
+      .linkedin-btn:hover {
+        background: #004182;
+        color: white;
+      }
+
+      .linkedin-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      .case-study-takeaway {
+        background: var(--pt-gold);
+        color: var(--pt-oxford);
+        padding: 1.5rem;
+        border-radius: 8px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
       }
 
       .case-study-cta {
@@ -191,14 +286,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -213,7 +302,9 @@
       <div class="sale-banner-content">
         <span class="sale-banner-text"
           >🎄 HOLIDAY SALE: 65% OFF —
-          <a href="/offers/application-review/">Get Your Application Reviewed</a></span
+          <a href="/offers/application-review/"
+            >Get Your Application Reviewed</a
+          ></span
         >
         <div class="countdown-timer" id="countdown">
           <span class="countdown-unit" id="days">00</span>
@@ -247,7 +338,9 @@
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
               <li><a href="/offers/faculty-coaching/">Faculty Coaching</a></li>
-              <li><a href="/offers/application-review/">Application Review</a></li>
+              <li>
+                <a href="/offers/application-review/">Application Review</a>
+              </li>
             </ul>
           </li>
           <li><a href="/about/" class="nav-link">About</a></li>
@@ -263,13 +356,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category"
-              >Industry Professional & Adjunct</span
+            <span class="case-study-category">JD → Faculty (No PhD)</span>
+            <h1>The "Academic Misfit" Who Landed 3 Faculty Appointments</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
             >
-            <h1>Christine Ohenewah</h1>
+              Christine E. Ohenewah
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/hiWpt1r-_kM"
+              width="100%"
+              height="100%"
+              title="Christine Ohenewah Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -279,49 +383,142 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Christine</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Christine Ohenewah -
-                  her background, current role, and what makes her story unique.
-                  Include details about her professional journey and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Christine E. Ohenewah is a Cornell-educated attorney and former
+                Big Law litigator who pivoted into academia. She isn't your
+                traditional "Ivory Tower" academic. She brings a dynamic,
+                interdisciplinary energy to the classroom—using Hip Hop lyrics
+                (from "Ye" to "Weezy") to deconstruct complex legal theories
+                like mens rea and self-defense.
+              </p>
+              <p style="margin-top: 1rem">
+                Despite her professional pedigree, she felt like an outsider. As
+                a JD holder without a PhD, she was navigating a system designed
+                for a different kind of candidate, unsure if she would ever be
+                viewed as a "real" professor.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Christine faced before
-                  working with Professor Town. What obstacles were preventing
-                  her from achieving her academic career goals? What pain points
-                  was she experiencing?]
+                  "I feel like a misfit. Is the PhD a driver's license I don't
+                  have?"
                 </p>
               </div>
+              <p>
+                Christine was stuck in the "Adjunct Trap." She had the talent
+                and the student reviews, but she was hitting the "PhD Ceiling."
+                Colleagues and mentors told her that without a doctorate, she
+                was hitting a dead end.
+              </p>
+              <p style="margin-top: 1rem">
+                She was "shooting in the dark," applying to roles without a
+                clear strategy, and facing the silent rejection of the academic
+                bureaucracy. She had recently been "strung along" for a month by
+                a hiring committee at SUNY Purchase, only to be rejected without
+                feedback.
+              </p>
+              <p style="margin-top: 1rem">
+                She came to Professor Town asking a single, burning question:
+                <strong
+                  >"Is it even possible for me to get a faculty job, or am I
+                  wasting my time?"</strong
+                >
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Christine. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  her unique challenges?]
-                </p>
+              <p>
+                <strong
+                  >We stopped guessing and audited the "Scorecard."</strong
+                >
+              </p>
+              <p style="margin-top: 1rem">
+                We moved Christine from "anxious applicant" to "strategic
+                operator" by decoding exactly how hiring committees viewed her
+                unique profile.
+              </p>
+
+              <h3>1. The "Insider" Rubric Audit</h3>
+              <p>
+                We stripped away the imposter syndrome and scored her CV against
+                a real R1 Faculty Hiring Rubric.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Insight:</strong> We demonstrated that she didn't
+                need to apologize for her lack of a PhD. Her "Service" score
+                (launching the Elizabeth Tweneboah Foundation) and "Teaching
+                Excellence" were high-value assets that outweighed the doctoral
+                requirement for her specific target market.
               </div>
+
+              <h3>2. The "Portfolio Professor" Strategy</h3>
+              <p>
+                Instead of trying to force herself into a traditional R1
+                research box, we leaned into her brand as a
+                "Scholar-Practitioner." We targeted institutions that value
+                professional authority (her Big Law background) over theoretical
+                research.
+              </p>
+
+              <h3>3. The Interview Strategy</h3>
+              <p>
+                We prepped her to stop hiding her "Millennial Energy" and start
+                selling it as her superpower—positioning her as the bridge
+                between the university and the modern student body.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Christine achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Christine about her experience.]
-                </p>
+              <p>
+                <strong
+                  >From "Rejection Fatigue" to 3 Concurrent Faculty
+                  Appointments.</strong
+                >
+              </p>
+              <p style="margin-top: 1rem">
+                Christine didn't just land a job; she built an academic empire.
+                By applying the Professor Town protocols, she secured faculty
+                positions at three distinct institutions, cementing her status
+                as a Professor of Law, Criminology, and Sociology.
+              </p>
+
+              <h3>The Wins:</h3>
+              <img
+                src="linkedin.png"
+                alt="Christine Ohenewah's LinkedIn showing her 3 faculty positions at Iona University, Hofstra University, and St. Paul's School of Nursing"
+                class="case-study-wins-image"
+              />
+              <a
+                href="https://www.linkedin.com/in/christine-ohenewah-7733110c/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                View Christine on LinkedIn
+              </a>
+
+              <div class="case-study-takeaway">
+                She proved that you don't need a PhD to be a professor—you need
+                a strategy.
+              </div>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "He is not a snake oil salesman... He is direct and will tell
+                  you exactly what you need to do. I am already seeing results
+                  from his approach."
+                </blockquote>
+                <cite>— Christine E. Ohenewah</cite>
               </div>
             </div>
 
@@ -380,19 +577,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
@@ -410,4 +610,3 @@
     </script>
   </body>
 </html>
-

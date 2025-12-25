@@ -72,8 +72,14 @@
     <style>
       .success-stories-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+      }
+
+      @media (max-width: 1024px) {
+        .success-stories-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
       .success-story-card {
@@ -125,19 +131,6 @@
         flex-direction: column;
       }
 
-      .success-story-category {
-        display: inline-block;
-        padding: 0.25rem 0.75rem;
-        background: var(--pt-gold);
-        color: var(--pt-oxford);
-        border-radius: 4px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-bottom: 0.75rem;
-        width: fit-content;
-      }
-
       .success-story-card h3 {
         margin-bottom: 0.5rem;
         font-size: 1.25rem;
@@ -172,42 +165,6 @@
         color: var(--pt-oxford);
       }
 
-      .category-filters {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-      }
-
-      .category-filter-btn {
-        padding: 0.5rem 1rem;
-        background: var(--pt-white);
-        border: 1px solid var(--pt-slate-200);
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.15s ease;
-        font-weight: 500;
-      }
-
-      .category-filter-btn:hover,
-      .category-filter-btn.is-active {
-        background: var(--pt-teal);
-        color: var(--pt-white);
-        border-color: var(--pt-teal);
-      }
-
-      .category-section {
-        margin-bottom: 3rem;
-      }
-
-      .category-section-title {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.75rem;
-        border-bottom: 2px solid var(--pt-teal);
-        display: inline-block;
-      }
-
       @media (max-width: 768px) {
         .success-stories-grid {
           grid-template-columns: 1fr;
@@ -221,7 +178,9 @@
       <div class="sale-banner-content">
         <span class="sale-banner-text"
           >🎄 HOLIDAY SALE: 65% OFF —
-          <a href="/offers/application-review/">Get Your Application Reviewed</a></span
+          <a href="/offers/application-review/"
+            >Get Your Application Reviewed</a
+          ></span
         >
         <div class="countdown-timer" id="countdown">
           <span class="countdown-unit" id="days">00</span>
@@ -255,7 +214,9 @@
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
               <li><a href="/offers/faculty-coaching/">Faculty Coaching</a></li>
-              <li><a href="/offers/application-review/">Application Review</a></li>
+              <li>
+                <a href="/offers/application-review/">Application Review</a>
+              </li>
             </ul>
           </li>
           <li><a href="/about/" class="nav-link">About</a></li>
@@ -287,294 +248,268 @@
 
       <section class="section">
         <div class="container">
-          <div class="category-filters reveal">
-            <button class="category-filter-btn is-active" data-category="all">
-              All Stories
-            </button>
-            <button
-              class="category-filter-btn"
-              data-category="industry-adjunct"
-            >
-              Industry Professional & Adjunct
-            </button>
-            <button class="category-filter-btn" data-category="phd-student">
-              PhD Student
-            </button>
-            <button class="category-filter-btn" data-category="professor">
-              Professor
-            </button>
-          </div>
+          <div class="success-stories-grid reveal">
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/christine-ohenewah/image.jpeg"
+                  alt="Christine Ohenewah"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/christine-ohenewah/"
+                    >Christine Ohenewah</a
+                  >
+                </h3>
+                <p class="success-story-excerpt">
+                  Discover how Christine transformed her career path with
+                  strategic guidance and support from Professor Town.
+                </p>
+                <a
+                  href="/success-stories/christine-ohenewah/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-          <!-- Industry Professional & Adjunct -->
-          <div class="category-section reveal" data-section="industry-adjunct">
-            <h2 class="category-section-title">
-              Industry Professional & Adjunct
-            </h2>
-            <div class="success-stories-grid">
-              <article
-                class="success-story-card"
-                data-category="industry-adjunct"
-              >
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category"
-                    >Industry Professional & Adjunct</span
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/christopher-bosley/1761246979803.png"
+                  alt="Christopher Bosley"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/christopher-bosley/"
+                    >Christopher Bosley</a
                   >
-                  <h3>
-                    <a href="/success-stories/christine-ohenewah/"
-                      >Christine Ohenewah</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Discover how Christine transformed her career path with
-                    strategic guidance and support from Professor Town.
-                  </p>
-                  <a
-                    href="/success-stories/christine-ohenewah/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+                </h3>
+                <p class="success-story-excerpt">
+                  Learn how Christopher navigated the transition from industry
+                  to academia with expert coaching.
+                </p>
+                <a
+                  href="/success-stories/christopher-bosley/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article
-                class="success-story-card"
-                data-category="industry-adjunct"
-              >
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category"
-                    >Industry Professional & Adjunct</span
-                  >
-                  <h3>
-                    <a href="/success-stories/christopher-bosley/"
-                      >Christopher Bosley</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Learn how Christopher navigated the transition from industry
-                    to academia with expert coaching.
-                  </p>
-                  <a
-                    href="/success-stories/christopher-bosley/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/charlene-avis/1760200937176.jpeg"
+                  alt="Charlene Avis"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/charlene-avis/">Charlene Avis</a>
+                </h3>
+                <p class="success-story-excerpt">
+                  See how Charlene leveraged her industry experience to land her
+                  dream academic position.
+                </p>
+                <a
+                  href="/success-stories/charlene-avis/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article
-                class="success-story-card"
-                data-category="industry-adjunct"
-              >
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category"
-                    >Industry Professional & Adjunct</span
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/yolanda-villacreses/1716077243918.jpeg"
+                  alt="Yolanda Villacreses"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/yolanda-villacreses/"
+                    >Yolanda Villacreses</a
                   >
-                  <h3>
-                    <a href="/success-stories/charlene-avis/">Charlene Avis</a>
-                  </h3>
-                  <p class="success-story-excerpt">
-                    See how Charlene leveraged her industry experience to land
-                    her dream academic position.
-                  </p>
-                  <a
-                    href="/success-stories/charlene-avis/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+                </h3>
+                <p class="success-story-excerpt">
+                  Explore how Yolanda successfully balanced her adjunct
+                  responsibilities while pursuing new opportunities.
+                </p>
+                <a
+                  href="/success-stories/yolanda-villacreses/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article
-                class="success-story-card"
-                data-category="industry-adjunct"
-              >
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category"
-                    >Industry Professional & Adjunct</span
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/dolores-termini/headshot.jpeg"
+                  alt="Dolores Termini"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/dolores-termini/"
+                    >Dolores Termini</a
                   >
-                  <h3>
-                    <a href="/success-stories/yolanda-villacreses/"
-                      >Yolanda Villacreses</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Explore how Yolanda successfully balanced her adjunct
-                    responsibilities while pursuing new opportunities.
-                  </p>
-                  <a
-                    href="/success-stories/yolanda-villacreses/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
+                </h3>
+                <p class="success-story-excerpt">
+                  Discover how Dolores prepared for the academic job market
+                  while completing her dissertation.
+                </p>
+                <a
+                  href="/success-stories/dolores-termini/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-          <!-- PhD Student -->
-          <div class="category-section reveal" data-section="phd-student">
-            <h2 class="category-section-title">PhD Student</h2>
-            <div class="success-stories-grid">
-              <article class="success-story-card" data-category="phd-student">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">PhD Student</span>
-                  <h3>
-                    <a href="/success-stories/dolores-termini/"
-                      >Dolores Termini</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Discover how Dolores prepared for the academic job market
-                    while completing her dissertation.
-                  </p>
-                  <a
-                    href="/success-stories/dolores-termini/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/ivan-campbell/Ivan-Campbell-2.webp"
+                  alt="Ivan Campbell"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/ivan-campbell/">Ivan Campbell</a>
+                </h3>
+                <p class="success-story-excerpt">
+                  Learn how Ivan developed a winning strategy for his faculty
+                  job search during his PhD.
+                </p>
+                <a
+                  href="/success-stories/ivan-campbell/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article class="success-story-card" data-category="phd-student">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">PhD Student</span>
-                  <h3>
-                    <a href="/success-stories/ivan-campbell/">Ivan Campbell</a>
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Learn how Ivan developed a winning strategy for his faculty
-                    job search during his PhD.
-                  </p>
-                  <a
-                    href="/success-stories/ivan-campbell/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/jafni-jiken/5785.jpeg"
+                  alt="Jafni Jiken"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/jafni-jiken/">Jafni Jiken</a>
+                </h3>
+                <p class="success-story-excerpt">
+                  See how Jafni overcame common PhD student challenges to secure
+                  multiple faculty interviews.
+                </p>
+                <a
+                  href="/success-stories/jafni-jiken/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article class="success-story-card" data-category="phd-student">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">PhD Student</span>
-                  <h3>
-                    <a href="/success-stories/jafni-jiken/">Jafni Jiken</a>
-                  </h3>
-                  <p class="success-story-excerpt">
-                    See how Jafni overcame common PhD student challenges to
-                    secure multiple faculty interviews.
-                  </p>
-                  <a
-                    href="/success-stories/jafni-jiken/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/marvin-kopka/Marvin-Kopka-Photograph-2-scaled.jpg"
+                  alt="Marvin Kopka"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/marvin-kopka/">Marvin Kopka</a>
+                </h3>
+                <p class="success-story-excerpt">
+                  Explore Marvin's journey from PhD candidate to successfully
+                  landing his first faculty position.
+                </p>
+                <a
+                  href="/success-stories/marvin-kopka/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article class="success-story-card" data-category="phd-student">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">PhD Student</span>
-                  <h3>
-                    <a href="/success-stories/marvin-kopka/">Marvin Kopka</a>
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Explore Marvin's journey from PhD candidate to successfully
-                    landing his first faculty position.
-                  </p>
-                  <a
-                    href="/success-stories/marvin-kopka/"
-                    class="success-story-link"
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/suzanne-rosenzweig/suzanne.jpg"
+                  alt="Suzanne Rosenzweig"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/suzanne-rosenzweig/"
+                    >Suzanne Rosenzweig</a
                   >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
+                </h3>
+                <p class="success-story-excerpt">
+                  Discover how Suzanne built a compelling academic profile that
+                  stood out to search committees.
+                </p>
+                <a
+                  href="/success-stories/suzanne-rosenzweig/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
 
-              <article class="success-story-card" data-category="phd-student">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">PhD Student</span>
-                  <h3>
-                    <a href="/success-stories/suzanne-rosenzweig/"
-                      >Suzanne Rosenzweig</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Discover how Suzanne built a compelling academic profile
-                    that stood out to search committees.
-                  </p>
-                  <a
-                    href="/success-stories/suzanne-rosenzweig/"
-                    class="success-story-link"
+            <article class="success-story-card">
+              <div class="success-story-image">
+                <img
+                  src="/success-stories/justin-hastings/Untitled.png"
+                  alt="Justin Hastings"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="success-story-content">
+                <h3>
+                  <a href="/success-stories/justin-hastings/"
+                    >Justin Hastings</a
                   >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- Professor -->
-          <div class="category-section reveal" data-section="professor">
-            <h2 class="category-section-title">Professor</h2>
-            <div class="success-stories-grid">
-              <article class="success-story-card" data-category="professor">
-                <div class="success-story-image">
-                  <div class="success-story-image-placeholder">👤</div>
-                </div>
-                <div class="success-story-content">
-                  <span class="success-story-category">Professor</span>
-                  <h3>
-                    <a href="/success-stories/justin-hastings/"
-                      >Justin Hastings</a
-                    >
-                  </h3>
-                  <p class="success-story-excerpt">
-                    Learn how Justin advanced his academic career with strategic
-                    career development and coaching.
-                  </p>
-                  <a
-                    href="/success-stories/justin-hastings/"
-                    class="success-story-link"
-                  >
-                    Read Full Story →
-                  </a>
-                </div>
-              </article>
-            </div>
+                </h3>
+                <p class="success-story-excerpt">
+                  Learn how Justin advanced his academic career with strategic
+                  career development and coaching.
+                </p>
+                <a
+                  href="/success-stories/justin-hastings/"
+                  class="success-story-link"
+                >
+                  Read Full Story →
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -640,49 +575,25 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
-    <script>
-      // Category filter functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const filterBtns = document.querySelectorAll(".category-filter-btn");
-        const categorySections = document.querySelectorAll(".category-section");
-
-        filterBtns.forEach((btn) => {
-          btn.addEventListener("click", function () {
-            const category = this.dataset.category;
-
-            // Update active button
-            filterBtns.forEach((b) => b.classList.remove("is-active"));
-            this.classList.add("is-active");
-
-            // Show/hide sections
-            categorySections.forEach((section) => {
-              if (category === "all") {
-                section.style.display = "block";
-              } else {
-                section.style.display =
-                  section.dataset.section === category ? "block" : "none";
-              }
-            });
-          });
-        });
-      });
-    </script>
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
@@ -700,4 +611,3 @@
     </script>
   </body>
 </html>
-
