@@ -76,7 +76,9 @@
       <div class="sale-banner-content">
         <span class="sale-banner-text"
           >🎄 HOLIDAY SALE: 65% OFF —
-          <a href="/offers/application-review/">Get Your Application Reviewed</a></span
+          <a href="/offers/application-review/"
+            >Get Your Application Reviewed</a
+          ></span
         >
         <div class="countdown-timer" id="countdown">
           <span class="countdown-unit" id="days">00</span>
@@ -110,7 +112,9 @@
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
               <li><a href="/offers/faculty-coaching/">Faculty Coaching</a></li>
-              <li><a href="/offers/application-review/">Application Review</a></li>
+              <li>
+                <a href="/offers/application-review/">Application Review</a>
+              </li>
             </ul>
           </li>
           <li><a href="/about/" class="nav-link">About</a></li>
@@ -146,18 +150,20 @@
             <h2>Our Mission</h2>
             <p>
               The academic job market is brutally opaque. With 80–200+
-              applicants per opening, the odds are stacked against you—unless
+              applicants per opening, the odds are stacked against you,unless
               you know what hiring committees are actually looking for.
             </p>
             <p>
               I'm Haaris Mian. I've been academic faculty at various
               institutions since 2016 and have served on numerous search
               committees. I've personally reviewed thousands of CV,s teaching
-              statements, and interviewed hundreds of candidates.
+              statements, and interviewed hundreds of candidates. Through this
+              work, I have helped dozens of candidates get interviews and
+              offers.
             </p>
             <p>
               Over time, I cracked the code on what actually works. Professor
-              Town exists to share everything I've learned—so you don't have to
+              Town exists to share everything I've learned so you don't have to
               figure it out alone, or take the several years it took me.
             </p>
           </div>
@@ -175,24 +181,23 @@
               <p>
                 I've been academic faculty since 2016 and have served on
                 numerous search committees. I still sit on hiring committees
-                today—which means I see exactly what's working right now, not
-                what worked five years ago.
+                today which means I see exactly what's working right now, not
+                what worked 10 years ago.
               </p>
             </div>
             <div class="card reveal" style="grid-column: span 4">
               <h3>Practical Approach</h3>
               <p>
-                No fluff, no theory—just actionable strategies and real-world
-                practice that gets results. We focus on what actually works in
-                interviews.
+                No fluff. just actionable strategies and real-world practice
+                that gets results. We focus on what actually works to get you
+                interviews and offers.
               </p>
             </div>
             <div class="card reveal" style="grid-column: span 4">
               <h3>Proven Results</h3>
               <p>
-                Our average client reduces their time-to-offer by 30–60 days.
-                Most report feeling significantly more confident after just one
-                coaching session.
+                Our average client gets interviews within 30 days of working
+                with us. Most clients get offers in less than 90 days.
               </p>
             </div>
           </div>
@@ -202,41 +207,7 @@
       <section class="section">
         <div class="container" style="max-width: 800px">
           <div class="reveal">
-            <h2>My Story</h2>
-            <p>
-              When I started navigating the academic job market, it felt like
-              everyone else had a rulebook I'd never seen. The process was
-              opaque. The feedback—when you got any—was vague. And the people
-              who succeeded seemed to just know things that were never written
-              down anywhere.
-            </p>
-            <p>
-              So I figured it out the hard way. And then I joined the other side
-              of the table.
-            </p>
-            <p>
-              After years of serving on hiring committees, I saw the same
-              pattern over and over: qualified candidates making fixable
-              mistakes. Not because they weren't good enough, but because the
-              system doesn't tell you what it's actually looking for.
-            </p>
-            <p>
-              I started coaching colleagues informally. Then grad students. The
-              results were clear—with the right preparation and feedback,
-              candidates started getting more interviews and more offers.
-            </p>
-            <p>
-              Professor Town was built to make that preparation accessible to
-              everyone.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container" style="max-width: 800px">
-          <div class="reveal">
-            <h2>Why I Do This</h2>
+            <h2>Why Professor Town Exists</h2>
 
             <p>
               I got into this because I genuinely believe that better educators
@@ -339,8 +310,10 @@
               <a href="/resources/#playbook" class="btn btn-primary"
                 >Get Your Free Package</a
               >
-              <a href="/work-with-us/" class="btn btn-secondary"
-                >Book a Coaching Session</a
+              <a
+                href="https://calendly.com/hello-professortown/faculty-career-strategy-session"
+                class="btn btn-secondary"
+                >Book an Application Review</a
               >
             </div>
           </div>
@@ -383,19 +356,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
