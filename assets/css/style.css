@@ -13,6 +13,12 @@
   --pt-slate-50: #f8fafc;
   --pt-white: #ffffff;
   --pt-black: #0b1220;
+  
+  /* Neo-Academic Color Palette */
+  --neo-mustard: #F0D656;
+  --neo-forest: #1E3D3B;
+  --neo-slate-blue: #7FA9B6;
+  --neo-cream: #F9F8F4;
 }
 
 /* ============================================
@@ -197,8 +203,8 @@ small {
 .nav {
   position: sticky;
   top: 0;
-  background: var(--pt-white);
-  border-bottom: 1px solid var(--pt-slate-200);
+  background: var(--neo-forest);
+  border-bottom: none;
   z-index: 50;
   padding: 1rem 0;
   transition: opacity 0.3s ease;
@@ -217,7 +223,11 @@ small {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--pt-oxford);
+  color: var(--pt-white);
+}
+
+.nav-logo:hover {
+  color: var(--neo-mustard);
 }
 
 .nav-menu {
@@ -229,12 +239,12 @@ small {
 
 .nav-link {
   font-weight: 500;
-  color: var(--pt-ink);
+  color: var(--pt-white);
   padding: 0.5rem 0;
 }
 
 .nav-link:hover {
-  color: var(--pt-teal);
+  color: var(--neo-mustard);
 }
 
 .nav-mobile-toggle {
@@ -243,7 +253,7 @@ small {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--pt-oxford);
+  color: var(--pt-white);
 }
 
 /* Nav Dropdown */
@@ -274,9 +284,9 @@ small {
   left: 50%;
   transform: translateX(-50%);
   background: var(--pt-white);
-  border: 1px solid var(--pt-slate-200);
+  border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   min-width: 220px;
   padding: 0.5rem 0;
   opacity: 0;
@@ -299,14 +309,14 @@ small {
 .nav-dropdown-menu a {
   display: block;
   padding: 0.75rem 1.25rem;
-  color: var(--pt-ink);
+  color: var(--neo-forest);
   font-weight: 500;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .nav-dropdown-menu a:hover {
-  background: var(--pt-parch);
-  color: var(--pt-teal);
+  background: var(--neo-cream);
+  color: var(--neo-forest);
 }
 
 @media (max-width: 768px) {
@@ -315,10 +325,10 @@ small {
     top: 70px;
     left: 0;
     right: 0;
-    background: var(--pt-white);
+    background: var(--neo-forest);
     flex-direction: column;
     padding: 2rem;
-    border-top: 1px solid var(--pt-slate-200);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -341,7 +351,7 @@ small {
     transform: none;
     box-shadow: none;
     border: none;
-    background: var(--pt-parch);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     margin-top: 0.5rem;
     padding: 0.25rem 0;
@@ -356,6 +366,12 @@ small {
   .nav-dropdown-menu a {
     padding: 0.5rem 1rem;
     font-size: 0.9375rem;
+    color: var(--pt-white);
+  }
+
+  .nav-dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--neo-mustard);
   }
 }
 
@@ -444,25 +460,107 @@ small {
 }
 
 /* ============================================
-   Hero
+   Hero - Neo-Academic Style
    ============================================ */
 .hero {
   padding: 5rem 0 4rem;
-  background: linear-gradient(to bottom, var(--pt-white), var(--pt-slate-50));
+  background: var(--neo-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 .hero-content {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    text-align: center;
+  }
+}
+
+.hero h1 {
+  color: var(--neo-forest);
+}
+
+.hero-subhead {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--neo-forest);
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .hero-subhead {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero-cta-group {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .hero-cta-group {
+    justify-content: center;
+  }
+}
+
+.btn-neo-primary {
+  background: var(--neo-forest);
+  color: var(--pt-white);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-neo-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30, 61, 59, 0.3);
+  color: var(--pt-white);
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-lady-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .hero-lady-image {
+    max-height: 400px;
+  }
 }
 
 .trust-icons {
@@ -472,6 +570,187 @@ small {
   margin-top: 3rem;
   flex-wrap: wrap;
   opacity: 0.6;
+}
+
+/* ============================================
+   Problem Section - Neo-Academic
+   ============================================ */
+.section-problem {
+  background: var(--neo-forest);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-problem h2 {
+  color: var(--pt-white);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.4;
+}
+
+.problem-etching {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .problem-etching {
+    display: none;
+  }
+}
+
+/* ============================================
+   Solutions Grid - Neo-Academic
+   ============================================ */
+.section-solutions {
+  background: var(--neo-slate-blue);
+  padding: 5rem 0;
+}
+
+.section-solutions h2 {
+  color: var(--neo-forest);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.solution-card {
+  background: var(--pt-white);
+  border: 1px solid var(--pt-black);
+  border-radius: 0;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.solution-card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}
+
+.solution-card h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--neo-forest);
+  margin-bottom: 0.5rem;
+}
+
+.solution-card-tagline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--neo-forest);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.solution-card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neo-forest);
+  margin-bottom: 1rem;
+}
+
+.solution-card-description {
+  color: var(--pt-ink);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.solution-card .btn {
+  align-self: flex-start;
+}
+
+/* ============================================
+   Insider Evidence Section - Neo-Academic
+   ============================================ */
+.section-insider {
+  background: var(--neo-cream);
+  padding: 5rem 0;
+}
+
+.section-insider h2 {
+  color: var(--neo-forest);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.insider-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .insider-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.insider-visual {
+  position: relative;
+}
+
+.insider-visual img {
+  border-radius: 4px;
+  box-shadow: 12px 12px 0 rgba(30, 61, 59, 0.15);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.insider-visual:hover img {
+  transform: rotate(0deg);
+}
+
+.insider-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--pt-ink);
+  margin-bottom: 2rem;
+}
+
+.btn-neo-secondary {
+  display: inline-block;
+  color: var(--neo-forest);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.btn-neo-secondary:hover {
+  color: var(--pt-teal);
 }
 
 /* ============================================
