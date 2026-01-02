@@ -509,28 +509,7 @@
       }
     </style>
   </head>
-  <body class="has-sale-banner">
-    <!-- Christmas Sale Banner -->
-    <div class="sale-banner">
-      <div class="sale-banner-content">
-        <span class="sale-banner-text"
-          >🎄 HOLIDAY SALE: 65% OFF —
-          <a href="/offers/application-review/"
-            >Get Your Application Reviewed</a
-          ></span
-        >
-        <div class="countdown-timer" id="countdown">
-          <span class="countdown-unit" id="days">00</span>
-          <span class="countdown-separator">:</span>
-          <span class="countdown-unit" id="hours">00</span>
-          <span class="countdown-separator">:</span>
-          <span class="countdown-unit" id="minutes">00</span>
-          <span class="countdown-separator">:</span>
-          <span class="countdown-unit" id="seconds">00</span>
-        </div>
-      </div>
-    </div>
-
+  <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Navigation -->
@@ -696,7 +675,7 @@
             <div class="tier-card reveal">
               <div class="tier-header">
                 <div class="tier-name">Document Review</div>
-                <div class="tier-price">$197</div>
+                <div class="tier-price">$297</div>
                 <div class="tier-tagline">
                   Get your application materials committee-ready
                 </div>
@@ -751,7 +730,7 @@
               <div class="tier-badge">Most Popular</div>
               <div class="tier-header">
                 <div class="tier-name">Faculty Job Search Coaching</div>
-                <div class="tier-price">$997</div>
+                <div class="tier-price">$1,097</div>
                 <div class="tier-tagline">
                   Full strategic support through your entire job search
                 </div>
@@ -936,8 +915,8 @@
               <tbody>
                 <tr class="price-row">
                   <td>Price</td>
-                  <td>$197</td>
-                  <td class="featured">$997</td>
+                  <td>$297</td>
+                  <td class="featured">$1,097</td>
                   <td>$3,500</td>
                 </tr>
                 <tr>
@@ -1398,7 +1377,7 @@
             "description": "A complete hiring committee-style review of your academic job application materials with video walkthrough and annotated documents.",
             "offers": {
               "@type": "Offer",
-              "price": "197",
+              "price": "297",
               "priceCurrency": "USD"
             }
           },
@@ -1409,7 +1388,7 @@
             "description": "Full strategic support through your entire job search including document review, live coaching sessions, unlimited revisions, and interview prep fundamentals.",
             "offers": {
               "@type": "Offer",
-              "price": "997",
+              "price": "1097",
               "priceCurrency": "USD"
             }
           },
@@ -1493,40 +1472,6 @@
           observer.observe(packagesSection);
         }
       });
-    </script>
-
-    <!-- Countdown Timer Script -->
-    <script>
-      (function () {
-        function updateCountdown() {
-          const targetDate = new Date("2025-12-27T04:59:59Z");
-          const now = new Date();
-          const diff = targetDate - now;
-          if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach((timer) => {
-              timer.innerHTML =
-                '<span style="font-weight: 700;">Sale Ended</span>';
-            });
-            return;
-          }
-          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-          const d = document.getElementById("days");
-          const h = document.getElementById("hours");
-          const m = document.getElementById("minutes");
-          const s = document.getElementById("seconds");
-          if (d) d.textContent = String(days).padStart(2, "0") + "d";
-          if (h) h.textContent = String(hours).padStart(2, "0") + "h";
-          if (m) m.textContent = String(minutes).padStart(2, "0") + "m";
-          if (s) s.textContent = String(seconds).padStart(2, "0") + "s";
-        }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-      })();
     </script>
   </body>
 </html>
