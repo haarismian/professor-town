@@ -256,6 +256,23 @@ small {
   color: var(--pt-white);
 }
 
+.btn-nav-cta {
+  background: var(--neo-mustard);
+  color: var(--neo-forest);
+  padding: 0.625rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(240, 214, 86, 0.4);
+  color: var(--neo-forest);
+}
+
 /* Nav Dropdown */
 .nav-dropdown {
   position: relative;
