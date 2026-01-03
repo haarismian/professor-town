@@ -13,27 +13,27 @@
   --pt-slate-50: #f8fafc;
   --pt-white: #ffffff;
   --pt-black: #0b1220;
-  
+
   /* Neo-Academic Color Palette */
-  --neo-mustard: #F0D656;
-  --neo-forest: #1E3D3B;
-  --neo-slate-blue: #7FA9B6;
-  --neo-cream: #F9F8F4;
-  
+  --neo-mustard: #f0d656;
+  --neo-forest: #1e3d3b;
+  --neo-slate-blue: #7fa9b6;
+  --neo-cream: #f9f8f4;
+
   /* Squeeze Page Design System Variables */
-  --bg-cream: #F9F8F4;      /* Page Background */
-  --bg-forest: #1E3D3B;     /* Primary Text, Borders, Hero Background */
-  --bg-mustard: #F0D656;    /* CTAs, Highlights */
-  --bg-slate: #7FA9B6;      /* Secondary Section Background */
-  
+  --bg-cream: #f9f8f4; /* Page Background */
+  --bg-forest: #1e3d3b; /* Primary Text, Borders, Hero Background */
+  --bg-mustard: #f0d656; /* CTAs, Highlights */
+  --bg-slate: #7fa9b6; /* Secondary Section Background */
+
   /* "Realize" Aesthetic Components */
   --border-style: 1px solid var(--bg-forest);
   --hard-shadow: 4px 4px 0px var(--bg-forest); /* Distinctive Retro Shadow */
-  --card-radius: 4px;       /* Subtle rounding, nearly square */
-  
+  --card-radius: 4px; /* Subtle rounding, nearly square */
+
   /* Typography */
-  --font-heading: 'Source Serif 4', serif; /* Weights: 700 */
-  --font-body: 'Inter', sans-serif;        /* Weights: 400, 500, 600 */
+  --font-heading: "Source Serif 4", serif; /* Weights: 700 */
+  --font-body: "Inter", sans-serif; /* Weights: 400, 500, 600 */
 }
 
 /* ============================================
@@ -655,10 +655,11 @@ small {
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 482px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
