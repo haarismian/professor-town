@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Our strategy sessions are currently reserved for active applicants. Access our free resources including blog posts, newsletter, and insider tips."
+      content="Our strategy sessions are currently reserved for active applicants. Access our free resources including guides, YouTube videos, and LinkedIn insights."
     />
     <title>Office Hours Full - Free Resources | Professor Town</title>
 
@@ -150,9 +150,15 @@
 
       .diversion-resources-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin-bottom: 3rem;
+      }
+
+      @media (max-width: 968px) {
+        .diversion-resources-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       .diversion-resource-card {
@@ -199,143 +205,13 @@
         color: var(--diversion-forest);
       }
 
-      /* Newsletter Section */
-      .diversion-newsletter {
-        background: var(--diversion-cream);
-        padding: 3rem 0;
-        border-top: 2px solid var(--diversion-dark-slate);
-        border-bottom: 2px solid var(--diversion-dark-slate);
-      }
-
-      .diversion-newsletter-container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        text-align: center;
-      }
-
-      .diversion-newsletter h3 {
-        font-family: var(--font-heading);
-        font-size: 1.75rem;
-        font-weight: 700;
-        color: var(--diversion-forest);
-        margin-bottom: 0.75rem;
-      }
-
-      .diversion-newsletter p {
-        font-size: 1.0625rem;
-        line-height: 1.7;
-        color: var(--diversion-forest);
-        margin-bottom: 1.5rem;
-      }
-
-      .diversion-newsletter-form {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .diversion-newsletter-form input[type="email"] {
-        width: 100%;
-        padding: 0.875rem;
-        border: 1px solid var(--diversion-dark-slate);
-        border-radius: 0;
-        background: #ffffff;
-        color: var(--diversion-forest);
-        font-size: 1rem;
-        font-family: var(--font-body);
-        margin-bottom: 1rem;
-        box-sizing: border-box;
-      }
-
-      .diversion-newsletter-form input[type="email"]:focus {
-        outline: none;
-        border-color: var(--diversion-forest);
-        border-width: 2px;
-      }
-
-      .diversion-newsletter-form button {
-        width: 100%;
-        background: var(--diversion-mustard);
-        color: var(--diversion-forest);
-        padding: 0.875rem 2rem;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 4px;
-        border: 2px solid var(--diversion-dark-slate);
-        box-shadow: 4px 4px 0px var(--diversion-dark-slate);
-        cursor: pointer;
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
-        font-family: var(--font-body);
-      }
-
-      .diversion-newsletter-form button:hover {
-        transform: translate(2px, 2px);
-        box-shadow: 2px 2px 0px var(--diversion-dark-slate);
-      }
-
-      .diversion-newsletter-message {
-        margin-top: 1rem;
-        font-size: 0.9375rem;
-        color: var(--diversion-forest);
-        display: none;
-      }
-
-      .diversion-newsletter-message.show {
-        display: block;
-      }
-
-      /* CTA Section */
-      .diversion-cta {
-        background: var(--diversion-cream);
-        padding: 4rem 0;
-      }
-
-      .diversion-cta-container {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        text-align: center;
-      }
-
-      .diversion-cta h2 {
-        font-family: var(--font-heading);
-        font-size: clamp(1.75rem, 3vw, 2.25rem);
-        font-weight: 700;
-        color: var(--diversion-forest);
-        margin-bottom: 1rem;
-      }
-
-      .diversion-cta-button {
-        display: inline-block;
-        background: var(--diversion-mustard);
-        color: var(--diversion-forest);
-        padding: 1.125rem 2.5rem;
-        font-size: 1.125rem;
-        font-weight: 600;
-        border-radius: 4px;
-        text-decoration: none;
-        border: 2px solid var(--diversion-dark-slate);
-        box-shadow: 4px 4px 0px var(--diversion-dark-slate);
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
-        font-family: var(--font-body);
-        margin-top: 1.5rem;
-      }
-
-      .diversion-cta-button:hover {
-        transform: translate(2px, 2px);
-        box-shadow: 2px 2px 0px var(--diversion-dark-slate);
-        color: var(--diversion-forest);
-      }
-
       /* Mobile Responsive */
       @media (max-width: 768px) {
         .diversion-hero {
           padding: 2rem 0;
         }
 
-        .diversion-resources,
-        .diversion-newsletter,
-        .diversion-cta {
+        .diversion-resources {
           padding: 3rem 0;
         }
 
@@ -369,7 +245,9 @@
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
               <li>
-                <a href="/offers/application-review/">Detailed Document Review</a>
+                <a href="/offers/application-review/"
+                  >Detailed Document Review</a
+                >
               </li>
               <li>
                 <a href="/offers/faculty-coaching/"
@@ -391,41 +269,33 @@
       <!-- Hero Section -->
       <section class="diversion-hero">
         <div class="diversion-hero-container">
-          <h1>Our Strategy Sessions are currently reserved for active applicants.</h1>
-          <p class="diversion-hero-subhead">
-            But you don't need a call to get the 'hidden curriculum.' We publish our best advice for free.
-          </p>
+          <h1>Office hours are currently full!</h1>
           <div class="diversion-hero-image">
-            <!-- Placeholder for textured editorial sketch of books/journal -->
-            <div
+            <img
+              src="/office-hours-full/image.png"
+              alt="Office hours illustration"
               style="
                 width: 100%;
                 max-width: 400px;
-                height: 300px;
-                background: var(--diversion-slate-blue);
+                height: auto;
                 border: 2px solid var(--diversion-dark-slate);
                 border-radius: 4px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--diversion-forest);
-                font-size: 1rem;
-                text-align: center;
-                padding: 2rem;
                 box-shadow: 4px 4px 0px var(--diversion-dark-slate);
                 margin: 0 auto;
+                display: block;
               "
-            >
-              <div>
-                <p style="font-weight: 600; margin-bottom: 0.5rem;">
-                  Textured Editorial Sketch
-                </p>
-                <p style="font-size: 0.875rem; opacity: 0.8;">
-                  Stack of books or open journal
-                </p>
-              </div>
-            </div>
+            />
           </div>
+          <p
+            class="diversion-hero-subhead"
+            style="max-width: 700px; margin: 0 auto"
+          >
+            If you're seeing this page it means that our services probably
+            aren't the best fit for you right now, either because the budget or
+            application timing isn't aligned with our current availability.
+            Instead I want to offer you something that will be helpful right
+            away.
+          </p>
         </div>
       </section>
 
@@ -435,106 +305,68 @@
           <h2 class="diversion-resources-title">Free Resources</h2>
           <div class="diversion-resources-grid">
             <div class="diversion-resource-card">
-              <h3>Read the Blog</h3>
+              <h3>1. The "Insider" Playbook</h3>
               <p>
-                Deep dives into dossier building and interview prep.
+                If you haven't already, start here. Access our library of guides
+                on CVs, statements, and the molecular structure of a winning
+                application.
               </p>
-              <a href="/blog/" class="diversion-resource-button">Visit the Library</a>
+              <a href="/resources" class="diversion-resource-button"
+                >Read the Guides</a
+              >
             </div>
             <div class="diversion-resource-card">
-              <h3>The Newsletter</h3>
+              <h3>2. Watch the Breakdowns</h3>
               <p>
-                Weekly insider tips from the hiring committee.
+                I post video analyses on the specific reasons candidates get
+                rejected and how academic faculty hiring actually works.
               </p>
-              <a href="#newsletter" class="diversion-resource-button">Subscribe Below</a>
+              <a
+                href="https://www.youtube.com/@ProfessorTown"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="diversion-resource-button"
+                >Watch on YouTube</a
+              >
+            </div>
+            <div class="diversion-resource-card">
+              <h3>3. Join the Conversation</h3>
+              <p>
+                I share daily insights and "insider" tips on the academic market
+                to help you build your network.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/haarismian/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="diversion-resource-button"
+                >Connect on LinkedIn</a
+              >
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Newsletter Section -->
-      <section class="diversion-newsletter" id="newsletter">
-        <div class="diversion-newsletter-container">
-          <h3>The Newsletter</h3>
-          <p>Weekly insider tips from the hiring committee.</p>
-          <form class="diversion-newsletter-form" id="newsletter-form" action="#" method="post">
-            <input
-              type="email"
-              id="newsletter-email"
-              name="email"
-              placeholder="Your email address"
-              required
-            />
-            <button type="submit">Subscribe</button>
-            <p class="diversion-newsletter-message" id="newsletter-message">
-              You're on the list! Check your email for confirmation.
-            </p>
-          </form>
-        </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section class="diversion-cta">
-        <div class="diversion-cta-container">
-          <h2>Ready to invest later?</h2>
-          <a href="/" class="diversion-cta-button">View Our Services</a>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer style="background: var(--diversion-forest); color: #ffffff; padding: 2rem 0; text-align: center;">
-      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-        <p style="margin: 0; font-size: 0.9375rem;">
+    <footer
+      style="
+        background: var(--diversion-forest);
+        color: #ffffff;
+        padding: 2rem 0;
+        text-align: center;
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 2rem"
+      >
+        <p style="margin: 0; font-size: 0.9375rem">
           &copy; 2025 Professor Town. All rights reserved.
         </p>
       </div>
     </footer>
 
     <script src="/assets/js/main.js"></script>
-    <script>
-      // Newsletter form handler
-      document.addEventListener('DOMContentLoaded', function() {
-        const newsletterForm = document.getElementById('newsletter-form');
-        const newsletterMessage = document.getElementById('newsletter-message');
-        const urlParams = new URLSearchParams(window.location.search);
-        const emailParam = urlParams.get('email');
-        
-        // Pre-fill email if passed from qualifying form
-        if (emailParam) {
-          const emailInput = document.getElementById('newsletter-email');
-          if (emailInput) {
-            emailInput.value = emailParam;
-            newsletterMessage.classList.add('show');
-            newsletterMessage.textContent = "You're on the list! Check your email for confirmation.";
-          }
-        }
-        
-        if (newsletterForm) {
-          newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('newsletter-email').value;
-            
-            // TODO: Replace with your actual newsletter endpoint
-            fetch('#', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ email: email })
-            }).then(function() {
-              newsletterMessage.classList.add('show');
-              newsletterForm.reset();
-            }).catch(function(error) {
-              console.log('Newsletter signup error:', error);
-              newsletterMessage.textContent = 'Thank you! You\'re on the list.';
-              newsletterMessage.classList.add('show');
-            });
-          });
-        }
-      });
-    </script>
   </body>
 </html>
-
