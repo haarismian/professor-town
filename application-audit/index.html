@@ -11,7 +11,10 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://professortown.com/application-audit/" />
+    <meta
+      property="og:url"
+      content="https://professortown.com/application-audit/"
+    />
     <meta
       property="og:title"
       content="Free Application Audit | Professor Town"
@@ -23,7 +26,10 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://professortown.com/application-audit/" />
+    <meta
+      name="twitter:url"
+      content="https://professortown.com/application-audit/"
+    />
     <meta
       name="twitter:title"
       content="Free Application Audit | Professor Town"
@@ -491,7 +497,9 @@
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
               <li>
-                <a href="/offers/application-review/">Detailed Document Review</a>
+                <a href="/offers/application-review/"
+                  >Detailed Document Review</a
+                >
               </li>
               <li>
                 <a href="/offers/faculty-coaching/"
@@ -517,11 +525,15 @@
             <div class="audit-hero-content">
               <h1>Is Your Application Committee-Ready?</h1>
               <p class="audit-hero-subhead">
-                We sit on hiring committees. We see the rubrics. Book a free
-                20-minute diagnostic session to find out why you aren't getting
-                interviews.
+                We sit on hiring committees. We see the rubrics committees use
+                to evaluate applications. Book a free 20-minute diagnostic
+                session to find out why you aren't getting interviews.
               </p>
-              <form id="qualifying-form" class="audit-qualifying-form" name="qualifying-form">
+              <form
+                id="qualifying-form"
+                class="audit-qualifying-form"
+                name="qualifying-form"
+              >
                 <div class="form-field">
                   <label for="full-name">Full Name *</label>
                   <input
@@ -543,41 +555,36 @@
                   />
                 </div>
                 <div class="form-field">
-                  <label for="timeline">When do you plan to be actively applying? *</label>
+                  <label for="timeline"
+                    >When do you plan to be actively applying? *</label
+                  >
                   <select id="timeline" name="timeline" required>
                     <option value="">Select timeline</option>
-                    <option value="30-days">I have applications due in the next 30 days</option>
+                    <option value="30-days">
+                      I have applications due in the next 30 days
+                    </option>
                     <option value="2-6-months">Next 2-6 months</option>
                     <option value="within-year">Within the next year</option>
                     <option value="exploring">Just exploring for now</option>
                   </select>
                 </div>
                 <div class="form-field">
-                  <label>Our services range from $297-$1,500. Is this investment within your budget if it's a good fit? *</label>
+                  <label
+                    >Our services range from $297-$1,500. Is this investment
+                    within your budget if it's a good fit? *</label
+                  >
                   <div class="radio-group">
                     <label class="radio-option">
-                      <input
-                        type="radio"
-                        name="budget"
-                        value="yes"
-                        required
-                      />
+                      <input type="radio" name="budget" value="yes" required />
                       <span>Yes</span>
                     </label>
                     <label class="radio-option">
-                      <input
-                        type="radio"
-                        name="budget"
-                        value="no"
-                        required
-                      />
+                      <input type="radio" name="budget" value="no" required />
                       <span>No, that's outside my budget at the moment</span>
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="audit-cta-button">
-                  Continue
-                </button>
+                <button type="submit" class="audit-cta-button">Continue</button>
               </form>
             </div>
             <div class="audit-hero-image">
@@ -634,14 +641,13 @@
           <h2 class="audit-who-title">Who Is This For?</h2>
           <ul class="audit-who-list">
             <li>PhD Candidates: Who don't know where to begin.</li>
-            <li>
-              Postdocs: looking to get a permanent Professorship.
-            </li>
+            <li>Postdocs: looking to get a permanent Professorship.</li>
             <li>
               Adjuncts: Who feel stuck in the 'adjunct trap' and need to pivot.
             </li>
             <li>
-              Current lecturers and professors who want a review of their materials for their next role.
+              Current lecturers and professors who want a review of their
+              materials for their next role.
             </li>
           </ul>
         </div>
@@ -665,9 +671,7 @@
         <div class="audit-final-cta-container">
           <h2>Relationships Get You Hired. Documents Open the Door.</h2>
           <p>Let's make sure your door is open.</p>
-          <a
-            href="#qualifying-form"
-            class="audit-cta-button"
+          <a href="#qualifying-form" class="audit-cta-button"
             >Schedule Free Strategy Session</a
           >
         </div>
@@ -675,9 +679,16 @@
     </main>
 
     <!-- Footer -->
-    <footer style="background: var(--audit-forest); color: #ffffff; padding: 2rem 0; text-align: center;">
+    <footer
+      style="
+        background: var(--audit-forest);
+        color: #ffffff;
+        padding: 2rem 0;
+        text-align: center;
+      "
+    >
       <div class="container">
-        <p style="margin: 0; font-size: 0.9375rem;">
+        <p style="margin: 0; font-size: 0.9375rem">
           &copy; 2025 Professor Town. All rights reserved.
         </p>
       </div>
@@ -686,49 +697,54 @@
     <script src="/assets/js/main.js"></script>
     <script>
       // Qualifying Form Handler
-      document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('qualifying-form');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("qualifying-form");
+
         if (form) {
-          form.addEventListener('submit', function(e) {
+          form.addEventListener("submit", function (e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(form);
             const data = {
-              fullName: formData.get('fullName'),
-              email: formData.get('email'),
-              timeline: formData.get('timeline'),
-              budget: formData.get('budget')
+              fullName: formData.get("fullName"),
+              email: formData.get("email"),
+              timeline: formData.get("timeline"),
+              budget: formData.get("budget"),
             };
-            
+
             // Step 1: Save data to CRM/database
             // TODO: Replace with your actual endpoint (Formspree, Netlify Forms, etc.)
-            fetch('#', {
-              method: 'POST',
+            fetch("#", {
+              method: "POST",
               headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
               },
-              body: JSON.stringify(data)
-            }).catch(function(error) {
+              body: JSON.stringify(data),
+            }).catch(function (error) {
               // Silently fail - we still want to redirect even if data capture fails
-              console.log('Data capture error (non-blocking):', error);
+              console.log("Data capture error (non-blocking):", error);
             });
-            
+
             // Step 2: Conditional Redirect based on budget answer
-            if (data.budget === 'yes') {
+            if (data.budget === "yes") {
               // Qualified lead - redirect to Calendly
               // Pre-fill Calendly with name and email if possible
-              const calendlyUrl = new URL('https://calendly.com/hello-professortown/faculty-career-strategy-session');
-              calendlyUrl.searchParams.set('name', data.fullName);
-              calendlyUrl.searchParams.set('email', data.email);
+              const calendlyUrl = new URL(
+                "https://calendly.com/hello-professortown/faculty-career-strategy-session"
+              );
+              calendlyUrl.searchParams.set("name", data.fullName);
+              calendlyUrl.searchParams.set("email", data.email);
               window.location.href = calendlyUrl.toString();
             } else {
               // Unqualified lead - redirect to diversion page
               // Pass data via URL params for the diversion page
-              const diversionUrl = new URL('/office-hours-full', window.location.origin);
-              diversionUrl.searchParams.set('email', data.email);
-              diversionUrl.searchParams.set('name', data.fullName);
+              const diversionUrl = new URL(
+                "/office-hours-full",
+                window.location.origin
+              );
+              diversionUrl.searchParams.set("email", data.email);
+              diversionUrl.searchParams.set("name", data.fullName);
               window.location.href = diversionUrl.toString();
             }
           });
@@ -737,4 +753,3 @@
     </script>
   </body>
 </html>
-
