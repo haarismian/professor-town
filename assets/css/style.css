@@ -274,17 +274,21 @@ small {
 .btn-nav-cta {
   background: var(--neo-mustard);
   color: var(--neo-forest);
-  padding: 0.625rem 1.25rem;
-  border-radius: 50px;
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
   font-weight: 600;
-  font-size: 0.9375rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1rem;
+  border: 2px solid #0b1220;
+  box-shadow: 4px 4px 0px #0b1220;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-nav-cta:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(240, 214, 86, 0.4);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #0b1220;
   color: var(--neo-forest);
 }
 
@@ -315,7 +319,7 @@ small {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--pt-white);
+  background: var(--neo-forest);
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -341,14 +345,14 @@ small {
 .nav-dropdown-menu a {
   display: block;
   padding: 0.75rem 1.25rem;
-  color: var(--neo-forest);
+  color: #ffffff;
   font-weight: 500;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .nav-dropdown-menu a:hover {
-  background: var(--neo-cream);
-  color: var(--neo-forest);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
