@@ -1889,23 +1889,41 @@ small {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .squeeze-hero-container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .squeeze-hero-left {
+    display: contents;
+  }
+
+  .eyebrow-tag {
+    order: 1;
+  }
+
+  .squeeze-hero h1 {
+    order: 2;
+    font-size: 2rem;
+  }
+
+  .squeeze-hero-subheadline {
+    order: 3;
   }
 
   .squeeze-hero-visual {
-    order: 2;
+    order: 4;
     min-height: 300px;
     padding: 1rem 0;
+  }
+
+  .squeeze-form-wrapper {
+    order: 5;
   }
 
   .document-stack-single {
     transform: rotate(-1deg);
     max-width: 100%;
-  }
-
-  .squeeze-hero-left {
-    order: 1;
   }
 
   .squeeze-hero h1 {
