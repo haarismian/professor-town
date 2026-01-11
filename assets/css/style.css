@@ -1902,6 +1902,7 @@ small {
   .squeeze-hero-visual {
     min-height: 300px;
     padding: 0;
+    margin-bottom: -1.5rem;
   }
 
   .document-stack-single {
