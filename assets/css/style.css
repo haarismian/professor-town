@@ -1714,6 +1714,7 @@ small {
   cursor: pointer;
   box-shadow: var(--hard-shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
 }
 
 .squeeze-form-button:hover {
@@ -1958,4 +1959,88 @@ small {
 .squeeze-form-wrapper button.formkit-submit:active {
   transform: translate(0, 0) !important;
   box-shadow: var(--hard-shadow) !important;
+}
+
+/* Download Modal */
+.download-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 61, 59, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.download-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.download-modal {
+  background: var(--bg-cream);
+  border: var(--border-style);
+  border-radius: var(--card-radius);
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.5rem;
+  box-shadow: var(--hard-shadow);
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.25s ease;
+  position: relative;
+}
+
+.download-modal-overlay.active .download-modal {
+  transform: scale(1) translateY(0);
+}
+
+.download-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--bg-forest);
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.download-modal-close:hover {
+  background-color: rgba(30, 61, 59, 0.1);
+}
+
+.download-modal-content {
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .download-modal {
+    padding: 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .download-modal-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.75rem;
+    width: 2rem;
+    height: 2rem;
+  }
 }

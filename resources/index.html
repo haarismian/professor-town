@@ -92,12 +92,10 @@
             </div>
           </div>
 
-          <div class="squeeze-form-wrapper">
-            <script
-              async
-              data-uid="7843a5ee63"
-              src="https://professor-town.kit.com/7843a5ee63/index.js"
-            ></script>
+          <div class="squeeze-form-wrapper" id="downloadButtonWrapper">
+            <button class="squeeze-form-button" id="downloadNowButton">
+              Download Now
+            </button>
             <p class="squeeze-form-microcopy">
               Join hundreds of successful candidates who have used this guide.
             </p>
@@ -178,8 +176,72 @@
       </footer>
     </main>
 
+    <!-- Download Modal -->
+    <div class="download-modal-overlay" id="downloadModal">
+      <div class="download-modal">
+        <button class="download-modal-close" id="downloadModalClose" aria-label="Close modal">×</button>
+        <div class="download-modal-content">
+          <div class="squeeze-form-wrapper">
+            <script
+              async
+              data-uid="7843a5ee63"
+              src="https://professor-town.kit.com/7843a5ee63/index.js"
+            ></script>
+            <p class="squeeze-form-microcopy">
+              Join hundreds of successful candidates who have used this guide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Testimonial Slider Scripts -->
     <script src="/assets/js/testimonials-data.js"></script>
     <script src="/assets/js/testimonial-slider.js"></script>
+
+    <!-- Download Modal Script -->
+    <script>
+      (function () {
+        const modal = document.getElementById("downloadModal");
+        const openButton = document.getElementById("downloadNowButton");
+        const closeButton = document.getElementById("downloadModalClose");
+
+        function openModal() {
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+          modal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+
+        // Open modal when Download Now button is clicked
+        if (openButton) {
+          openButton.addEventListener("click", openModal);
+        }
+
+        // Close button closes modal
+        if (closeButton) {
+          closeButton.addEventListener("click", closeModal);
+        }
+
+        // Close modal when clicking outside
+        if (modal) {
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+              closeModal();
+            }
+          });
+        }
+
+        // Close modal on Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeModal();
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
