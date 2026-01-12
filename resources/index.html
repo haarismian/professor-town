@@ -93,13 +93,13 @@
           </div>
 
           <div class="squeeze-form-wrapper" id="downloadButtonWrapper">
-            <button class="squeeze-form-button" id="downloadNowButton">
+            <button class="squeeze-form-button open-download-modal">
               Download Now
             </button>
           </div>
 
           <h2 class="squeeze-testimonials-header">
-            Join the hundreds of successful candidates who love this guide ❤️
+            Join the hundreds of successful candidates who love this guide ↓
           </h2>
         </div>
       </section>
@@ -111,6 +111,11 @@
       >
         <div class="container">
           <div id="testimonial-slider"></div>
+          <div class="squeeze-form-wrapper" style="margin-top: 3rem">
+            <button class="squeeze-form-button open-download-modal">
+              Download Now
+            </button>
+          </div>
         </div>
       </section>
 
@@ -150,6 +155,20 @@
                 visits.
               </p>
             </div>
+          </div>
+
+          <div
+            class="squeeze-form-wrapper"
+            style="
+              margin-top: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <button class="squeeze-form-button open-download-modal">
+              Download Now
+            </button>
           </div>
         </div>
       </section>
@@ -210,7 +229,7 @@
     <script>
       (function () {
         const modal = document.getElementById("downloadModal");
-        const openButton = document.getElementById("downloadNowButton");
+        const openButtons = document.querySelectorAll(".open-download-modal");
         const closeButton = document.getElementById("downloadModalClose");
 
         function openModal() {
@@ -223,10 +242,10 @@
           document.body.style.overflow = "";
         }
 
-        // Open modal when Download Now button is clicked
-        if (openButton) {
-          openButton.addEventListener("click", openModal);
-        }
+        // Open modal when any Download Now button is clicked
+        openButtons.forEach(function (button) {
+          button.addEventListener("click", openModal);
+        });
 
         // Close button closes modal
         if (closeButton) {
