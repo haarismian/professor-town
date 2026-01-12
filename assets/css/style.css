@@ -1672,6 +1672,16 @@ small {
   display: inline-block;
 }
 
+.squeeze-testimonials-header {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bg-forest);
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+}
+
 .squeeze-hero-subheadline {
   font-family: var(--font-body);
   font-size: 1.1rem;
@@ -1898,6 +1908,10 @@ small {
 
   .squeeze-hero-container h1 {
     font-size: 2rem;
+  }
+
+  .squeeze-testimonials-header {
+    font-size: 1.5rem;
   }
 
   .squeeze-hero-visual {
