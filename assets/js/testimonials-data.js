@@ -38,4 +38,40 @@ const TESTIMONIALS = [
     logo: "/assets/img/uni logos/university_utah.jpg",
     text: "Coming into this, I honestly didn't understand how to approach academic roles. I didn't know how faculty hiring committees read my materials or how to tell my story in a way that made sense to them. Working with Haaris, I finally got a clear view of the actual process: how committees use rubrics, what they score, and how my documents are really being evaluated. He showed me how to turn my executive and industry background into an academic narrative that speaks directly to those criteria. I left with specific, actionable steps to improve my CV, cover letter, and teaching statement, plus a concrete networking strategy tailored to my target universities.",
   },
+  {
+    initials: "MK",
+    name: "Dr. Marvin Kopka",
+    title: "PhD to Professor at Imperial College London",
+    linkedin: "https://www.linkedin.com/in/marvin-kopka/?originalSubdomain=de",
+    // image: "/assets/img/testimonials/marvin-kopka.jpg", // Add LinkedIn photo when available
+    logo: "/assets/img/uni logos/Logo_for_Imperial_College_London.svg.png",
+    text: "The session with Haaris was excellent. We went through all my application documents, and I received detailed feedback on everything: what already works well, what could be improved, and why. He also shared general tips for my applications. After implementing all of it, I feel confident that my applications will be much more successful. Even just looking at the revised documents, I can clearly see a improvement myself. Haaris was extremely kind, attentive to every detail, and even spent more time with me than we had originally scheduled to make sure that all my questions were answered. Afterwards, he continued to answer additional questions via mail in great detail. With the resources he shared, I can now also assess my own application documents to check whether everything is included. I would absolutely recommend Professor Town if you are applying for any type of faculty position. He knows exactly what he's talking about, and, as I mentioned, you can really see how much your documents improve.",
+  },
+  {
+    initials: "DT",
+    name: "Dr. Dolores Termini",
+    title: "PhD to Professor at Kean University",
+    linkedin: "https://www.linkedin.com/in/dolores-termini-phd-653a30198/",
+    // image: "/assets/img/testimonials/dolores-termini.jpg", // Add LinkedIn photo when available
+    logo: "/assets/img/uni logos/Kean University.png",
+    text: "The feedback I received from Professor Town was excellent! I was expecting just a review of my CV and Teaching Statement, but I feel like I gained much more than that. He offered insights into the hiring process in higher education and thoroughly researched my background before our first meeting. The resources he provided were very helpful when I was unsure where to even start with restructuring my teaching statement, but following his guidance made a big difference. He not only provided resources and feedback, but it also felt like he boosted my confidence in my abilities, as I hadn't realized that some things I was already doing as an educator were considered course development and service. I strongly recommend this service to anyone interested in teaching in higher education but unsure about the hiring process or how to start with their application documents.",
+  },
+  {
+    initials: "IC",
+    name: "Dr. Ivan Campbell",
+    title: "PhD Student at University of Georgia",
+    linkedin: "https://www.linkedin.com/in/ivan-campbell-445139164/",
+    // image: "/assets/img/testimonials/ivan-campbell.jpg", // Add LinkedIn photo when available
+    logo: "/assets/img/uni logos/university-of-georgia-logo.png",
+    text: "Very insightful meeting, gave me a much better idea of what committees are looking for and gave me actionable feedback about my materials and trajectory that I can implement. Highly recommend",
+  },
+  {
+    initials: "JJ",
+    name: "Dr. Jafni Jiken",
+    title: "PhD to Professor at Durham University",
+    linkedin: "https://www.linkedin.com/in/jafnijiken/",
+    // image: "/assets/img/testimonials/jafni-jiken.jpg", // Add LinkedIn photo when available
+    logo: "/assets/img/uni logos/durham university.png",
+    text: "I had an amazing session with Professor Town for my CV and Cover Letter, and I honestly feel so glad I booked it. I came in unsure about how to organise my academic CV after the Teaching and Research sections. I kept questioning whether I should put industry experience first or knowledge exchange or my collaborations. By the end of the session, everything finally clicked and I felt much more confident about how my application should look. One thing I really appreciated was how practical the whole session was. I selected one Job Description that I am applying for, and we went through it together. Then we tailored my CV based on that specific role. This made the whole process feel so real and grounded. It was not just theory. It was exactly what I needed. He also noticed details I had never seen myself. Small things like formatting, consistency, and what actually belongs in a faculty CV. I honestly thought my documents were already quite polished, but he found so many areas that could be improved. The difference after the session was huge. The most eye opening part was when he explained how hiring rubrics work and how much committees rely on them. That completely changed how I see the entire application process. He also helped restructure sections of my teaching experience and my KE activities, and the improvement was immediate. There was a moment when he pointed out that the things I thought were unnecessary were actually important, and the things I thought were important were not helping me at all. That really stayed with me. It helped me understand the logic behind what academic recruiters want. After the session, my CV and Cover Letter felt stronger, clearer, and much more competitive. My confidence has gone up a lot, and for the first time I feel like my application actually reflects my strengths. Would I recommend this service? Yes. One hundred percent yes. If you are applying for faculty roles or if you want to understand how committees think and make decisions, just book the session. It is absolutely worth it.",
+  },
 ];
