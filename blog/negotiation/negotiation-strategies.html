@@ -153,13 +153,19 @@
               <li>
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
-              <li><a href="/offers/application-review/">Detailed Document Review</a></li>
-              <li><a href="/offers/faculty-coaching/">Faculty Offer Accelerator</a></li>
+              <li>
+                <a href="/offers/application-review/"
+                  >Detailed Document Review</a
+                >
+              </li>
+              <li>
+                <a href="/offers/faculty-coaching/"
+                  >Faculty Offer Accelerator</a
+                >
+              </li>
             </ul>
           </li>
-          
-          
-          
+
           <li><a href="/contact/" class="nav-link">Contact</a></li>
           <li>
             <a href="/resources/" class="btn btn-nav-cta">Get the Free Guide</a>
@@ -579,7 +585,7 @@
               strategy, and practice your approach.
             </p>
             <a
-              href="/work-with-us/"
+              href="/application-audit/"
               class="btn btn-primary"
               style="background: var(--pt-white); color: var(--pt-oxford)"
               >Book a Negotiation Coaching Session</a
@@ -757,19 +763,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
