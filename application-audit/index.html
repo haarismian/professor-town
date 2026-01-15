@@ -530,63 +530,13 @@
                 <strong><u>free</u></strong> 20-minute diagnostic session to
                 find out why you aren't getting interviews.
               </p>
-              <form
-                id="qualifying-form"
-                class="audit-qualifying-form"
-                name="qualifying-form"
+              <a
+                href="https://calendly.com/hello-professortown/faculty-career-strategy-session"
+                class="audit-cta-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Book Now</a
               >
-                <div class="form-field">
-                  <label for="full-name">Full Name *</label>
-                  <input
-                    type="text"
-                    id="full-name"
-                    name="fullName"
-                    required
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div class="form-field">
-                  <label for="email">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div class="form-field">
-                  <label for="timeline"
-                    >When do you plan to be actively applying? *</label
-                  >
-                  <select id="timeline" name="timeline" required>
-                    <option value="">Select timeline</option>
-                    <option value="30-days">
-                      I have applications due in the next 30 days
-                    </option>
-                    <option value="2-6-months">Next 2-6 months</option>
-                    <option value="within-year">Within the next year</option>
-                    <option value="exploring">Just exploring for now</option>
-                  </select>
-                </div>
-                <div class="form-field">
-                  <label
-                    >While this session is completely free, our services start
-                    at $297. Does this investment make sense for you? *</label
-                  >
-                  <div class="radio-group">
-                    <label class="radio-option">
-                      <input type="radio" name="budget" value="yes" required />
-                      <span>Yes</span>
-                    </label>
-                    <label class="radio-option">
-                      <input type="radio" name="budget" value="no" required />
-                      <span>No, that's outside my budget at the moment</span>
-                    </label>
-                  </div>
-                </div>
-                <button type="submit" class="audit-cta-button">Continue</button>
-              </form>
             </div>
             <div class="audit-hero-image">
               <img
@@ -672,7 +622,11 @@
         <div class="audit-final-cta-container">
           <h2>Relationships Get You Hired. Documents Open the Door.</h2>
           <p>Let's make sure your door is open.</p>
-          <a href="#qualifying-form" class="audit-cta-button"
+          <a
+            href="https://calendly.com/hello-professortown/faculty-career-strategy-session"
+            class="audit-cta-button"
+            target="_blank"
+            rel="noopener noreferrer"
             >Schedule Free Strategy Session</a
           >
         </div>
@@ -696,61 +650,5 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
-    <script>
-      // Qualifying Form Handler
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("qualifying-form");
-
-        if (form) {
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(form);
-            const data = {
-              fullName: formData.get("fullName"),
-              email: formData.get("email"),
-              timeline: formData.get("timeline"),
-              budget: formData.get("budget"),
-            };
-
-            // Step 1: Save data to CRM/database
-            // TODO: Replace with your actual endpoint (Formspree, Netlify Forms, etc.)
-            fetch("#", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(data),
-            }).catch(function (error) {
-              // Silently fail - we still want to redirect even if data capture fails
-              console.log("Data capture error (non-blocking):", error);
-            });
-
-            // Step 2: Conditional Redirect based on budget answer
-            if (data.budget === "yes") {
-              // Qualified lead - redirect to Calendly
-              // Pre-fill Calendly with name and email if possible
-              const calendlyUrl = new URL(
-                "https://calendly.com/hello-professortown/faculty-career-strategy-session"
-              );
-              calendlyUrl.searchParams.set("name", data.fullName);
-              calendlyUrl.searchParams.set("email", data.email);
-              window.location.href = calendlyUrl.toString();
-            } else {
-              // Unqualified lead - redirect to diversion page
-              // Pass data via URL params for the diversion page
-              const diversionUrl = new URL(
-                "/office-hours-full",
-                window.location.origin
-              );
-              diversionUrl.searchParams.set("email", data.email);
-              diversionUrl.searchParams.set("name", data.fullName);
-              window.location.href = diversionUrl.toString();
-            }
-          });
-        }
-      });
-    </script>
   </body>
 </html>
