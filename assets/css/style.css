@@ -1688,6 +1688,8 @@ small {
   font-weight: 400;
   color: var(--bg-forest);
   line-height: 1.6;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* ConvertKit Form Styling */
@@ -1754,6 +1756,7 @@ small {
   justify-content: center;
   min-height: 400px;
   padding: 0;
+  margin-top: 0;
 }
 
 .document-stack-single {
