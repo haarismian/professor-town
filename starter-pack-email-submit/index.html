@@ -162,18 +162,34 @@
         background: var(--pt-parch);
       }
 
-      .calendly-container {
-        max-width: 900px;
-        margin: 0 auto;
-        background: var(--pt-white);
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      .book-now-button {
+        display: inline-block;
+        background-color: var(--pt-teal);
+        color: var(--pt-white);
+        padding: 1.125rem 2.5rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 4px;
+        border: 2px solid var(--pt-oxford);
+        box-shadow: 4px 4px 0px var(--pt-oxford);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
       }
 
-      .calendly-inline-widget {
-        min-width: 320px;
-        height: 700px;
+      .book-now-button:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0px var(--pt-oxford);
+        color: var(--pt-white);
+      }
+
+      .spots-counter {
+        background: linear-gradient(135deg, var(--pt-oxford) 0%, #1a365d 100%);
+        border-radius: 12px;
+        padding: 1.5rem 2rem;
+        margin: 2rem auto;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
       }
 
       .skip-footer {
@@ -252,23 +268,7 @@
           ></iframe>
 
           <!-- Spots Counter -->
-          <div
-            class="spots-counter"
-            style="
-              background: linear-gradient(
-                135deg,
-                var(--pt-oxford) 0%,
-                #1a365d 100%
-              );
-              border-radius: 12px;
-              padding: 1.5rem 2rem;
-              margin-bottom: 2rem;
-              max-width: 500px;
-              margin-left: auto;
-              margin-right: auto;
-              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            "
-          >
+          <div class="spots-counter">
             <p
               style="
                 color: var(--pt-slate-200);
@@ -277,8 +277,8 @@
                 line-height: 1.5;
               "
             >
-              Because I review every file personally, I am capped at 7 audits
-              per week.
+              Because we are a small team, we want to ensure the highest quality
+              work so we only accept a few audits per week.
             </p>
             <p
               style="
@@ -305,13 +305,17 @@
         </div>
       </section>
 
-      <!-- Calendly Embed Section -->
+      <!-- Book Now Button Section -->
       <section class="calendly-section">
-        <div class="calendly-container">
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/hello-professortown/faculty-career-strategy-session?hide_gdpr_banner=1"
-          ></div>
+        <div style="text-align: center; padding: 3rem 1.5rem">
+          <a
+            href="https://calendly.com/hello-professortown/faculty-career-strategy-session"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="book-now-button"
+          >
+            Book Now
+          </a>
         </div>
       </section>
 
@@ -320,24 +324,6 @@
         <a href="/">No thanks, I'll just wait for the email.</a>
       </div>
     </main>
-
-    <!-- Calendly Widget Script -->
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-      async
-    ></script>
-
-    <!-- Calendly Event Listener for PostHog -->
-    <script>
-      window.addEventListener("message", function (e) {
-        if (e.data.event === "calendly.event_scheduled") {
-          if (window.posthog) {
-            posthog.capture("meeting_booked");
-          }
-        }
-      });
-    </script>
 
     <!-- Dynamic Slot Counter -->
     <script>
