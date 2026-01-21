@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Marvin Kopka's success story - how he transformed his academic career with Professor Town's guidance and coaching."
+      content="How Dr. Marvin Kopka, a dual-doctorate holder with 300+ citations, went from '15 Applications. 9 Rejections. 0 Interviews' to securing a position at Imperial College London."
     />
-    <title>Marvin Kopka | Success Stories | Professor Town</title>
+    <title>
+      Dr. Marvin Kopka: The "Invisible" Dual-Doctorate Who Cracked the Tenure Track | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +100,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +138,100 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: var(--pt-white);
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .linkedin-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 1rem;
+      }
+
+      .linkedin-btn:hover {
+        background: #004182;
+        color: white;
+      }
+
+      .linkedin-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
       }
 
       .case-study-cta {
@@ -191,14 +267,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -250,11 +320,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category">PhD Student</span>
-            <h1>Marvin Kopka</h1>
+            <span class="case-study-category">Dual Doctorate</span>
+            <h1>The "Invisible" Dual-Doctorate Who Cracked the Tenure Track</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Dr. Marvin Kopka
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/xgQ1LcVeEjs"
+              width="100%"
+              height="100%"
+              title="Dr. Marvin Kopka Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -264,50 +347,90 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Marvin</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Marvin Kopka - his
-                  background, PhD program, and what makes his story unique.
-                  Include details about his research interests and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Marvin is the definition of a modern, interdisciplinary scholar. Holding a dual doctorate (a PhD in Psychology/Neuroscience and a Doctorate in Medical Sciences), he sits at the cutting edge of Behavioral Science, AI, and Medical Informatics. With over 300 citations, an H-index of 9, and a track record of publishing in top-tier journals like Nature Digital Medicine, Marvin seemed like the perfect candidate on paper. He aimed to become the "Father" of a new niche: Naturalistic Decision Support. But despite his stellar credentials and "Millennial Energy," he was invisible to hiring committees.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Marvin faced before
-                  working with Professor Town. What obstacles were preventing
-                  him from achieving his academic career goals? What pain points
-                  was he experiencing as a PhD student?]
+                  "15 Applications. 9 Rejections. 0 Interviews."
                 </p>
               </div>
+              <p>
+                Marvin was stuck in the "Silent Rejection Cycle." He was applying to top institutions across Europe and North America but wasn't getting past the first screen. He was falling victim to cultural mistranslation. His German-formatted CV prioritized experience over education, and his application materials were humble and generic rather than evidence-based. He was hitting the "Keyword Wall"—qualified for the job, but failing to trigger the scoring mechanisms used by burnt-out hiring committees and automated systems. He came to Professor Town demotivated, asking: "My documents look nice to me, so why am I getting rejected?"
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Marvin. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  his unique challenges as a PhD student?]
-                </p>
+              <p>
+                We shifted Marvin from "Passive Applicant" to "Active Brand" by auditing his materials against the hidden rules of the game.
+              </p>
+
+              <h3>1. The "Rubric-Ready" CV Transformation</h3>
+              <p>
+                We identified that Marvin's CV was failing the "10-Second Scan."
+              </p>
+              <div class="case-study-insight">
+                <strong>The Fix:</strong> We restructured his CV for the North American/Global market, moving his prestigious Education to the top and reversing his publication count to highlight volume immediately.
+              </div>
+              <div class="case-study-insight">
+                <strong>The Keyword Strategy:</strong> We stopped him from "hoping" committees would understand his niche and taught him to aggressively map his CV language to the specific keywords (e.g., "Cybersecurity," "Funding Potential") found in job descriptions.
+              </div>
+
+              <h3>2. The "Father of the Field" Personal Brand</h3>
+              <p>
+                Marvin wanted to be known for "Naturalistic Decision Support," but he was keeping his expertise hidden in academic journals.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Fix:</strong> We implemented the "Content Pillar" Protocol. We set up a strategy for him to post daily on LinkedIn, translating complex papers into accessible insights. This moved him from an unknown researcher to a visible subject matter expert before he even stepped into the interview room.
+              </div>
+
+              <h3>3. The "Evidence-Based" Narrative</h3>
+              <p>
+                His teaching and research statements were filled with generic phrases like "I am passionate."
+              </p>
+              <div class="case-study-insight">
+                <strong>The Fix:</strong> We replaced platitudes with "Cinema Stories." We turned his statements into narratives that showed specific classroom moments and concrete examples of how he handles diverse learning needs (including neurodiversity), allowing the committee to visualize him in the role.
               </div>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Marvin achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Marvin about his experience.]
-                </p>
+              <p>
+                <strong>From "Zero Interviews" to Imperial College London.</strong> Marvin didn't just fix a few typos; he learned the mechanics of the hiring game. By tailoring his application to the rubric and networking proactively, he broke the silence.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul style="font-size: 1.125rem; line-height: 1.8; color: var(--pt-ink);">
+                <li>Secured a Research Position at Imperial College London.</li>
+                <li>Landed 3 Tenure Track Interviews shortly after implementing the new protocols.</li>
+                <li>Successfully bridged the gap between German academic norms and the Global market.</li>
+              </ul>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "My confidence level is pretty high now that I will land the faculty position... I understood exactly what I can change to tailor my applications. It was insanely helpful."
+                </blockquote>
+                <cite>— Dr. Marvin Kopka</cite>
               </div>
+
+              <a
+                href="https://www.linkedin.com/in/marvin-kopka/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                View Dr. Marvin Kopka on LinkedIn
+              </a>
             </div>
 
             <div class="case-study-cta reveal">

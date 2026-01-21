@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Justin Hastings's success story - how he advanced his academic career with Professor Town's guidance and coaching."
+      content="How Dr. Justin Hastings, a seasoned educator and consultant, secured tenure by treating his application like a product launch with Professor Town's guidance."
     />
-    <title>Justin Hastings | Success Stories | Professor Town</title>
+    <title>
+      Dr. Justin Hastings: The "Academic Realist" Who Secured Tenure | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +100,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +138,120 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: var(--pt-white);
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .case-study-results-list li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .case-study-results-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--pt-teal);
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .scholar-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #4285f4;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 1rem;
+      }
+
+      .scholar-btn:hover {
+        background: #3367d6;
+        color: white;
+      }
+
+      .scholar-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
       }
 
       .case-study-cta {
@@ -191,14 +287,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -250,11 +340,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category">Professor</span>
-            <h1>Justin Hastings</h1>
+            <span class="case-study-category">Tenure Track</span>
+            <h1>The "Academic Realist" Who Secured Tenure</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Dr. Justin Hastings
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/HveanBdqAhE"
+              width="100%"
+              height="100%"
+              title="Dr. Justin Hastings Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -263,51 +366,88 @@
         <div class="container">
           <div class="case-study-content">
             <div class="case-study-section reveal">
-              <h2>Meet Justin</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Justin Hastings - his
-                  background, current position, and what makes his story unique.
-                  Include details about his academic journey and career
-                  development.]
-                </p>
-              </div>
+              <h2>Meet Dr. Justin Hastings</h2>
+              <p>
+                Dr. Justin Hastings is not a naive applicant. He is a seasoned educator and consultant who understands the brutal economics of higher education. He runs his own college-prep bootcamps and knows exactly how "the market is shifting." To Dr. Justin Hastings, the academic job search isn't a lottery; it's a business transaction. He is cynical about the "snake oil" often sold to academics and prefers hard truths over reassurance. He didn't need a cheerleader—he needed a campaign manager.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Justin faced before
-                  working with Professor Town. What obstacles were preventing
-                  him from advancing his academic career? What pain points was
-                  he experiencing as a professor?]
+                  "The market is shifting... We have no idea what job searches look like five years from now."
                 </p>
               </div>
+              <p>
+                Despite his experience and "bootcamp" success, Dr. Justin Hastings knew that resting on his laurels was dangerous in the current climate. With the academic landscape becoming increasingly volatile ("The Trump Era," budget cuts, shifting demographics), he needed to secure the ultimate safety net: Tenure.
+              </p>
+              <p style="margin-top: 1rem">
+                He wasn't struggling to teach; he was struggling to package his diverse, "scholar-practitioner" background into a narrative that a traditional Tenure Committee would buy. He needed to prove that his external consulting work wasn't a distraction, but a high-value asset for the university.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Justin. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  his unique challenges as a professor?]
-                </p>
+              <p>
+                <strong>We treated his Tenure Application like a Product Launch.</strong> Dr. Justin Hastings didn't want fluff. He wanted "market penetration." We audited his dossier with the cold, hard logic of a hiring committee.
+              </p>
+
+              <h3>1. The "Product" Mindset</h3>
+              <p>
+                Dr. Justin Hastings calls a spade a spade. He recognized that to win, he had to stop acting like a supplicant and start acting like a provider of high-value services. We restructured his tenure file to position his teaching and "bootcamp" work not just as service, but as Market Proof—demonstrating that he attracts students and tuition dollars in an era where enrollment is everything.
+              </p>
+
+              <h3>2. The "Menu of Services" Strategy</h3>
+              <p>
+                Instead of overwhelming the committee with everything he's ever done, we curated his "Menu of Services." We defined exactly where his contract ended and where his extra value began, framing his boundaries as professional authority rather than lack of commitment.
+              </p>
+
+              <div class="case-study-insight">
+                <strong>The Cynic's Advantage:</strong> We didn't try to soften Dr. Justin Hastings's "realist" edge; we sharpened it. We used his deep understanding of the "customer" (students and parents writing six-figure checks) to position him as a professor who understands the ROI of a degree—a killer argument for modern university administrators.
               </div>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Justin achieved. Include
-                  specific results, career advancements, new positions, or other
-                  measurable successes. Add any quotes or testimonials from
-                  Justin about his experience.]
-                </p>
+              <p>
+                <strong>From "Adjunct Hustle" to Tenured Security.</strong>
+              </p>
+              <p style="margin-top: 1rem">
+                Dr. Justin Hastings successfully navigated the bureaucracy and secured a Tenured Faculty Position. He proved that you don't have to fit the traditional "Ivory Tower" mold to get tenure—you just need to sell your "product" effectively to the committee.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul class="case-study-results-list">
+                <li>
+                  <strong>Tenure Secured:</strong> Locked in permanent status in a volatile market.
+                </li>
+                <li>
+                  <strong>Authority Validated:</strong> Successfully leveraged his external consulting as a tenure-track asset.
+                </li>
+                <li>
+                  <strong>Strategic positioning:</strong> Moved from "Service Provider" to "Institutional Asset."
+                </li>
+              </ul>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "Your product is good. I hate to call it a product, but here we are... This is the necessary expense for being on the market. Right up there with the right kind of suit."
+                </blockquote>
+                <cite>— Dr. Justin Hastings<br>Tenured Professor & Educational Consultant</cite>
               </div>
+
+              <a
+                href="https://scholar.google.com/citations?user=azvXeUIAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="scholar-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                </svg>
+                View Dr. Justin Hastings on Google Scholar
+              </a>
             </div>
 
             <div class="case-study-cta reveal">
@@ -395,4 +535,3 @@
     </script>
   </body>
 </html>
-

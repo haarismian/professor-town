@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Suzanne Rosenzweig's success story - how she transformed her academic career with Professor Town's guidance and coaching."
+      content="How Dr. Suzanne Rosenzweig, an adjunct physicist who felt 'invisible on paper,' secured a full-time physics lectureship at Hillsborough College by leveraging her industry experience."
     />
-    <title>Suzanne Rosenzweig | Success Stories | Professor Town</title>
+    <title>
+      Dr. Suzanne Rosenzweig: The "Invisible on Paper" Adjunct Who Secured a Full-Time Physics Lectureship | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +100,117 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
+        aspect-ratio: 16 / 9;
+        border-radius: 14px;
+        margin: 2rem auto;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
+      }
+
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
         background: linear-gradient(
           135deg,
           var(--pt-oxford) 0%,
           var(--pt-teal) 100%
         );
-        border-radius: 14px;
-        margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        padding: 2rem;
+        margin: 1.5rem 0;
+        position: relative;
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
+      .case-study-quote p {
         color: var(--pt-white);
+        font-size: 1.25rem;
+        font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .linkedin-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 0.5rem;
+      }
+
+      .linkedin-btn:hover {
+        background: #004182;
+        color: white;
+      }
+
+      .linkedin-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
       }
 
       .case-study-content {
@@ -148,15 +234,6 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
-        padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
-        font-style: italic;
-      }
 
       .case-study-cta {
         background: var(--pt-oxford);
@@ -191,14 +268,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -250,11 +321,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category">PhD Student</span>
-            <h1>Suzanne Rosenzweig</h1>
+            <span class="case-study-category">Adjunct → Full-Time Faculty</span>
+            <h1>The "Invisible on Paper" Adjunct Who Secured a Full-Time Physics Lectureship</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Dr. Suzanne Rosenzweig
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/Wf7IecoHhYM"
+              width="100%"
+              height="100%"
+              title="Dr. Suzanne Rosenzweig Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -264,49 +348,102 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Suzanne</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Suzanne Rosenzweig -
-                  her background, PhD program, and what makes her story unique.
-                  Include details about her research interests and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Suzanne is a physicist with a passion for teaching that far outweighs her interest in the lonely silo of research. With a background in biophysics and condensed matter, she possesses the technical chops, but her career path took a detour through the corporate world, working in data analysis and consulting for non-profits. She is the type of educator who lights up a room—communicative, energetic, and deeply invested in student success. But despite her ability to connect in person, she felt invisible where it mattered most: on her CV.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Suzanne faced before
-                  working with Professor Town. What obstacles were preventing
-                  her from achieving her academic career goals? What pain points
-                  was she experiencing as a PhD student?]
+                  "If I can get in the room and talk to somebody, I'm golden. But I have no idea how to stand out on paper."
                 </p>
               </div>
+              <p>
+                Suzanne was stuck in the "Adjunct Trap" at Hillsborough Community College. She loved the students and the community, but the pay wasn't paying the bills, and the lack of stability was wearing her down. She was eyeing a competitive jump to a full-time role or a position at a major R1 institution like USF, but she was paralyzed by the application process.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Industry Stigma:</strong> She felt her 7 years at "Shining Star" (a non-profit consulting firm) were "wasted time" that she had to hide or bury at the bottom of her CV.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Resume Black Hole:</strong> She knew she was a great teacher, but her application materials looked generic. She was terrified of being filtered out by a "hippie-dippy" teaching statement rubric she didn't understand.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Network Gap:</strong> She had the drive to network but felt awkward and unsure how to approach senior faculty without looking desperate.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Suzanne. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  her unique challenges as a PhD student?]
-                </p>
+              <p>
+                We stopped trying to make Suzanne look like a traditional researcher and started positioning her as a "Modern Industry-Integrated Educator."
+              </p>
+
+              <h3>1. The "Translation" Pivot</h3>
+              <p>
+                Suzanne thought her industry job was a liability. We turned it into her competitive advantage. We didn't hide her work at "Shining Star"; we translated it.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Insight:</strong> We demonstrated that building Python macros and organizing complex data sets is physics. We rewrote her CV to use physics terminology to describe her industry work, proving she could teach students practical, employable computational skills that career academics couldn't.
               </div>
+
+              <h3>2. The "Student Bridge" Networking Protocol</h3>
+              <p>
+                Suzanne was afraid of cold-emailing department heads. We developed a "Warm Lead" strategy. Instead of asking for favors, we drafted a communication plan where she used her current students—who were transferring to the target universities—as the bridge. This positioned her not as a beggar, but as a partner in the student pipeline, instantly building peer-to-peer respect with senior faculty.
+              </p>
+
+              <h3>3. The "Accessibility" Teaching Statement</h3>
+              <p>
+                We scrapped the generic "I love teaching" fluff. We audited her teaching philosophy against the unspoken needs of a modern college: Retention and Accessibility. We highlighted her ability to teach to diverse learning styles and her "Millennial Energy" that makes physics less intimidating for first-generation students.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Suzanne achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Suzanne about her experience.]
-                </p>
+              <p>
+                <strong>From "Adjunct Anxiety" to Full-Time Faculty.</strong>
+              </p>
+              <p style="margin-top: 1rem">
+                Suzanne didn't just get an interview; she proved that her non-traditional path was exactly what the department needed. She successfully secured a Faculty Position in Physics at Hillsborough College.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul style="font-size: 1.125rem; line-height: 1.8; color: var(--pt-ink);">
+                <li>
+                  <strong>Escaped the "Adjunct Trap"</strong> and secured a full-time salary.
+                </li>
+                <li>
+                  <strong>Successfully leveraged her industry experience</strong> as a teaching asset.
+                </li>
+                <li>
+                  <strong>Mastered the art of "Paper Confidence"</strong>—ensuring her CV speaks as loudly as she does.
+                </li>
+              </ul>
+
+              <a
+                href="https://www.linkedin.com/in/srosenz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                View Dr. Suzanne on LinkedIn
+              </a>
+
+              <div class="case-study-testimonial">
+                <h2 style="color: var(--pt-oxford); margin-bottom: 1.5rem; font-size: 1.75rem;">What Suzanne Said</h2>
+                <blockquote>
+                  "I've given my CV to a few different people... but the feedback from you feels the most immediately relevant and impactful.
+                </blockquote>
+                <blockquote style="margin-top: 1rem;">
+                  Others said 'add more here, move this around.' But yours was like: 'No, you ARE a physics professor. Let's throw some physics in there.' You made the process a lot less overwhelming and intimidating."
+                </blockquote>
+                <cite>— Suzanne, Physics Faculty, Hillsborough College</cite>
               </div>
             </div>
 

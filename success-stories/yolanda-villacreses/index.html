@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Yolanda Villacreses's success story - how she transformed her academic career with Professor Town's guidance and coaching."
+      content="How Yolanda Villacreses, an MBA-holding Latina and First-Gen professional, turned her youth into an asset and overcame the 'PhD Myth' to pursue tenure-track roles."
     />
-    <title>Yolanda Villacreses | Success Stories | Professor Town</title>
+    <title>
+      Yolanda Villacreses: The "Next-Gen" Educator Who Turned Youth Into An Asset |
+      Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +101,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +139,111 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: #ffffff !important;
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .linkedin-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 0.5rem;
+      }
+
+      .linkedin-btn:hover {
+        background: #004182;
+        color: white;
+      }
+
+      .linkedin-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      .case-study-takeaway {
+        background: var(--pt-gold);
+        color: var(--pt-oxford);
+        padding: 1.5rem;
+        border-radius: 8px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
       }
 
       .case-study-cta {
@@ -191,14 +279,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -251,12 +333,25 @@
               >← Back to Success Stories</a
             >
             <span class="case-study-category"
-              >Industry Professional & Adjunct</span
+              >Next-Gen Educator</span
             >
-            <h1>Yolanda Villacreses</h1>
+            <h1>The "Next-Gen" Educator Who Turned Youth Into An Asset</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Yolanda Villacreses
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/XRL9UfZr6hw"
+              width="100%"
+              height="100%"
+              title="Yolanda Villacreses Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -266,49 +361,104 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Yolanda</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Yolanda Villacreses -
-                  her background, current role, and what makes her story unique.
-                  Include details about her professional journey and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Yolanda Villacreses is the face of the modern business classroom. An MBA-holding Latina and First-Gen professional, she brings a "Scholar-Practitioner" energy to the lecture hall that students crave. She doesn't just teach theory; she implements real-time pedagogical innovation, utilizing AI tools and "gamified" simulations to engage a generation of digital natives.
+              </p>
+              <p style="margin-top: 1rem">
+                Currently teaching at East Los Angeles College (ELAC) and Long Beach City College, she is a dedicated educator serving on the Academic Senate and driving social justice initiatives. She has the student reviews (90% satisfaction) and the drive—but she was hitting a psychological wall.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Yolanda faced before
-                  working with Professor Town. What obstacles were preventing
-                  her from achieving her academic career goals? What pain points
-                  was she experiencing?]
+                  "I wear my lanyard so they don't mistake me for a student."
                 </p>
               </div>
+              <p>
+                Yolanda was facing the "Youth Penalty." Despite her MBA and corporate background, she felt judged by the "Old Guard" of academia. Colleagues with "gray hairs" and PhDs made her feel that without a doctorate, she was hitting a dead end.
+              </p>
+              <p style="margin-top: 1rem">
+                She was trapped in a cycle of "Waiting for Permission." She believed she had to wait for a tenured professor to retire to even have a shot at a permanent role. She came to the session debating if she should abandon academia entirely for a corporate job, fearing that her lack of a PhD was a permanent disqualifier for the tenure track.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Yolanda. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  her unique challenges?]
-                </p>
+              <p>
+                We audited her "Scorecard" and proved that she was playing the game with the wrong rules.
+              </p>
+              <p style="margin-top: 1rem">
+                During her Faculty Career Roadmap Session, we dismantled the "PhD Myth" and repositioned her youth not as a liability, but as her market differentiator.
+              </p>
+
+              <h3>1. The "Terminal Degree" Reframe</h3>
+              <p>
+                Yolanda believed she was underqualified. We walked her through the Carnegie Classification System to identify hundreds of "Teaching-Focused" institutions (R2s and Colleges) where her MBA is legally considered a "Terminal Degree."
+              </p>
+              <div class="case-study-insight">
+                <strong>The Insight:</strong> She didn't need more school; she needed more strategy. We validated that she is already qualified for tenure-track roles today.
               </div>
+
+              <h3>2. The "Innovation" Brand Pivot</h3>
+              <p>
+                We advised Yolanda to stop hiding her age and start selling her "Millennial Energy." While older faculty struggle to connect with Gen Z, Yolanda utilizes AI and modern tech fluently. We rebranded her from "Junior Adjunct" to "Pedagogical Innovator," positioning her as the bridge between the institution and the modern student body.
+              </p>
+
+              <h3>3. The "Hidden Market" Protocol</h3>
+              <p>
+                Yolanda was waiting for job postings to appear. We shifted her to an Active Networking Strategy. Instead of "cold applying," she is now executing a "Coffee Chat" protocol—connecting with Department Chairs not to ask for jobs, but to discuss her specific research on AI in Business Education, making her the "first draft pick" when roles open.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Yolanda achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Yolanda about her experience.]
-                </p>
+              <p>
+                <strong>From "Imposter Syndrome" to Securing Faculty Positions at Two Institutions.</strong>
+              </p>
+              <p style="margin-top: 1rem">
+                Yolanda didn't just get a roadmap—she got results. By applying the Professor Town strategy, she secured faculty positions at two institutions, proving that her MBA and "Next-Gen" approach were exactly what hiring committees were looking for.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul style="font-size: 1.125rem; line-height: 1.8; color: var(--pt-ink);">
+                <li>
+                  <strong>Faculty Position Secured:</strong> Adjunct Professor of Business at East Los Angeles College.
+                </li>
+                <li>
+                  <strong>Second Position Landed:</strong> Adjunct Professor of Business at Long Beach City College.
+                </li>
+                <li>
+                  <strong>Myth Busted:</strong> Confirmed eligibility for faculty roles with an MBA (Terminal Degree status) without needing a PhD.
+                </li>
+                <li>
+                  <strong>CV Optimization:</strong> Restructured her CV to remove "Junior" language (e.g., changing "Intern" to "Faculty Contractor").
+                </li>
+                <li>
+                  <strong>Confidence Restored:</strong> Shifted from "Am I wasting my time?" to securing multiple faculty appointments.
+                </li>
+              </ul>
+
+              <a
+                href="https://www.linkedin.com/in/yvillacreses/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-btn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                View Yolanda on LinkedIn
+              </a>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "Professor Town gave me the reassurance I was desperate for. I was dealing with imposter syndrome... but he walked me step-by-step through the reality of hiring. I realized I don't need to wait. If you are hesitant or confused about the academic market, take a chance on this service."
+                </blockquote>
+                <cite>— Yolanda Villacreses</cite>
               </div>
             </div>
 

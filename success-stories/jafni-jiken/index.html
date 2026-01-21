@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Jafni Jiken's success story - how they transformed their academic career with Professor Town's guidance and coaching."
+      content="How Jafni Bin Johari Jiken, a global operator bridging industry and academia, transformed his application strategy from 'shooting in the dark' to securing high-value interviews with Professor Town's guidance."
     />
-    <title>Jafni Jiken | Success Stories | Professor Town</title>
+    <title>
+      Jafni Jiken: The "Industry Connector" Who Turned Experience Into an Academic Superpower | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +100,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +138,122 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: var(--pt-white);
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .case-study-results-list li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: var(--pt-ink);
+      }
+
+      .case-study-results-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--pt-teal);
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.125rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .linkedin-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 1rem;
+      }
+
+      .linkedin-btn:hover {
+        background: #004182;
+        color: white;
+      }
+
+      .linkedin-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
       }
 
       .case-study-cta {
@@ -191,14 +289,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -230,7 +322,9 @@
               <li>
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
-              <li><a href="/offers/application-review/">7-Day Application Rescue</a></li>
+              <li>
+                <a href="/offers/application-review/">7-Day Application Rescue</a>
+              </li>
               <li><a href="/offers/faculty-coaching/">Faculty Offer Accelerator</a></li>
             </ul>
           </li>
@@ -250,11 +344,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category">PhD Student</span>
-            <h1>Jafni Jiken</h1>
+            <span class="case-study-category">Industry to Academia</span>
+            <h1>The "Industry Connector" Who Turned Experience Into an Academic Superpower</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Jafni Bin Johari Jiken
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/DiiMKboaNy0"
+              width="100%"
+              height="100%"
+              title="Jafni Jiken Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -264,49 +371,144 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Jafni</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Jafni Jiken - their
-                  background, PhD program, and what makes their story unique.
-                  Include details about their research interests and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Jafni isn't your typical PhD candidate. He is a global operator—a Malaysian national with a Master's from Iowa and a PhD nearing completion in the UK. He bridges the gap between the boardroom and the lecture hall, bringing massive industry experience in Digital Agriculture and AI into his teaching.
+              </p>
+              <p style="margin-top: 1rem">
+                He doesn't just teach theory; he brings the real world to his students. He utilizes LEGO Serious Play and simulation-based exercises, and he even leveraged his professional network to build live case studies with IKEA.
+              </p>
+              <p style="margin-top: 1rem">
+                Despite a track record that includes securing significant funding and managing complex projects, Jafni felt stuck between two worlds: too "corporate" for traditional academia, but trying to break into a university system that seemed to speak a different language.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Jafni faced before
-                  working with Professor Town. What obstacles were preventing
-                  them from achieving their academic career goals? What pain
-                  points were they experiencing as a PhD student?]
+                  "I have 26 applications and a 6-page cover letter. I'm shooting in the dark."
                 </p>
               </div>
+              <p>
+                Jafni was suffering from "The Kitchen Sink Syndrome." Because he had so much valuable experience—from consulting with CEOs to curriculum development—he was trying to force all of it into his application documents.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Clutter Crisis:</strong> His cover letter was a staggering six pages long. His CV was burying his best assets (like his funding history) under pages of less relevant data.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Identity Crisis:</strong> He was conflicted on how to present himself. Was he a researcher? A teacher? An industry expert? By trying to be everything to everyone, he risked being nothing to the hiring committee.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The "PhD Limbo":</strong> Competing against candidates with finished PhDs, he felt his "near-completion" status was a handicap he couldn't overcome.
+              </p>
+              <p style="margin-top: 1rem">
+                He came to Professor Town with a burning question: <strong>"How do I stop just applying and start competing?"</strong>
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Jafni. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  their unique challenges as a PhD student?]
-                </p>
+              <p>
+                <strong>We stopped "guessing" and started Auditing.</strong>
+              </p>
+              <p style="margin-top: 1rem">
+                We took Jafni's sprawling experience and compressed it into a lethal, targeted weapon using the "Rubric Reverse-Engineering" method.
+              </p>
+
+              <h3>1. The "Golden Sections" Restructure</h3>
+              <p>
+                Jafni didn't realize that his "Industry Experience" was actually his hidden ace—if positioned correctly.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Insight:</strong> We identified that his ability to secure funding (over $300k equivalent) and his "Pedagogical Innovation" (LEGO/Simulation) were his Golden Sections.
               </div>
+              <p style="margin-top: 1rem">
+                <strong>The Fix:</strong> We reorganized his CV hierarchy based on the specific job posting. If the role was Teaching, his industry case studies went to the top. If it was Research, his funding history took the lead. We cut the fluff and highlighted the wins.
+              </p>
+
+              <h3>2. The Cover Letter "Diet"</h3>
+              <p>
+                We tackled the 6-page cover letter.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Strategy:</strong> We slashed it by 66%, bringing it down to a tight, punchy 2-page narrative. We replaced generic summaries with hard evidence: specific course evaluation scores (4.7/5) and direct quotes from student feedback. We proved his impact rather than just listing his duties.
+              </p>
+
+              <h3>3. The "Networking Superpower"</h3>
+              <p>
+                Jafni was used to cold-calling CEOs, but he was passive with Professors.
+              </p>
+              <p style="margin-top: 1rem">
+                <strong>The Pivot:</strong> We unlocked his "Superpower." We applied his fearless industry networking tactics to the academic job market. Instead of waiting for job postings, Jafni began treating Department Heads like potential business partners—using his "Connector" energy to uncover unlisted sessional roles.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Jafni achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Jafni about their experience.]
-                </p>
+              <p>
+                <strong>From "Conflicted Applicant" to "Strategic Operator."</strong>
+              </p>
+              <p style="margin-top: 1rem">
+                Jafni didn't just clean up a resume; he unlocked a new way to view his career. He moved from anxious applicant to a candidate who knows exactly what he brings to the table.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul class="case-study-results-list">
+                <li>
+                  <strong>Research position at Durham University Business School.</strong>
+                </li>
+                <li>
+                  <strong>3 High-Value Interviews</strong> secured out of his initial batch of applications.
+                </li>
+                <li>
+                  <strong>A "Lethal" Application Package:</strong> A streamlined CV and Cover Letter that hit the hiring rubric 100% of the time.
+                </li>
+                <li>
+                  <strong>Confidence:</strong> He stopped apologizing for his non-traditional path and started selling it as his greatest asset.
+                </li>
+              </ul>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "The difference after the session was huge. My confidence has gone up a lot, and for the first time, I feel like my application actually reflects my strengths."
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="case-study-section reveal">
+              <h2>Jafni's Experience</h2>
+              <h3>In His Own Words</h3>
+              <p>
+                "I came in unsure about how to organise my academic CV... whether I should put industry experience first or knowledge exchange. By the end of the session, everything finally clicked."
+              </p>
+              <p style="margin-top: 1rem">
+                "He noticed details I had never seen myself. Small things like formatting, consistency, and what actually belongs in a faculty CV. I honestly thought my documents were already quite polished, but he found so many areas that could be improved."
+              </p>
+              <p style="margin-top: 1rem">
+                "There was a moment when he pointed out that the things I thought were unnecessary were actually important, and the things I thought were important were not helping me at all. That really stayed with me."
+              </p>
+              <p style="margin-top: 1rem">
+                "Would I recommend this service? Yes. One hundred percent yes. If you are applying for faculty roles or if you want to understand how committees think and make decisions, just book the session. It is absolutely worth it."
+              </p>
+              <p style="margin-top: 1.5rem; font-style: italic; color: var(--pt-oxford); font-weight: 600;">
+                — Jafni Bin Johari Jiken<br>
+                Scholar, Educator, & Industry Strategist
+              </p>
+
+              <div style="text-align: center; margin-top: 2rem;">
+                <a
+                  href="https://www.linkedin.com/in/jafnijiken/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="linkedin-btn"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                  View Jafni on LinkedIn
+                </a>
               </div>
             </div>
 
@@ -365,19 +567,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
@@ -395,4 +600,3 @@
     </script>
   </body>
 </html>
-

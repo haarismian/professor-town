@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Read Ivan Campbell's success story - how he transformed his academic career with Professor Town's guidance and coaching."
+      content="How Ivan Campbell, a PhD candidate in Clinical and Counseling Psychology, overcame the 'Comparison Trap' and positioned himself as a strategic R1 contender with Professor Town's guidance."
     />
-    <title>Ivan Campbell | Success Stories | Professor Town</title>
+    <title>
+      Ivan Campbell: The "Clinical Heavyweight" Who Feared He Was Falling Behind | Professor Town
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -98,33 +100,21 @@
         margin-bottom: 1rem;
       }
 
-      .case-study-featured-image {
+      .case-study-featured-video {
         width: 100%;
         max-width: 800px;
-        height: 400px;
-        background: linear-gradient(
-          135deg,
-          var(--pt-oxford) 0%,
-          var(--pt-teal) 100%
-        );
+        aspect-ratio: 16 / 9;
         border-radius: 14px;
         margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--pt-oxford);
       }
 
-      .case-study-image-placeholder {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: var(--pt-white);
+      .case-study-featured-video iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
 
       .case-study-content {
@@ -148,14 +138,114 @@
         color: var(--pt-ink);
       }
 
-      .case-study-placeholder {
-        background: var(--pt-parch);
-        border: 2px dashed var(--pt-slate-200);
-        border-radius: 8px;
+      .case-study-section h3 {
+        color: var(--pt-oxford);
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .case-study-quote {
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        border-radius: 10px;
         padding: 2rem;
-        color: var(--pt-ink);
-        opacity: 0.8;
+        margin: 1.5rem 0;
+        position: relative;
+      }
+
+      .case-study-quote p {
+        color: var(--pt-white);
+        font-size: 1.25rem;
         font-style: italic;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .case-study-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .case-study-insight {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .case-study-insight strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .case-study-results-list li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .case-study-results-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--pt-teal);
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+
+      .case-study-testimonial {
+        background: var(--pt-slate-50);
+        border-radius: 14px;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .case-study-testimonial blockquote {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--pt-ink);
+        line-height: 1.8;
+        margin: 0 0 1rem;
+      }
+
+      .case-study-testimonial cite {
+        color: var(--pt-oxford);
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .scholar-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #4285f4;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-top: 1rem;
+      }
+
+      .scholar-link:hover {
+        background: #3367d6;
+        color: white;
       }
 
       .case-study-cta {
@@ -191,14 +281,8 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-featured-image {
-          height: 250px;
-        }
-
-        .case-study-image-placeholder {
-          width: 100px;
-          height: 100px;
-          font-size: 2.5rem;
+        .case-study-featured-video {
+          border-radius: 10px;
         }
 
         .case-study-cta {
@@ -250,11 +334,24 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <span class="case-study-category">PhD Student</span>
-            <h1>Ivan Campbell</h1>
+            <span class="case-study-category">PhD Candidate</span>
+            <h1>The "Clinical Heavyweight" Who Feared He Was Falling Behind</h1>
+            <p
+              style="font-size: 1.25rem; color: var(--pt-ink); margin-top: 1rem"
+            >
+              Ivan Campbell
+            </p>
           </div>
-          <div class="case-study-featured-image reveal">
-            <div class="case-study-image-placeholder">👤</div>
+          <div class="case-study-featured-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/1j3Ci5urTgw"
+              width="100%"
+              height="100%"
+              title="Ivan Campbell Success Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -264,49 +361,89 @@
           <div class="case-study-content">
             <div class="case-study-section reveal">
               <h2>Meet Ivan</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Add an introduction about Ivan Campbell - his
-                  background, PhD program, and what makes his story unique.
-                  Include details about his research interests and aspirations
-                  in academia.]
-                </p>
-              </div>
+              <p>
+                Ivan Campbell is a PhD candidate in Clinical and Counseling Psychology with a focus on Neuropsychology. He isn't just a researcher; he is deeply motivated by the intersection of biology and morality, a curiosity sparked by his time in a private religious high school in rural Georgia. Ivan possesses a rare blend of technical skill (neuroimaging, tensor imaging) and deep clinical experience. However, despite his talent, he felt like he was running a race he couldn't win. Diagnosed with ADHD and managing a crushing clinical workload, he constantly compared himself to peers who seemed to produce publications effortlessly.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Problem</h2>
-              <div class="case-study-placeholder">
+              <div class="case-study-quote">
                 <p>
-                  [Placeholder: Describe the challenges Ivan faced before
-                  working with Professor Town. What obstacles were preventing
-                  him from achieving his academic career goals? What pain points
-                  was he experiencing as a PhD student?]
+                  "I feel like I'm already behind. Do I even have a shot at an R1 job?"
                 </p>
               </div>
+              <p>
+                Ivan was stuck in the "Comparison Trap." While his peers were racking up 10+ publications, Ivan had three. He worried that his heavy rotation of clinical work was a liability that was eating up his writing time. Compounding this was the "First-Generation Gap." Coming from a background where he didn't have "Mommy and Daddy" explaining the unwritten rules of academia, Ivan felt like an outsider. He was terrified of networking, convinced that reaching out to potential mentors would be seen as "annoying." He came to Professor Town with a deflated spirit, asking if his lack of publication volume had already disqualified him from his dream of running a Tenure Track lab.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>How Professor Town Helped</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Detail the specific ways Professor Town
-                  supported Ivan. What coaching sessions, resources, or
-                  strategies were most impactful? How did the guidance address
-                  his unique challenges as a PhD student?]
-                </p>
+              <p>
+                We stopped the comparison game and audited his "Hidden Assets." We shifted Ivan from an "anxious student" to a "future colleague" by restructuring how he presented his value to a hiring committee.
+              </p>
+
+              <h3>1. The "Funding Hunter" Pivot</h3>
+              <p>
+                Ivan was burying the lede. In our audit, we discovered that because his program lacked funding, Ivan had gone out and created his own assistantships, securing nearly $100,000 in funding for his department by pitching to local organizations.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Insight:</strong> We moved this from a minor CV detail to a headline feature. We proved that he wasn't just a student; he was a revenue generator—a trait R1 universities value even more than a few extra papers.
               </div>
+
+              <h3>2. Leveraging the "NASA" Stamp</h3>
+              <p>
+                Ivan had "undergrad research assistant" listed for a major project. We dug deeper and realized it was a NASA-funded initiative.
+              </p>
+              <div class="case-study-insight">
+                <strong>The Strategy:</strong> We rebranded this experience to signal "Federal Funding Literacy." We showed him that hiring committees aren't just looking for past papers; they are looking for future grant winners.
+              </div>
+
+              <h3>3. The "Clinician-Scholar" Model</h3>
+              <p>
+                Instead of apologizing for his heavy clinical hours, we turned them into his unique selling proposition. We designed a narrative where his clinical expertise allows him to train students in-house—creating a self-sustaining lab model that pure researchers can't offer.
+              </p>
             </div>
 
             <div class="case-study-section reveal">
               <h2>The Results</h2>
-              <div class="case-study-placeholder">
-                <p>
-                  [Placeholder: Share the outcomes Ivan achieved. Include
-                  specific results, positions obtained, interviews landed, or
-                  other measurable successes. Add any quotes or testimonials
-                  from Ivan about his experience.]
-                </p>
+              <p>
+                <strong>From "Imposter Syndrome" to a Strategic R1 Contender.</strong> Ivan left the session with a re-engineered CV and a realized ambition. He didn't just get edits; he got a roadmap to apply for a top-tier internship at Brown and a strategy to position himself as a funded, commercially viable academic.
+              </p>
+
+              <h3>The Wins:</h3>
+              <ul class="case-study-results-list">
+                <li>
+                  <strong>Identified $100k+ in "Hidden" Grant Success:</strong> Transformed informal funding efforts into a competitive grant track record.
+                </li>
+                <li>
+                  <strong>The "Cold Email" Cure:</strong> Overcame the fear of networking with a specific, non-intrusive protocol for contacting future mentors.
+                </li>
+                <li>
+                  <strong>CV Re-Engineering:</strong> Restructured his document to highlight "Funding Potential" over simple "Publication Volume."
+                </li>
+                <li>
+                  <strong>Secured a clinical neuropsychology position at University of Georgia.</strong>
+                </li>
+              </ul>
+
+              <div class="case-study-testimonial">
+                <blockquote>
+                  "Coming from rural Georgia, nobody told me how any of this works... I didn't have Mommy and Daddy telling me what to do. I have concrete steps now. I'm feeling a lot more confident. I have a direction I can go in."
+                </blockquote>
+                <cite>— Ivan Campbell</cite>
+              </div>
+
+              <div style="text-align: center; margin-top: 2rem;">
+                <a
+                  href="https://scholar.google.com/citations?user=g4BaB8YAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="scholar-link"
+                >
+                  View Ivan's Google Scholar Profile
+                </a>
               </div>
             </div>
 
