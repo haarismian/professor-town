@@ -3,7 +3,7 @@
 const TESTIMONIALS = [
   {
     initials: "SR",
-    name: "Dr. Suzanne Rosenzweig",
+    name: "Professor Suzanne Rosenzweig",
     title: "Physics Professor at Hillsborough College",
     linkedin: "https://www.linkedin.com/in/srosenz/",
     // image: "/assets/img/testimonials/suzanne-rosenzweig.jpg", // Add LinkedIn photo when available
@@ -21,7 +21,7 @@ const TESTIMONIALS = [
   },
   {
     initials: "JH",
-    name: "Dr. Justin Hastings",
+    name: "Professor Justin Hastings",
     title: "Professor at University of Sydney",
     linkedin:
       "https://www.linkedin.com/in/justin-hastings-4b3b6ab/?originalSubdomain=au",
@@ -40,8 +40,8 @@ const TESTIMONIALS = [
   },
   {
     initials: "MK",
-    name: "Dr. Marvin Kopka",
-    title: "PhD to Professor at Imperial College London",
+    name: "Professor Marvin Kopka",
+    title: "Professor at Imperial College London",
     linkedin: "https://www.linkedin.com/in/marvin-kopka/?originalSubdomain=de",
     // image: "/assets/img/testimonials/marvin-kopka.jpg", // Add LinkedIn photo when available
     logo: "/assets/img/uni logos/Logo_for_Imperial_College_London.svg.png",
@@ -49,8 +49,8 @@ const TESTIMONIALS = [
   },
   {
     initials: "DT",
-    name: "Dr. Dolores Termini",
-    title: "PhD to Professor at Kean University",
+    name: "Professor Dolores Termini",
+    title: "Professor at Kean University",
     linkedin: "https://www.linkedin.com/in/dolores-termini-phd-653a30198/",
     // image: "/assets/img/testimonials/dolores-termini.jpg", // Add LinkedIn photo when available
     logo: "/assets/img/uni logos/Kean University.png",
@@ -58,8 +58,8 @@ const TESTIMONIALS = [
   },
   {
     initials: "IC",
-    name: "Dr. Ivan Campbell",
-    title: "PhD Student at University of Georgia",
+    name: "Professor Ivan Campbell",
+    title: "Graduate Student at University of Georgia",
     linkedin: "https://www.linkedin.com/in/ivan-campbell-445139164/",
     // image: "/assets/img/testimonials/ivan-campbell.jpg", // Add LinkedIn photo when available
     logo: "/assets/img/uni logos/university-of-georgia-logo.png",
@@ -67,8 +67,8 @@ const TESTIMONIALS = [
   },
   {
     initials: "JJ",
-    name: "Dr. Jafni Jiken",
-    title: "PhD to Professor at Durham University",
+    name: "Professor Jafni Jiken",
+    title: "Professor at Durham University",
     linkedin: "https://www.linkedin.com/in/jafnijiken/",
     // image: "/assets/img/testimonials/jafni-jiken.jpg", // Add LinkedIn photo when available
     logo: "/assets/img/uni logos/durham university.png",
