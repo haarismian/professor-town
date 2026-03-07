@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,9 @@
         background: var(--pt-white);
         border: 1px solid var(--pt-slate-200);
         border-radius: 8px;
-        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease;
         box-sizing: border-box;
       }
 
@@ -160,12 +162,12 @@
           (e.init = function (i, s, a) {
             function g(t, e) {
               var o = e.split(".");
-              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (2 == o.length && ((t = t[o[0]]), (e = o[1])),
                 (t[e] = function () {
                   t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                });
+                }));
             }
-            ((p = t.createElement("script")).type = "text/javascript"),
+            (((p = t.createElement("script")).type = "text/javascript"),
               (p.crossOrigin = "anonymous"),
               (p.async = !0),
               (p.src =
@@ -173,8 +175,8 @@
                 "/static/array.js"),
               (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
                 p,
-                r
-              );
+                r,
+              ));
             var u = e;
             for (
               void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
@@ -182,7 +184,9 @@
                 u.toString = function (t) {
                   var e = "posthog";
                   return (
-                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                    "posthog" !== a && (e += "." + a),
+                    t || (e += " (stub)"),
+                    e
                   );
                 },
                 u.people.toString = function () {
@@ -190,7 +194,7 @@
                 },
                 o =
                   "init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(
-                    " "
+                    " ",
                   ),
                 n = 0;
               n < o.length;
@@ -224,19 +228,26 @@
         </button>
         <ul class="nav-menu">
           <li><a href="/" class="nav-link">Home</a></li>
-          
-          
+
           <li class="nav-dropdown">
             <span class="nav-link nav-dropdown-toggle">Work With Us</span>
             <ul class="nav-dropdown-menu">
               <li>
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
-              <li><a href="/offers/application-review/">7-Day Application Rescue</a></li>
-              <li><a href="/offers/faculty-coaching/">Faculty Offer Accelerator</a></li>
+              <li>
+                <a href="/offers/application-review/"
+                  >7-Day Application Rescue</a
+                >
+              </li>
+              <li>
+                <a href="/offers/faculty-coaching/"
+                  >Faculty Offer Accelerator</a
+                >
+              </li>
             </ul>
           </li>
-          
+
           <li><a href="/contact/" class="nav-link">Contact</a></li>
           <li>
             <a href="/resources/" class="btn btn-nav-cta">Get the Free Guide</a>
@@ -271,7 +282,16 @@
           <div class="grid-12">
             <div class="card reveal" style="grid-column: span 6">
               <h2>Contact Professor Town</h2>
-              <p style="font-size: 0.875rem; color: #64748b; margin-top: -0.5rem; margin-bottom: 1rem;">Professor Town is a service of Blackframe Consulting Inc.</p>
+              <p
+                style="
+                  font-size: 0.875rem;
+                  color: #64748b;
+                  margin-top: -0.5rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                Professor Town is a service of Blackframe Consulting Inc
+              </p>
               <form id="contactForm" class="contact-form" novalidate>
                 <div class="contact-form-group">
                   <label for="fullName" class="contact-form-label"
@@ -304,8 +324,7 @@
 
                 <div class="contact-form-group">
                   <label for="phoneNumber" class="contact-form-label"
-                    >Phone Number
-                    <span class="contact-required">*</span></label
+                    >Phone Number <span class="contact-required">*</span></label
                   >
                   <input
                     type="tel"
@@ -363,7 +382,9 @@
                 </div>
 
                 <div class="contact-form-group">
-                  <label for="message" class="contact-form-label">Message</label>
+                  <label for="message" class="contact-form-label"
+                    >Message</label
+                  >
                   <textarea
                     id="message"
                     name="message"
@@ -373,7 +394,10 @@
                   ></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary contact-form-submit">
+                <button
+                  type="submit"
+                  class="btn btn-primary contact-form-submit"
+                >
                   Send Message
                 </button>
               </form>
@@ -503,16 +527,12 @@
         form.addEventListener("submit", function (e) {
           e.preventDefault();
 
-          form
-            .querySelectorAll(".contact-form-error")
-            .forEach(function (el) {
-              el.remove();
-            });
-          form
-            .querySelectorAll(".input-error")
-            .forEach(function (el) {
-              el.classList.remove("input-error");
-            });
+          form.querySelectorAll(".contact-form-error").forEach(function (el) {
+            el.remove();
+          });
+          form.querySelectorAll(".input-error").forEach(function (el) {
+            el.classList.remove("input-error");
+          });
 
           var fullName = form.fullName.value.trim();
           var email = form.emailAddress.value.trim();
@@ -584,19 +604,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
