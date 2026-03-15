@@ -5,285 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Get the 2026 Academic Job Market Resource Pack: 4 Screening Rubrics, 2 Winning CV Templates, and 100+ Interview Questions from successful candidates."
+      content="Choose your path to get the right Professor Town support for your academic career goals."
     />
-    <title>
-      The Insider Pack - 2026 Academic Job Market Resource Pack | Professor Town
-    </title>
+    <title>Academic Job Search Guide | Professor Town</title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-    <script>
-      !(function (t, e) {
-        var o, n, p, r;
-        e.__SV ||
-          (window.posthog && window.posthog.__loaded) ||
-          ((window.posthog = e),
-          (e._i = []),
-          (e.init = function (i, s, a) {
-            function g(t, e) {
-              var o = e.split(".");
-              2 == o.length && ((t = t[o[0]]), (e = o[1])),
-                (t[e] = function () {
-                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                });
-            }
-            ((p = t.createElement("script")).type = "text/javascript"),
-              (p.crossOrigin = "anonymous"),
-              (p.async = !0),
-              (p.src =
-                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
-                "/static/array.js"),
-              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
-                p,
-                r
-              );
-            var u = e;
-            for (
-              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
-                u.people = u.people || [],
-                u.toString = function (t) {
-                  var e = "posthog";
-                  return (
-                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
-                  );
-                },
-                u.people.toString = function () {
-                  return u.toString(1) + ".people (stub)";
-                },
-                o =
-                  "init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(
-                    " "
-                  ),
-                n = 0;
-              n < o.length;
-              n++
-            )
-              g(u, o[n]);
-            e._i.push([i, s, a]);
-          }),
-          (e.__SV = 1));
-      })(document, window.posthog || []);
+    <style>
+      .pathway-page {
+        background-color: var(--bg-cream);
+        color: var(--bg-forest);
+        min-height: 100vh;
+      }
 
-      posthog.init("phc_aHb8ipxdNNj5P4vtPWgv4yTD7dKH1qnYy25xPWpG2T9", {
-        api_host: "https://us.i.posthog.com",
-        defaults: "2025-05-24",
-        person_profiles: "always",
-      });
-    </script>
+      .pathway-section {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 5rem 1.5rem;
+      }
+
+      .pathway-title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .pathway-title h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 0.5rem;
+      }
+
+      .pathway-title p {
+        margin: 0;
+        color: var(--color-text);
+        font-size: 1.1rem;
+      }
+
+      .pathway-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+      }
+
+      .pathway-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: var(--color-white);
+        border: 1px solid rgba(43, 58, 42, 0.14);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .pathway-card:hover,
+      .pathway-card:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-color: rgba(43, 58, 42, 0.3);
+        outline: none;
+      }
+
+      .pathway-icon {
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+
+      .pathway-card h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.4rem;
+      }
+
+      .pathway-card p {
+        margin: 0 0 1rem;
+        color: var(--color-text);
+      }
+
+      .pathway-cta {
+        font-weight: 700;
+        color: var(--bg-forest);
+      }
+
+      @media (max-width: 900px) {
+        .pathway-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
-  <body style="background-color: var(--bg-cream); color: var(--bg-forest)">
+  <body class="pathway-page">
     <main id="main-content">
-      <!-- Section B: The Hero & Capture -->
-      <section class="squeeze-hero">
-        <div class="squeeze-hero-container">
-          <h1>
-            Everything you need to land an academic faculty job in
-            <span class="underline-highlight">2026</span>
-          </h1>
-          <p class="squeeze-hero-subheadline">
-            Application document templates, example CVs and cover letters,
-            teaching and research statements, interview questions, and more!
-          </p>
-
-          <div class="squeeze-hero-visual">
-            <div class="document-stack-single">
-              <img
-                src="/assets/img/free%20resources%20page/all-combined.png"
-                alt="2026 Academic Job Market Resource Pack Preview"
-              />
-            </div>
-          </div>
-
-          <div class="squeeze-form-wrapper" id="downloadButtonWrapper">
-            <button class="squeeze-form-button open-download-modal">
-              Download Now
-            </button>
-          </div>
-
-          <h2 class="squeeze-testimonials-header">
-            Join the hundreds of successful candidates who love this guide ↓
-          </h2>
+      <section class="pathway-section">
+        <div class="pathway-title">
+          <h1>Which best describes you?</h1>
         </div>
-      </section>
 
-      <!-- Testimonials Section -->
-      <section
-        class="section"
-        style="background-color: var(--bg-cream); padding: 4rem 1.5rem"
-      >
-        <div class="container">
-          <div id="testimonial-slider"></div>
-          <div class="squeeze-form-wrapper" style="margin-top: 3rem">
-            <button class="squeeze-form-button open-download-modal">
-              Download Now
-            </button>
-          </div>
-        </div>
-      </section>
+        <div class="pathway-grid">
+          <a class="pathway-card" href="/professional-to-professor-guide/">
+            <div class="pathway-icon" aria-hidden="true">🏢</div>
+            <h2>I'm in industry</h2>
+            <p>I want to teach at a university - part-time or full-time</p>
+            <span class="pathway-cta">See how I can help -></span>
+          </a>
 
-      <!-- Section C: The "Value Stack" Grid -->
-      <section class="squeeze-value-stack">
-        <div class="squeeze-value-stack-container">
-          <h2>Inside the Committee's Toolkit</h2>
+          <a class="pathway-card" href="/academic-job-search-guide/">
+            <div class="pathway-icon" aria-hidden="true">🎓</div>
+            <h2>I'm finishing my PhD</h2>
+            <p>I'm entering the academic job market and need an edge</p>
+            <span class="pathway-cta">See how I can help -></span>
+          </a>
 
-          <div class="squeeze-value-grid">
-            <div class="resource-card">
-              <div class="resource-card-icon">📋</div>
-              <h3>4 Committee Screening Rubrics</h3>
-              <p>
-                See exactly how your application is graded before you submit.
-              </p>
-            </div>
+          <a class="pathway-card" href="/academic-job-search-guide/">
+            <div class="pathway-icon" aria-hidden="true">📚</div>
+            <h2>I'm an adjunct</h2>
+            <p>I want to land a full-time faculty position</p>
+            <span class="pathway-cta">See how I can help -></span>
+          </a>
 
-            <div class="resource-card">
-              <div class="resource-card-icon">📊</div>
-              <h3>Real-World Case Study</h3>
-              <p>
-                Breakdown of how 9 candidates landed offers in the last cycle.
-              </p>
-            </div>
-
-            <div class="resource-card">
-              <div class="resource-card-icon">📄</div>
-              <h3>2 'Committee-Ready' CVs</h3>
-              <p>Formatted to survive the initial 30-second scan.</p>
-            </div>
-
-            <div class="resource-card">
-              <div class="resource-card-icon">💬</div>
-              <h3>100+ Interview Questions</h3>
-              <p>
-                The complete question bank for screening, job talks, and campus
-                visits.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="squeeze-form-wrapper"
-            style="
-              margin-top: 3rem;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <button class="squeeze-form-button open-download-modal">
-              Download Now
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section D: The "Pain" Interrupter -->
-      <section class="squeeze-pain-bar">
-        <div class="squeeze-pain-bar-content">
-          <div class="squeeze-pain-bar-icon">⚠️</div>
-          <h3>
-            Most candidates get rejected before their second page is read. Use
-            these tools to ensure you aren't one of them.
-          </h3>
-        </div>
-      </section>
-
-      <!-- Section E: The Footer -->
-      <footer class="squeeze-footer">
-        <div class="squeeze-footer-content">
-          <p>&copy; 2026 Professor Town</p>
-          <ul class="squeeze-footer-links">
-            <li><a href="/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="/terms-conditions/">Terms</a></li>
-          </ul>
-        </div>
-      </footer>
-    </main>
-
-    <!-- Download Modal -->
-    <div class="download-modal-overlay" id="downloadModal">
-      <div class="download-modal">
-        <button
-          class="download-modal-close"
-          id="downloadModalClose"
-          aria-label="Close modal"
-        >
-          ×
-        </button>
-        <div class="download-modal-content">
-          <h2
-            style="
-              margin-top: 0;
-              margin-bottom: 1.5rem;
-              font-family: var(--font-heading);
-              font-size: 1.75rem;
-              font-weight: 700;
-              color: var(--color-text);
-            "
-          >
-            Where should we send it to?
-          </h2>
-          <div class="squeeze-form-wrapper">
-            <script
-              async
-              data-uid="7843a5ee63"
-              src="https://professor-town.kit.com/7843a5ee63/index.js"
-            ></script>
-            <p class="squeeze-form-microcopy">
-              Join hundreds of successful candidates who have used this guide.
+          <a class="pathway-card" href="/academic-job-search-guide/">
+            <div class="pathway-icon" aria-hidden="true">🔬</div>
+            <h2>I'm a current professor</h2>
+            <p>
+              I'm looking for a better-fit position or want to reposition
             </p>
-          </div>
+            <span class="pathway-cta">See how I can help -></span>
+          </a>
         </div>
-      </div>
-    </div>
-
-    <!-- Testimonial Slider Scripts -->
-    <script src="/assets/js/testimonials-data.js"></script>
-    <script src="/assets/js/testimonial-slider.js"></script>
-
-    <!-- Download Modal Script -->
-    <script>
-      (function () {
-        const modal = document.getElementById("downloadModal");
-        const openButtons = document.querySelectorAll(".open-download-modal");
-        const closeButton = document.getElementById("downloadModalClose");
-
-        function openModal() {
-          modal.classList.add("active");
-          document.body.style.overflow = "hidden";
-        }
-
-        function closeModal() {
-          modal.classList.remove("active");
-          document.body.style.overflow = "";
-        }
-
-        // Open modal when any Download Now button is clicked
-        openButtons.forEach(function (button) {
-          button.addEventListener("click", openModal);
-        });
-
-        // Close button closes modal
-        if (closeButton) {
-          closeButton.addEventListener("click", closeModal);
-        }
-
-        // Close modal when clicking outside
-        if (modal) {
-          modal.addEventListener("click", function (e) {
-            if (e.target === modal) {
-              closeModal();
-            }
-          });
-        }
-
-        // Close modal on Escape key
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && modal.classList.contains("active")) {
-            closeModal();
-          }
-        });
-      })();
-    </script>
+      </section>
+    </main>
   </body>
 </html>
