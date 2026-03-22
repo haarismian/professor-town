@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -71,13 +71,64 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <script>
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          (window.posthog && window.posthog.__loaded) ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              (2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                }));
+            }
+            (((p = t.createElement("script")).type = "text/javascript"),
+              (p.crossOrigin = "anonymous"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r,
+              ));
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a),
+                    t || (e += " (stub)"),
+                    e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(
+                    " ",
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
 
-      posthog.init('phc_aHb8ipxdNNj5P4vtPWgv4yTD7dKH1qnYy25xPWpG2T9', {
-          api_host: 'https://us.i.posthog.com',
-          defaults: '2025-05-24',
-          person_profiles: 'always', // or 'always' to create profiles for anonymous users as well
-      })
+      posthog.init("phc_aHb8ipxdNNj5P4vtPWgv4yTD7dKH1qnYy25xPWpG2T9", {
+        api_host: "https://us.i.posthog.com",
+        defaults: "2025-05-24",
+        person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+      });
     </script>
   </head>
   <body>
@@ -102,13 +153,19 @@
               <li>
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
-              <li><a href="/offers/application-review/">7-Day Application Rescue</a></li>
-              <li><a href="/offers/faculty-coaching/">Faculty Offer Accelerator</a></li>
+              <li>
+                <a href="/offers/application-review/"
+                  >7-Day Application Rescue</a
+                >
+              </li>
+              <li>
+                <a href="/offers/faculty-coaching/"
+                  >Faculty Offer Accelerator</a
+                >
+              </li>
             </ul>
           </li>
-          
-          
-          
+
           <li><a href="/contact/" class="nav-link">Contact</a></li>
           <li>
             <a href="/resources/" class="btn btn-nav-cta">Get the Free Guide</a>
@@ -163,7 +220,9 @@
             </h2>
             <ol style="padding-left: 1.5rem">
               <li>
-                <a href="#understanding-first-round">Understanding First-Round Interviews</a>
+                <a href="#understanding-first-round"
+                  >Understanding First-Round Interviews</a
+                >
               </li>
               <li>
                 <a href="#common-questions">Common First-Round Questions</a>
@@ -178,7 +237,9 @@
                 <a href="#fit-questions">Fit and Interest Questions</a>
               </li>
               <li>
-                <a href="#logistical-questions">Logistical and Practical Questions</a>
+                <a href="#logistical-questions"
+                  >Logistical and Practical Questions</a
+                >
               </li>
               <li>
                 <a href="#preparation-tips">Preparation Tips</a>
@@ -196,16 +257,21 @@
             </h2>
             <ul style="padding-left: 1.5rem; margin: 0">
               <li>
-                First-round interviews typically focus on fit, basic qualifications, and initial screening rather than deep technical discussions.
+                First-round interviews typically focus on fit, basic
+                qualifications, and initial screening rather than deep technical
+                discussions.
               </li>
               <li>
-                Prepare concise, clear answers to common questions about your research, teaching, and interest in the position.
+                Prepare concise, clear answers to common questions about your
+                research, teaching, and interest in the position.
               </li>
               <li>
-                Research the institution, department, and position thoroughly to answer fit questions authentically.
+                Research the institution, department, and position thoroughly to
+                answer fit questions authentically.
               </li>
               <li>
-                Practice your answers out loud and prepare questions to ask the committee.
+                Practice your answers out loud and prepare questions to ask the
+                committee.
               </li>
             </ul>
           </div>
@@ -219,7 +285,10 @@
                 color: var(--pt-ink);
               "
             >
-              First-round interviews in academic searches serve as initial screening to assess basic qualifications, fit, and mutual interest. Understanding what to expect and how to prepare helps you make a strong first impression.
+              First-round interviews in academic searches serve as initial
+              screening to assess basic qualifications, fit, and mutual
+              interest. Understanding what to expect and how to prepare helps
+              you make a strong first impression.
             </p>
           </div>
 
@@ -230,21 +299,29 @@
           >
             <h2>Understanding First-Round Interviews</h2>
             <p>
-              First-round interviews are typically shorter (30-60 minutes) and more focused than campus visits. They may be conducted via phone, video call, or at conferences.
+              First-round interviews are typically shorter (30-60 minutes) and
+              more focused than campus visits. They may be conducted via phone,
+              video call, or at conferences.
             </p>
             <p><strong>Common formats:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                <strong>Phone interviews:</strong> Usually 30-45 minutes with the search committee chair or a small group.
+                <strong>Phone interviews:</strong> Usually 30-45 minutes with
+                the search committee chair or a small group.
               </li>
               <li>
-                <strong>Video interviews:</strong> Similar to phone interviews but with visual connection, often using Zoom or similar platforms.
+                <strong>Video interviews:</strong> Similar to phone interviews
+                but with visual connection, often using Zoom or similar
+                platforms.
               </li>
               <li>
-                <strong>Conference interviews:</strong> In-person meetings at disciplinary conferences, often in hotel rooms or conference spaces.
+                <strong>Conference interviews:</strong> In-person meetings at
+                disciplinary conferences, often in hotel rooms or conference
+                spaces.
               </li>
               <li>
-                <strong>Initial screening calls:</strong> Brief conversations (15-30 minutes) to confirm basic qualifications and interest.
+                <strong>Initial screening calls:</strong> Brief conversations
+                (15-30 minutes) to confirm basic qualifications and interest.
               </li>
             </ul>
             <p><strong>Goals of first-round interviews:</strong></p>
@@ -252,62 +329,71 @@
               <li>
                 Verify qualifications and experience match the job description.
               </li>
-              <li>
-                Assess basic fit with the department and institution.
-              </li>
-              <li>
-                Gauge genuine interest in the position.
-              </li>
-              <li>
-                Narrow the candidate pool for campus visits.
-              </li>
+              <li>Assess basic fit with the department and institution.</li>
+              <li>Gauge genuine interest in the position.</li>
+              <li>Narrow the candidate pool for campus visits.</li>
             </ul>
           </section>
 
           <section id="common-questions" class="reveal" style="margin: 3rem 0">
             <h2>Common First-Round Questions</h2>
             <p>
-              While questions vary by institution and position, certain themes appear consistently in first-round interviews.
+              While questions vary by institution and position, certain themes
+              appear consistently in first-round interviews.
             </p>
             <div
               class="card"
               style="margin: 1.5rem 0; background: var(--pt-parch)"
             >
-              <h3 style="margin-bottom: 1rem">Most Frequently Asked Questions</h3>
+              <h3 style="margin-bottom: 1rem">
+                Most Frequently Asked Questions
+              </h3>
               <ul style="padding-left: 1.5rem; margin: 0">
                 <li>"Tell us about yourself and your research."</li>
                 <li>"Why are you interested in this position?"</li>
                 <li>"What can you tell us about your teaching experience?"</li>
                 <li>"How does your research fit with our department?"</li>
                 <li>"What questions do you have for us?"</li>
-                <li>"Why are you leaving your current position?" (if applicable)</li>
+                <li>
+                  "Why are you leaving your current position?" (if applicable)
+                </li>
                 <li>"What are your long-term career goals?"</li>
                 <li>"How would you contribute to our department's mission?"</li>
               </ul>
             </div>
             <p>
-              Prepare concise, clear answers to these questions. Aim for 2-3 minute responses that hit key points without rambling.
+              Prepare concise, clear answers to these questions. Aim for 2-3
+              minute responses that hit key points without rambling.
             </p>
           </section>
 
-          <section id="response-strategies" class="reveal" style="margin: 3rem 0">
+          <section
+            id="response-strategies"
+            class="reveal"
+            style="margin: 3rem 0"
+          >
             <h2>Effective Response Strategies</h2>
             <p>
-              How you answer questions matters as much as what you say. Use these strategies to communicate effectively.
+              How you answer questions matters as much as what you say. Use
+              these strategies to communicate effectively.
             </p>
             <p><strong>Structure your answers:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                <strong>Start with a clear point:</strong> Lead with your main message, then provide supporting details.
+                <strong>Start with a clear point:</strong> Lead with your main
+                message, then provide supporting details.
               </li>
               <li>
-                <strong>Use concrete examples:</strong> Illustrate points with specific experiences, publications, or teaching moments.
+                <strong>Use concrete examples:</strong> Illustrate points with
+                specific experiences, publications, or teaching moments.
               </li>
               <li>
-                <strong>Connect to the position:</strong> Link your answers to the specific job, department, or institution when possible.
+                <strong>Connect to the position:</strong> Link your answers to
+                the specific job, department, or institution when possible.
               </li>
               <li>
-                <strong>Keep it concise:</strong> Aim for 2-3 minutes per answer unless asked to elaborate.
+                <strong>Keep it concise:</strong> Aim for 2-3 minutes per answer
+                unless asked to elaborate.
               </li>
             </ul>
             <p><strong>Communication tips:</strong></p>
@@ -315,14 +401,11 @@
               <li>
                 Speak clearly and at a moderate pace, especially on phone calls.
               </li>
+              <li>Pause briefly before answering to collect your thoughts.</li>
+              <li>Show enthusiasm and energy in your voice and demeanor.</li>
               <li>
-                Pause briefly before answering to collect your thoughts.
-              </li>
-              <li>
-                Show enthusiasm and energy in your voice and demeanor.
-              </li>
-              <li>
-                Listen carefully to questions and ask for clarification if needed.
+                Listen carefully to questions and ask for clarification if
+                needed.
               </li>
             </ul>
           </section>
@@ -330,36 +413,45 @@
           <section id="research-teaching" class="reveal" style="margin: 3rem 0">
             <h2>Research and Teaching Questions</h2>
             <p>
-              Be prepared to discuss both your research and teaching, even if the position emphasizes one over the other.
+              Be prepared to discuss both your research and teaching, even if
+              the position emphasizes one over the other.
             </p>
             <p><strong>Research questions to expect:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                "Tell us about your current research." - Prepare a 2-3 minute overview that's accessible to non-specialists.
+                "Tell us about your current research." - Prepare a 2-3 minute
+                overview that's accessible to non-specialists.
               </li>
               <li>
-                "What are your future research plans?" - Show a clear trajectory and explain how the position supports it.
+                "What are your future research plans?" - Show a clear trajectory
+                and explain how the position supports it.
               </li>
               <li>
-                "How does your work fit with our department?" - Research the department's strengths and connect your work to them.
+                "How does your work fit with our department?" - Research the
+                department's strengths and connect your work to them.
               </li>
               <li>
-                "What grants or funding have you received?" - Be ready to discuss funding history and future plans.
+                "What grants or funding have you received?" - Be ready to
+                discuss funding history and future plans.
               </li>
             </ul>
             <p><strong>Teaching questions to expect:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                "Tell us about your teaching experience." - Highlight relevant courses, student populations, and teaching innovations.
+                "Tell us about your teaching experience." - Highlight relevant
+                courses, student populations, and teaching innovations.
               </li>
               <li>
-                "What courses could you teach?" - Review the department's course offerings and show how you could contribute.
+                "What courses could you teach?" - Review the department's course
+                offerings and show how you could contribute.
               </li>
               <li>
-                "How do you approach [specific topic or course]?" - Be ready to discuss pedagogy and course design.
+                "How do you approach [specific topic or course]?" - Be ready to
+                discuss pedagogy and course design.
               </li>
               <li>
-                "How do you engage diverse students?" - Prepare examples of inclusive teaching practices.
+                "How do you engage diverse students?" - Prepare examples of
+                inclusive teaching practices.
               </li>
             </ul>
           </section>
@@ -367,7 +459,8 @@
           <section id="fit-questions" class="reveal" style="margin: 3rem 0">
             <h2>Fit and Interest Questions</h2>
             <p>
-              Committees want to know that you're genuinely interested and that you'll be a good fit for their department and institution.
+              Committees want to know that you're genuinely interested and that
+              you'll be a good fit for their department and institution.
             </p>
             <div
               class="card"
@@ -376,70 +469,94 @@
               <h3 style="margin-bottom: 1rem">Preparing for Fit Questions</h3>
               <ul style="padding-left: 1.5rem; margin: 0">
                 <li>
-                  <strong>Research the institution:</strong> Understand the mission, student population, and institutional type.
+                  <strong>Research the institution:</strong> Understand the
+                  mission, student population, and institutional type.
                 </li>
                 <li>
-                  <strong>Research the department:</strong> Know faculty research areas, course offerings, and department culture.
+                  <strong>Research the department:</strong> Know faculty
+                  research areas, course offerings, and department culture.
                 </li>
                 <li>
-                  <strong>Identify specific connections:</strong> Find concrete ways your work, interests, or experience align with the position.
+                  <strong>Identify specific connections:</strong> Find concrete
+                  ways your work, interests, or experience align with the
+                  position.
                 </li>
                 <li>
-                  <strong>Be authentic:</strong> Show genuine interest rather than generic enthusiasm.
+                  <strong>Be authentic:</strong> Show genuine interest rather
+                  than generic enthusiasm.
                 </li>
               </ul>
             </div>
             <p><strong>Common fit questions:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                "Why are you interested in this position?" - Be specific about what draws you to this particular role and institution.
+                "Why are you interested in this position?" - Be specific about
+                what draws you to this particular role and institution.
               </li>
               <li>
-                "How would you contribute to our department?" - Connect your skills, experience, and interests to their needs.
+                "How would you contribute to our department?" - Connect your
+                skills, experience, and interests to their needs.
               </li>
               <li>
-                "What do you know about our institution?" - Demonstrate that you've done your homework.
+                "What do you know about our institution?" - Demonstrate that
+                you've done your homework.
               </li>
               <li>
-                "Why this location/region?" - If applicable, show genuine interest in the geographic area.
+                "Why this location/region?" - If applicable, show genuine
+                interest in the geographic area.
               </li>
             </ul>
           </section>
 
-          <section id="logistical-questions" class="reveal" style="margin: 3rem 0">
+          <section
+            id="logistical-questions"
+            class="reveal"
+            style="margin: 3rem 0"
+          >
             <h2>Logistical and Practical Questions</h2>
             <p>
-              First-round interviews may include questions about practical matters like availability, salary expectations, or relocation.
+              First-round interviews may include questions about practical
+              matters like availability, salary expectations, or relocation.
             </p>
             <p><strong>Common logistical questions:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                <strong>Availability:</strong> "When would you be available to start?" - Be prepared to discuss your timeline.
+                <strong>Availability:</strong> "When would you be available to
+                start?" - Be prepared to discuss your timeline.
               </li>
               <li>
-                <strong>Salary expectations:</strong> "What are your salary expectations?" - Research typical ranges and be prepared to discuss, but you can also defer to later stages.
+                <strong>Salary expectations:</strong> "What are your salary
+                expectations?" - Research typical ranges and be prepared to
+                discuss, but you can also defer to later stages.
               </li>
               <li>
-                <strong>Relocation:</strong> "Are you willing to relocate?" - Show openness and enthusiasm if you're genuinely interested.
+                <strong>Relocation:</strong> "Are you willing to relocate?" -
+                Show openness and enthusiasm if you're genuinely interested.
               </li>
               <li>
-                <strong>Other offers:</strong> "Are you considering other positions?" - Be honest but diplomatic. You don't need to share details.
+                <strong>Other offers:</strong> "Are you considering other
+                positions?" - Be honest but diplomatic. You don't need to share
+                details.
               </li>
             </ul>
             <p>
-              For sensitive questions like salary, it's often appropriate to say you'd like to learn more about the position and benefits package before discussing specific numbers.
+              For sensitive questions like salary, it's often appropriate to say
+              you'd like to learn more about the position and benefits package
+              before discussing specific numbers.
             </p>
           </section>
 
           <section id="preparation-tips" class="reveal" style="margin: 3rem 0">
             <h2>Preparation Tips</h2>
             <p>
-              Thorough preparation helps you feel confident and make a strong impression.
+              Thorough preparation helps you feel confident and make a strong
+              impression.
             </p>
             <p><strong>Before the interview:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
               <li>
-                Review your application materials and be ready to discuss everything you mentioned.
+                Review your application materials and be ready to discuss
+                everything you mentioned.
               </li>
               <li>
                 Research the institution, department, and faculty thoroughly.
@@ -447,30 +564,28 @@
               <li>
                 Prepare answers to common questions and practice them out loud.
               </li>
+              <li>Prepare thoughtful questions to ask the committee.</li>
               <li>
-                Prepare thoughtful questions to ask the committee.
+                For video calls, test your technology, lighting, and background
+                in advance.
               </li>
               <li>
-                For video calls, test your technology, lighting, and background in advance.
-              </li>
-              <li>
-                For phone calls, find a quiet space with good reception and have your materials nearby.
+                For phone calls, find a quiet space with good reception and have
+                your materials nearby.
               </li>
             </ul>
             <p><strong>Questions to ask:</strong></p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0">
+              <li>"What are the department's priorities for this position?"</li>
               <li>
-                "What are the department's priorities for this position?"
+                "What opportunities are there for collaboration within the
+                department?"
               </li>
               <li>
-                "What opportunities are there for collaboration within the department?"
+                "What support does the institution provide for
+                research/teaching?"
               </li>
-              <li>
-                "What support does the institution provide for research/teaching?"
-              </li>
-              <li>
-                "What is the timeline for the search process?"
-              </li>
+              <li>"What is the timeline for the search process?"</li>
               <li>
                 "What do you enjoy most about working at this institution?"
               </li>
@@ -490,7 +605,8 @@
               Need Interview Preparation Support?
             </h2>
             <p style="margin-bottom: 1.5rem; color: var(--pt-slate-200)">
-              Work with our coaches to practice your answers, refine your responses, and prepare for first-round interviews.
+              Work with our coaches to practice your answers, refine your
+              responses, and prepare for first-round interviews.
             </p>
             <a
               href="/application-audit/"
@@ -507,7 +623,10 @@
                 How long should my answers be?
               </h3>
               <p>
-                Aim for 2-3 minutes for most questions. Some questions may warrant shorter answers (30 seconds to 1 minute), while others might allow for slightly longer responses (3-4 minutes). Follow the interviewer's cues and be ready to elaborate if asked.
+                Aim for 2-3 minutes for most questions. Some questions may
+                warrant shorter answers (30 seconds to 1 minute), while others
+                might allow for slightly longer responses (3-4 minutes). Follow
+                the interviewer's cues and be ready to elaborate if asked.
               </p>
             </div>
             <div class="card" style="margin-bottom: 1.5rem">
@@ -515,7 +634,10 @@
                 What if I don't know the answer to a question?
               </h3>
               <p>
-                It's okay to say you don't know or need to think about it. You can say, "That's a great question. Let me think about that for a moment," or "I haven't considered that specifically, but based on my experience..." Avoid making up answers or being evasive.
+                It's okay to say you don't know or need to think about it. You
+                can say, "That's a great question. Let me think about that for a
+                moment," or "I haven't considered that specifically, but based
+                on my experience..." Avoid making up answers or being evasive.
               </p>
             </div>
             <div class="card" style="margin-bottom: 1.5rem">
@@ -523,7 +645,10 @@
                 Should I take notes during the interview?
               </h3>
               <p>
-                Yes, taking brief notes can be helpful, especially for questions you want to ask later or details you want to remember. Keep notes minimal so you can maintain engagement and eye contact (on video calls).
+                Yes, taking brief notes can be helpful, especially for questions
+                you want to ask later or details you want to remember. Keep
+                notes minimal so you can maintain engagement and eye contact (on
+                video calls).
               </p>
             </div>
             <div class="card">
@@ -531,7 +656,10 @@
                 How should I follow up after the interview?
               </h3>
               <p>
-                Send a brief thank-you email within 24 hours. Thank them for their time, reiterate your interest, and mention one or two specific points from the conversation that reinforced your interest. Keep it concise and professional.
+                Send a brief thank-you email within 24 hours. Thank them for
+                their time, reiterate your interest, and mention one or two
+                specific points from the conversation that reinforced your
+                interest. Keep it concise and professional.
               </p>
             </div>
           </section>
@@ -548,7 +676,8 @@
                   >
                 </h3>
                 <p>
-                  Learn the most frequent pitfalls candidates face and how to navigate them with confidence.
+                  Learn the most frequent pitfalls candidates face and how to
+                  navigate them with confidence.
                 </p>
               </article>
               <article class="card">
@@ -559,7 +688,8 @@
                   >
                 </h3>
                 <p>
-                  Craft a compelling teaching demonstration that showcases your pedagogy and engages students.
+                  Craft a compelling teaching demonstration that showcases your
+                  pedagogy and engages students.
                 </p>
               </article>
             </div>
@@ -579,7 +709,8 @@
               Get Weekly Interview Tips
             </h2>
             <p style="margin-bottom: 1.5rem; color: var(--pt-slate-200)">
-              Subscribe to receive interview preparation strategies, common questions, and academic job search insights.
+              Subscribe to receive interview preparation strategies, common
+              questions, and academic job search insights.
             </p>
             <form
               action="#"
@@ -623,7 +754,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h4>Blackframe Consulting Inc. d/b/a Professor Town</h4>
+            <h4>Professor Town</h4>
             <p>
               Practical interview prep for professors, adjuncts, and grad
               students.
@@ -656,19 +787,22 @@
 
     <!-- Countdown Timer Script -->
     <script>
-      (function() {
+      (function () {
         function updateCountdown() {
           const targetDate = new Date("2025-12-27T04:59:59Z");
           const now = new Date();
           const diff = targetDate - now;
           if (diff <= 0) {
-            document.querySelectorAll(".countdown-timer").forEach(timer => {
-              timer.innerHTML = '<span style="font-weight: 700;">Sale Ended</span>';
+            document.querySelectorAll(".countdown-timer").forEach((timer) => {
+              timer.innerHTML =
+                '<span style="font-weight: 700;">Sale Ended</span>';
             });
             return;
           }
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          );
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
           const d = document.getElementById("days");
@@ -686,4 +820,3 @@
     </script>
   </body>
 </html>
-

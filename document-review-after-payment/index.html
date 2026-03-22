@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,12 +21,12 @@
           (e.init = function (i, s, a) {
             function g(t, e) {
               var o = e.split(".");
-              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (2 == o.length && ((t = t[o[0]]), (e = o[1])),
                 (t[e] = function () {
                   t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                });
+                }));
             }
-            ((p = t.createElement("script")).type = "text/javascript"),
+            (((p = t.createElement("script")).type = "text/javascript"),
               (p.crossOrigin = "anonymous"),
               (p.async = !0),
               (p.src =
@@ -34,8 +34,8 @@
                 "/static/array.js"),
               (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
                 p,
-                r
-              );
+                r,
+              ));
             var u = e;
             for (
               void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
@@ -43,7 +43,9 @@
                 u.toString = function (t) {
                   var e = "posthog";
                   return (
-                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                    "posthog" !== a && (e += "." + a),
+                    t || (e += " (stub)"),
+                    e
                   );
                 },
                 u.people.toString = function () {
@@ -51,7 +53,7 @@
                 },
                 o =
                   "init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r".split(
-                    " "
+                    " ",
                   ),
                 n = 0;
               n < o.length;
@@ -83,7 +85,9 @@
         border-radius: 14px;
         padding: 2.5rem 2rem;
         text-align: center;
-        transition: transform 0.2s ease, box-shadow 0.2s ease,
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
           border-color 0.2s ease;
       }
 
@@ -249,14 +253,18 @@
                 <a href="/application-audit/">Free Application Audit</a>
               </li>
               <li>
-                <a href="/offers/application-review/">7-Day Application Rescue</a>
+                <a href="/offers/application-review/"
+                  >7-Day Application Rescue</a
+                >
               </li>
-              <li><a href="/offers/faculty-coaching/">Faculty Offer Accelerator</a></li>
+              <li>
+                <a href="/offers/faculty-coaching/"
+                  >Faculty Offer Accelerator</a
+                >
+              </li>
             </ul>
           </li>
-          
-          
-          
+
           <li><a href="/contact/" class="nav-link">Contact</a></li>
           <li>
             <a href="/resources/" class="btn btn-nav-cta">Get the Free Guide</a>
@@ -363,7 +371,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h4>Blackframe Consulting Inc. d/b/a Professor Town</h4>
+            <h4>Professor Town</h4>
             <p>
               Practical interview prep for professors, adjuncts, and grad
               students.
