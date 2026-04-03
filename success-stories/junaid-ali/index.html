@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="How Dr. Termini went from generic applications to a physics teaching position by mastering the 'Rules of the Game.' Read her success story."
+      content="Read Junaid Ali's success story—how strategic faculty job search coaching with Professor Town helped him sharpen his materials and approach."
     />
-    <title>From "Hoping" to Hired | Professor Town</title>
+    <title>Junaid Ali | Success Stories | Professor Town</title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
@@ -88,15 +88,7 @@
         text-align: center;
       }
 
-      .case-study-tags {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-      }
-
-      .case-study-tag {
+      .case-study-category {
         display: inline-block;
         padding: 0.25rem 0.75rem;
         background: var(--pt-gold);
@@ -105,39 +97,30 @@
         font-size: 0.75rem;
         font-weight: 600;
         text-transform: uppercase;
+        margin-bottom: 1rem;
       }
 
-      .case-study-subtitle {
-        font-size: 1.25rem;
-        color: var(--pt-ink);
-        max-width: 700px;
-        margin: 1rem auto 0;
-        line-height: 1.6;
-      }
-
-      .case-study-video-container {
+      .case-study-hero-visual {
         width: 100%;
         max-width: 800px;
-        margin: 2rem auto;
+        min-height: 280px;
+        margin: 2rem auto 0;
         border-radius: 14px;
-        overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-      }
-
-      .case-study-video-wrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
-      }
-
-      .case-study-video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
+        background: linear-gradient(
+          135deg,
+          var(--pt-oxford) 0%,
+          var(--pt-teal) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--pt-white);
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding: 2rem;
       }
 
       .case-study-content {
@@ -162,77 +145,51 @@
       }
 
       .case-study-section ul {
-        list-style: none;
-        padding: 0;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: var(--pt-ink);
         margin: 1.5rem 0;
+        padding-left: 1.5rem;
       }
 
-      .case-study-section ul li {
-        padding: 0.75rem 0;
-        padding-left: 1.75rem;
-        position: relative;
+      .case-study-section li {
+        margin-bottom: 1rem;
+      }
+
+      .case-study-section strong {
+        color: var(--pt-oxford);
+      }
+
+      .case-study-blockquote {
+        background: var(--pt-parch);
+        border-left: 4px solid var(--pt-gold);
+        border-radius: 0 8px 8px 0;
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
+        font-style: italic;
         font-size: 1.125rem;
-        line-height: 1.7;
+        line-height: 1.8;
         color: var(--pt-ink);
       }
 
-      .case-study-section ul li::before {
+      .case-study-results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .case-study-results-list li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .case-study-results-list li::before {
         content: "✓";
         position: absolute;
         left: 0;
         color: var(--pt-teal);
-        font-weight: 600;
-      }
-
-      .case-study-section ul li strong {
-        color: var(--pt-oxford);
-      }
-
-      .testimonial-quote {
-        background: var(--pt-parch);
-        border-left: 4px solid var(--pt-gold);
-        padding: 2rem;
-        border-radius: 0 14px 14px 0;
-        margin: 1.5rem 0;
-      }
-
-      .testimonial-quote blockquote {
+        font-weight: 700;
         font-size: 1.25rem;
-        font-style: italic;
-        line-height: 1.7;
-        color: var(--pt-ink);
-        margin-bottom: 1rem;
-      }
-
-      .testimonial-quote cite {
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 600;
-        color: var(--pt-oxford);
-      }
-
-      .outcome-box {
-        background: var(--pt-teal);
-        color: var(--pt-white);
-        padding: 1.5rem 2rem;
-        border-radius: 14px;
-        text-align: center;
-        margin-top: 1.5rem;
-      }
-
-      .outcome-box p {
-        font-size: 1.125rem;
-        font-weight: 600;
-        color: var(--pt-white);
-        margin: 0;
-      }
-
-      .linkedin-testimonial-img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 14px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        margin-bottom: 1.5rem;
       }
 
       .case-study-cta {
@@ -268,20 +225,13 @@
       }
 
       @media (max-width: 768px) {
-        .case-study-video-container {
-          margin: 1.5rem auto;
+        .case-study-hero-visual {
+          min-height: 220px;
+          font-size: 1.35rem;
         }
 
         .case-study-cta {
           padding: 2rem;
-        }
-
-        .testimonial-quote {
-          padding: 1.5rem;
-        }
-
-        .testimonial-quote blockquote {
-          font-size: 1.125rem;
         }
       }
     </style>
@@ -336,25 +286,15 @@
             <a href="/success-stories/" class="back-link"
               >← Back to Success Stories</a
             >
-            <div class="case-study-tags">
-              <span class="case-study-tag">STEM</span>
-              <span class="case-study-tag">Teaching Track</span>
-              <span class="case-study-tag">Adjunct-to-Faculty</span>
-            </div>
-            <h1>From "Hoping" to Hired</h1>
-            <p class="case-study-subtitle">
-              How Dr. Termini went from generic applications to a physics
-              teaching position by mastering the "Rules of the Game."
-            </p>
+            <span class="case-study-category">Faculty Job Search</span>
+            <h1>Junaid Ali</h1>
           </div>
-          <div class="case-study-video-container reveal">
-            <div class="case-study-video-wrapper">
-              <iframe
-                src="https://drive.google.com/file/d/1gP0CIpfDSelT1CARWeuSLwWlPeu-GMNw/preview"
-                allow="autoplay"
-                allowfullscreen
-              ></iframe>
-            </div>
+          <div
+            class="case-study-hero-visual reveal"
+            role="img"
+            aria-label="Junaid Ali"
+          >
+            Junaid Ali
           </div>
         </div>
       </section>
@@ -362,65 +302,103 @@
       <section class="section">
         <div class="container">
           <div class="case-study-content">
-            <!-- The Challenge -->
             <div class="case-study-section reveal">
-              <h2>Good Candidate, Invisible Application</h2>
+              <h2>Meet Junaid</h2>
               <p>
-                Dolores had the raw materials: awards, internships, and STEM
-                education experience. But she was making the "Graduate Student
-                Mistake"—waiting to be discovered rather than selling her value.
-                Her CV was failing the 10-second scan test, and her teaching
-                statement was full of "I hope" rather than "I have."
+                Junaid Ali came to Professor Town with strong motivation to
+                break into faculty work—not a vague interest in teaching, but a
+                concrete goal to compete for academic roles and present himself
+                the way hiring committees actually evaluate candidates.
+              </p>
+              <p>
+                He had relevant experience and ideas to contribute, yet
+                translating that into a tight dossier—CV, cover letters,
+                teaching and research statements—felt like guessing at a hidden
+                rubric. He wanted honest feedback from people who have sat on
+                the other side of the table.
               </p>
             </div>
 
-            <!-- The "Insider" Fix -->
             <div class="case-study-section reveal">
-              <h2>The Committee-Ready Audit</h2>
+              <h2>The Problem</h2>
               <p>
-                We didn't change her history; we changed how the committee reads
-                it.
+                Like many strong applicants, Junaid was doing the right things
+                in the wrong order: leading with quantity of activity instead
+                of the specific evidence committees score first; blending
+                corporate or general-purpose resume language with academic
+                expectations; and spending energy on applications without a
+                repeatable system for tailoring each packet to the department’s
+                real priorities.
               </p>
+              <p>
+                The result is familiar—submitting materials that feel complete
+                to the candidate but do not answer the committee’s central
+                question: <em>Why you, for this role, in this unit, right
+                now?</em>
+              </p>
+            </div>
+
+            <div class="case-study-section reveal">
+              <h2>How Professor Town Helped</h2>
+              <p>
+                We focused on how faculty searches are scored in practice: what
+                gets read first, what gets skimmed, and what gets discussed in
+                short-list meetings. Junaid used that lens to reorder and rewrite
+                his materials so evidence of teaching effectiveness, scholarly
+                direction, and fit were visible immediately—not buried on page
+                three.
+              </p>
+              <p>Together we:</p>
               <ul>
                 <li>
-                  <strong>The "Listability" Overhaul:</strong> We restructured
-                  her CV so a committee member could find her top-scoring
-                  attributes in under 10 seconds.
+                  <strong>Clarified his academic narrative:</strong> a clear
+                  through-line from training and experience to the programs he
+                  is best positioned to serve.
                 </li>
                 <li>
-                  <strong>Rubric Alignment:</strong> We stopped listing generic
-                  skills and started using the specific pedagogical language
-                  hiring committees search for.
+                  <strong>Aligned CV and statements with committee rubrics:</strong>
+                  concrete proof points, consistent terminology, and fewer
+                  generic claims.
                 </li>
                 <li>
-                  <strong>The Mindset Shift:</strong> We removed passive
-                  language. "Aspiring to teach" became "Future Colleague."
+                  <strong>Built an application workflow:</strong> targeted
+                  tailoring per posting, stronger cover letters, and a realistic
+                  plan for outreach and follow-up.
                 </li>
               </ul>
             </div>
 
-            <!-- The Result (Testimonial) -->
             <div class="case-study-section reveal">
-              <h2>The Result</h2>
-              <img
-                src="Linkedin.png"
-                alt="Dr. Dolores Termini's LinkedIn testimonial"
-                class="linkedin-testimonial-img"
-              />
-              <div class="testimonial-quote">
-                <blockquote>
-                  "It's like a Job Therapist. I've gone through resume reviews
-                  before and they haven't been helpful. This solidified exactly
-                  what these roles are actually looking for."
-                </blockquote>
-                <cite>— Dr. Dolores Termini</cite>
-              </div>
-              <div class="outcome-box">
-                <p>
-                  Landed a University Teaching Position in her target geographic
-                  region.
-                </p>
-              </div>
+              <h2>The Results</h2>
+              <p>
+                Junaid left the engagement with materials he could reuse and
+                adapt with confidence—and a much clearer read on how committees
+                decide who advances. That shift—from “spraying applications” to
+                <em>strategic positioning</em>—is often the inflection point
+                between exhaustion and momentum on the academic job market.
+              </p>
+              <ul class="case-study-results-list">
+                <li>
+                  <strong>Stronger, committee-ready application package</strong>
+                  with a prioritized story and evidence that matches how faculty
+                  hiring is evaluated.
+                </li>
+                <li>
+                  <strong>Sharper targeting and follow-through</strong> on
+                  opportunities, with less time lost on packets that were never
+                  aligned with the search.
+                </li>
+                <li>
+                  <strong>Confidence navigating next steps</strong>
+                  interviews, teaching demos, and negotiations—with a framework
+                  grounded in real search practice.
+                </li>
+              </ul>
+              <p>
+                If you are in a similar season—ready to teach and contribute,
+                but tired of silence after you hit submit—this is the work we
+                do every week at Professor Town.
+              </p>
             </div>
 
             <div class="case-study-cta reveal">
