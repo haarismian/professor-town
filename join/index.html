@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <title>Joining Professor Town…</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family:
+          Georgia,
+          "Times New Roman",
+          serif;
+        color: #1a1a1a;
+        background: #faf8f5;
+      }
+      p {
+        margin: 0;
+        font-size: 1.125rem;
+      }
+      a {
+        color: #1a1a1a;
+      }
+    </style>
+    <script>
+      (function () {
+        var DESTINATION =
+          "https://www.skool.com/professor-town-3966/about";
+
+        var HOST_TO_SOURCE = [
+          [/instagram\.com$/i, "instagram"],
+          [/facebook\.com$/i, "facebook"],
+          [/fb\.com$/i, "facebook"],
+          [/twitter\.com$/i, "twitter"],
+          [/^x\.com$/i, "twitter"],
+          [/^t\.co$/i, "twitter"],
+          [/linkedin\.com$/i, "linkedin"],
+          [/^lnkd\.in$/i, "linkedin"],
+          [/tiktok\.com$/i, "tiktok"],
+          [/youtube\.com$/i, "youtube"],
+          [/^youtu\.be$/i, "youtube"],
+          [/reddit\.com$/i, "reddit"],
+          [/threads\.net$/i, "threads"],
+          [/google\./i, "google"],
+          [/bing\.com$/i, "bing"],
+        ];
+
+        function hostnameOf(url) {
+          try {
+            return new URL(url).hostname.replace(/^www\./, "");
+          } catch (e) {
+            return "";
+          }
+        }
+
+        function sourceFromReferrer(referrer) {
+          var host = hostnameOf(referrer);
+          if (!host) return "";
+          for (var i = 0; i < HOST_TO_SOURCE.length; i++) {
+            if (HOST_TO_SOURCE[i][0].test(host)) {
+              return HOST_TO_SOURCE[i][1];
+            }
+          }
+          return host.split(".")[0] || "";
+        }
+
+        function buildDestination() {
+          var url = new URL(DESTINATION);
+          var incoming = new URLSearchParams(window.location.search);
+          var referrer = document.referrer || "";
+
+          // Forward any existing campaign params from /join?...
+          [
+            "utm_source",
+            "utm_medium",
+            "utm_campaign",
+            "utm_term",
+            "utm_content",
+            "ref",
+          ].forEach(function (key) {
+            var value = incoming.get(key);
+            if (value) url.searchParams.set(key, value);
+          });
+
+          // Infer source from HTTP referrer when not already set
+          if (!url.searchParams.get("utm_source") && referrer) {
+            var source = sourceFromReferrer(referrer);
+            if (source) {
+              url.searchParams.set("utm_source", source);
+              if (!url.searchParams.get("utm_medium")) {
+                url.searchParams.set("utm_medium", "social");
+              }
+            }
+          }
+
+          // Pass the raw referrer so analytics can see the exact origin
+          if (referrer && !url.searchParams.get("referrer")) {
+            url.searchParams.set("referrer", referrer);
+          }
+
+          return url.toString();
+        }
+
+        var target = buildDestination();
+
+        // Instant client redirect; replace so Back doesn't return here
+        window.location.replace(target);
+      })();
+    </script>
+    <!-- Fallback if JS is disabled -->
+    <meta
+      http-equiv="refresh"
+      content="0;url=https://www.skool.com/professor-town-3966/about"
+    />
+  </head>
+  <body>
+    <p>
+      Redirecting to
+      <a href="https://www.skool.com/professor-town-3966/about"
+        >Professor Town on Skool</a
+      >…
+    </p>
+  </body>
+</html>
