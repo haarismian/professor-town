@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Answer a few quick questions and get a free, personalized set of faculty job search resources matched to where you are right now."
+    />
+    <title>
+      Get Your Free Personalized Faculty Job Search Plan | Professor Town
+    </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <style>
+      .guide-page {
+        background-color: var(--bg-cream);
+      }
+
+      .guide-hero {
+        background-color: var(--bg-cream);
+        padding: 1.25rem 1.5rem 3rem;
+      }
+
+      .guide-hero-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .guide-headline {
+        font-family: Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(1.75rem, 3.6vw, 2.4rem);
+        line-height: 1.1;
+        color: var(--bg-forest);
+        margin: 0 auto;
+        max-width: 24ch;
+      }
+
+      .guide-headline .underline-highlight {
+        border-bottom: 5px solid var(--bg-mustard);
+        padding-bottom: 2px;
+        display: inline-block;
+      }
+
+      /* Capped against viewport height so the form below stays above the fold
+         on short laptop screens. */
+      .guide-visual {
+        display: inline-block;
+        max-width: 100%;
+        margin: 1rem auto 0;
+        border: var(--border-style);
+        border-radius: var(--card-radius);
+        box-shadow: var(--hard-shadow);
+        background: #fff;
+        overflow: hidden;
+      }
+
+      .guide-visual img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: min(150px, 16vh);
+      }
+
+      .guide-form-prompt {
+        font-family: Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+        color: var(--bg-forest);
+        margin: 1.25rem 0 0.25rem;
+      }
+
+      .guide-form-prompt em {
+        font-style: normal;
+        border-bottom: 5px solid var(--bg-mustard);
+        padding-bottom: 2px;
+      }
+
+      /* Height is left to form_embed.js, which sets an inline height on the
+         iframe once the form measures its own content. */
+      .guide-form-wrapper {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+
+      .guide-form-wrapper iframe {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .guide-benefits {
+        list-style: none;
+        margin: 1.5rem auto 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+        align-items: center;
+      }
+
+      .guide-benefits li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: Georgia, serif;
+        font-weight: 700;
+        font-size: 1.0625rem;
+        color: var(--bg-forest);
+      }
+
+      .guide-benefits svg {
+        flex-shrink: 0;
+        color: var(--pt-teal);
+      }
+
+      .guide-disclaimer {
+        max-width: 700px;
+        margin: 2rem auto 0;
+        font-size: 0.8125rem;
+        line-height: 1.6;
+        color: var(--bg-forest);
+        opacity: 0.7;
+      }
+
+      .guide-disclaimer a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .guide-proof {
+        background: var(--pt-white);
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+        padding: 3.5rem 1.5rem;
+      }
+
+      .guide-proof-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .guide-proof-image {
+        border: var(--border-style);
+        border-radius: var(--card-radius);
+        box-shadow: var(--hard-shadow);
+        overflow: hidden;
+        background: #fff;
+      }
+
+      .guide-proof-quote {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        color: var(--bg-forest);
+        font-style: italic;
+        margin: 0;
+      }
+
+      .guide-proof-attribution {
+        margin: 1rem 0 0;
+        font-weight: 600;
+        font-style: normal;
+        color: var(--bg-forest);
+      }
+
+      @media (max-width: 768px) {
+        .guide-hero {
+          padding: 2.5rem 1.25rem 3rem;
+        }
+
+        .guide-headline {
+          max-width: none;
+        }
+
+        .guide-form-wrapper {
+          max-width: 100%;
+        }
+
+        .guide-proof-inner {
+          grid-template-columns: 1fr;
+          gap: 1.75rem;
+        }
+
+        .guide-proof-image {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="guide-page">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">Professor Town</a>
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-dropdown">
+            <span class="nav-link nav-dropdown-toggle">Work With Us</span>
+            <ul class="nav-dropdown-menu">
+              <li><a href="/application-audit/">Free Application Audit</a></li>
+              <li>
+                <a href="/offers/faculty-coaching/"
+                  >Faculty Offer Accelerator</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/contact/" class="nav-link">Contact</a></li>
+          <li>
+            <a href="/guide/" class="btn btn-nav-cta">Get the Free Guide</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section class="guide-hero">
+        <div class="guide-hero-inner">
+          <h1 class="guide-headline">
+            Get Your Free Personalized Academia
+            <span class="underline-highlight">Plan</span>
+          </h1>
+          <div class="guide-visual">
+            <img
+              src="/assets/img/free%20resources%20page/all-combined.png"
+              alt="Preview of the Professor Town resource pack: CV template, annotated CV, interview questions, self-evaluation rubric, and cold email template"
+            />
+          </div>
+
+          <div class="guide-form-wrapper">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/nvjuiSZu58Z371HfLSXB"
+              style="
+                width: 100%;
+                height: 819px;
+                border: none;
+                border-radius: 8px;
+              "
+              id="inline-nvjuiSZu58Z371HfLSXB"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Lead Magnet Form"
+              data-height="819"
+              data-layout-iframe-id="inline-nvjuiSZu58Z371HfLSXB"
+              data-form-id="nvjuiSZu58Z371HfLSXB"
+              title="Lead Magnet Form"
+            ></iframe>
+            <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+          </div>
+
+          <ul class="guide-benefits">
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Free to download — no cost, no credit card
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Used by 500+ academic job seekers
+            </li>
+          </ul>
+
+          <p class="guide-disclaimer">
+            By providing your information you agree to receive emails from
+            Professor Town about faculty job search resources, coaching, and
+            related offers. We do not sell your personal information, and you
+            can unsubscribe at any time. See our
+            <a href="/privacy-policy/">Privacy Policy</a> and
+            <a href="/terms-conditions/">Terms of Service</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="guide-proof">
+        <div class="guide-proof-inner">
+          <div class="guide-proof-image">
+            <img
+              src="/assets/img/free%20resources%20page/annotated-cv.png"
+              alt="Annotated CV showing line-by-line hiring committee feedback"
+            />
+          </div>
+          <blockquote class="guide-proof-quote">
+            "Your feedback was by far the most immediately relevant and
+            impactful I've received. I've had multiple people review my CV, but
+            your approach was on another level — you showed me how to make my
+            materials speak the language of the job and actually look like a
+            physics instructor's CV."
+            <p class="guide-proof-attribution">
+              — Professor Suzanne Rosenzweig, Physics Professor at Hillsborough
+              College
+            </p>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Professor Town</h4>
+            <p>
+              Practical interview prep for professors, adjuncts, and grad
+              students.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/guide/">Free Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/terms-conditions/">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Professor Town. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
